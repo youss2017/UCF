@@ -1,0 +1,176 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002023, month=000000000009, day=000000000006, hour=000000000002, min=000000000023, sec=000000000034)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000003966, lin=000000000156, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock5'
+	SolutionName='AdaptivePass'
+	SolutionID=19
+	V=76
+	$begin 'States'
+		F(VID=21, Ver=76)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(11000000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=1
+			M(VID=21, Ver=76, File='DV21_SOL19_M1_V76.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			M(VID=21, Ver=76, File='DV21_SOL19_M2_V76.sd')
+		$end 'SubData'
+	$end 'M'
+$end 'SolutionBlock5'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=18, Instance=\'SetupDefinition\', Solution=-1, VersionID=76)'='SolutionBlock7'
+	'SolutionKey(SimSetup=18, Instance=\'SolutionDefinition\', Solution=19, VersionID=76)'='SolutionBlock5'
+	'SolutionKey(SimSetup=18, Instance=\'SolutionDefinition\', Solution=20, VersionID=76)'='SolutionBlock6'
+$end 'BlockMapName'
+$begin 'SolutionBlock6'
+	SolutionName='LastAdaptive'
+	SolutionID=20
+	V=76
+	$begin 'States'
+		F(VID=21, Ver=76)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(11000000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=21, Ver=76, File='DV21_SOL20_M0_V76.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'Fields'
+		IDDblMap(133, 11000000000)
+		$begin 'DataMap'
+			VID=21
+			Ver=76
+			F(DblID=133, Dir='DV21_S20_V76_F133/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock6'
+$begin 'SolutionBlock7'
+	SimSetupID=18
+	SimSetupName='Setup1'
+	VersionID=76
+	$begin 'EmConvergenceData'
+		EmConv(VID=21, Ver=76, EmConv='DV21_S18_V76.EMConvData')
+	$end 'EmConvergenceData'
+	IsImported=false
+	IsTable=false
+	SolveSetupID=0
+	$begin 'CurrMeshes'
+		M(VID=21, Ver=76, Dir='DV21_S18_V76.cmesh/')
+	$end 'CurrMeshes'
+	MeshAssemVersionID=8
+	$begin 'NextAssemVersionID'
+		NextUniqueID=13
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'ADP'
+		$begin 'SubData'
+			ID=2
+			ADP(VID=21, Ver=76, Dir='DV21_S18_ADP2_V76.sd/')
+		$end 'SubData'
+	$end 'ADP'
+	$begin 'SU'
+		$begin 'SubData'
+			ID=1
+			SU(VID=21, Ver=76, File='DV21_S18_SD1_V76.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			SU(VID=21, Ver=76, File='DV21_S18_SD2_V76.su')
+		$end 'SubData'
+	$end 'SU'
+	$begin 'WaveAdapt'
+		WA(VID=21, Ver=76, A=1)
+	$end 'WaveAdapt'
+	$begin 'LastPassNumbers'
+		LP(VID=21, Ver=76, P=2)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=21, Ver=76, File='DV21_S18_V76.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=21, Ver=76, Dir='DV21_S18_MI0_V76.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock7'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='HFSSDesign1'
+	VersionID=76
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=144
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='', ID=21)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=21, Ver=76, Dir='DV21_V76.imesh/')
+	$end 'InitialMeshes'
+	MeshAssemVersionID=16
+	$begin 'NextAssemVersionID'
+		NextUniqueID=21
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'DefinitionMeshes'
+		$begin 'DefMeshes_Comp-1'
+			DefinitionID=-1
+			VersionID=15
+			VIDMap('', 128)
+			DM(VID=128, Ver=15, Dir='NDV128_V15.dmesh/')
+		$end 'DefMeshes_Comp-1'
+	$end 'DefinitionMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=21, Ver=76, Dir='DV21_MI0_V76.sd/')
+		$end 'SubData'
+	$end 'MI'
+	VersionID2=77
+$end 'SolutionBlock1'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock1(pos=3134, lin=119, lvl=0)
+		SolutionBlock5(pos=370, lin=1, lvl=0)
+		BlockMapName(pos=957, lin=30, lvl=0)
+		SolutionBlock6(pos=1340, lin=36, lvl=0)
+		SolutionBlock7(pos=1992, lin=69, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=3966, lin=156, lvl=0)
+	$end '$index$'
+$end '$index$'
