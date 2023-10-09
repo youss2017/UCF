@@ -1,11 +1,35 @@
 SimValueCacheVersionID=1
 $begin 'SimValueInfos'
-	NextUniqueID=1
+	NextUniqueID=4
 	MoveBackwards=false
 	$begin 'SimValue'
 		ID=0
 		$begin 'SimValueParams'
 			QuantityName='S(1,1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=1
+		$begin 'SimValueParams'
+			QuantityName='S(2,1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=2
+		$begin 'SimValueParams'
+			QuantityName='S(1,2)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=3
+		$begin 'SimValueParams'
+			QuantityName='S(2,2)'
 			ValueState(90, 15, 1, 2)
 			MatrixSize(0, 0)
 		$end 'SimValueParams'
@@ -32,7 +56,7 @@ $begin 'SimValueCache'
 						VersionID=0
 						$begin 'MinorVVMap'
 							MajorVariation=''
-							MinorCacheFile='min7C4223916169446205828.tmp'
+							MinorCacheFile='min661113928169681839330.tmp'
 						$end 'MinorVVMap'
 					$end 'MajorVVMap'
 				$end 'VersionMap'
@@ -43,10 +67,6 @@ $begin 'SimValueCache'
 					$end 'ReportTypeSolnDef'
 					$begin 'MajorVVMap'
 						VersionID=0
-						$begin 'MinorVVMap'
-							MajorVariation=''
-							MinorCacheFile='min7C4223916169446205829.tmp'
-						$end 'MinorVVMap'
 					$end 'MajorVVMap'
 				$end 'VersionMap'
 			$end 'ContextMap'

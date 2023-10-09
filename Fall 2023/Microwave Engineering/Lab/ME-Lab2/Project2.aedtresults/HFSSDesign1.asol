@@ -1,13 +1,135 @@
 $begin '$base_index$'
   $begin 'properties'
     all_levels=000000000000
-    time(year=000000002023, month=000000000009, day=000000000011, hour=000000000019, min=000000000023, sec=000000000007)
+    time(year=000000002023, month=000000000010, day=000000000008, hour=000000000022, min=000000000026, sec=000000000033)
     version=000000000000
   $end 'properties'
   $begin '$base_index$'
-    $index$(pos=000000011423, lin=000000000240, lvl=000000000000)
+    $index$(pos=000000011974, lin=000000000264, lvl=000000000000)
   $end '$base_index$'
 $end '$base_index$'
+$begin 'SolutionBlock5'
+	SimSetupID=50
+	SimSetupName='Setup1'
+	VersionID=0
+	$begin 'EmConvergenceData'
+		EmConv(VID=53, Ver=0, EmConv='DV53_S50_V0.EMConvData')
+	$end 'EmConvergenceData'
+	IsImported=false
+	IsTable=false
+	SolveSetupID=0
+	$begin 'CurrMeshes'
+		M(VID=53, Ver=0, Dir='DV53_S50_V0.cmesh/')
+	$end 'CurrMeshes'
+	MeshAssemVersionID=0
+	$begin 'NextAssemVersionID'
+		NextUniqueID=1
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'ADP'
+		$begin 'SubData'
+			ID=9
+			ADP(VID=53, Ver=0, Dir='DV53_S50_ADP9_V0.sd/')
+		$end 'SubData'
+	$end 'ADP'
+	$begin 'SU'
+		$begin 'SubData'
+			ID=1
+			SU(VID=53, Ver=0, File='DV53_S50_SD1_V0.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			SU(VID=53, Ver=0, File='DV53_S50_SD2_V0.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			SU(VID=53, Ver=0, File='DV53_S50_SD3_V0.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=4
+			SU(VID=53, Ver=0, File='DV53_S50_SD4_V0.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=5
+			SU(VID=53, Ver=0, File='DV53_S50_SD5_V0.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=6
+			SU(VID=53, Ver=0, File='DV53_S50_SD6_V0.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=7
+			SU(VID=53, Ver=0, File='DV53_S50_SD7_V0.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=8
+			SU(VID=53, Ver=0, File='DV53_S50_SD8_V0.su')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=9
+			SU(VID=53, Ver=0, File='DV53_S50_SD9_V0.su')
+		$end 'SubData'
+	$end 'SU'
+	$begin 'WaveAdapt'
+		WA(VID=53, Ver=0, A=1)
+	$end 'WaveAdapt'
+	$begin 'LastPassNumbers'
+		LP(VID=53, Ver=0, P=9)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=53, Ver=0, File='DV53_S50_V0.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=53, Ver=0, Dir='DV53_S50_MI0_V0.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock5'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=50, Instance=\'SetupDefinition\', Solution=-1, VersionID=0)'='SolutionBlock5'
+	'SolutionKey(SimSetup=50, Instance=\'SolutionDefinition\', Solution=51, VersionID=0)'='SolutionBlock2'
+	'SolutionKey(SimSetup=50, Instance=\'SolutionDefinition\', Solution=52, VersionID=0)'='SolutionBlock3'
+	'SolutionKey(SimSetup=50, Instance=\'SolutionDefinition\', Solution=56, VersionID=0)'='SolutionBlock4'
+$end 'BlockMapName'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='HFSSDesign1'
+	VersionID=43
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=252
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='', ID=53)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=53, Ver=43, Dir='DV53_V43.imesh/')
+	$end 'InitialMeshes'
+	MeshAssemVersionID=44
+	$begin 'NextAssemVersionID'
+		NextUniqueID=45
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'DefinitionMeshes'
+		$begin 'DefMeshes_Comp-1'
+			DefinitionID=-1
+			VersionID=43
+			VIDMap('', 109)
+			DM(VID=109, Ver=43, Dir='NDV109_V43.dmesh/')
+		$end 'DefMeshes_Comp-1'
+	$end 'DefinitionMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=53, Ver=43, Dir='DV53_MI0_V43.sd/')
+		$end 'SubData'
+	$end 'MI'
+	VersionID2=0
+$end 'SolutionBlock1'
 $begin 'SolutionBlock2'
 	SolutionName='AdaptivePass'
 	SolutionID=51
@@ -51,15 +173,20 @@ $begin 'SolutionBlock2'
 			ID=6
 			M(VID=53, Ver=0, File='DV53_SOL51_M6_V0.sd')
 		$end 'SubData'
+		$begin 'SubData'
+			ID=7
+			M(VID=53, Ver=0, File='DV53_SOL51_M7_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=8
+			M(VID=53, Ver=0, File='DV53_SOL51_M8_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=9
+			M(VID=53, Ver=0, File='DV53_SOL51_M9_V0.sd')
+		$end 'SubData'
 	$end 'M'
 $end 'SolutionBlock2'
-$begin 'BlockMapName'
-	FileHeader='SolutionBlock1'
-	'SolutionKey(SimSetup=50, Instance=\'SetupDefinition\', Solution=-1, VersionID=0)'='SolutionBlock5'
-	'SolutionKey(SimSetup=50, Instance=\'SolutionDefinition\', Solution=51, VersionID=0)'='SolutionBlock2'
-	'SolutionKey(SimSetup=50, Instance=\'SolutionDefinition\', Solution=52, VersionID=0)'='SolutionBlock3'
-	'SolutionKey(SimSetup=50, Instance=\'SolutionDefinition\', Solution=56, VersionID=0)'='SolutionBlock4'
-$end 'BlockMapName'
 $begin 'SolutionBlock3'
 	SolutionName='LastAdaptive'
 	SolutionID=52
@@ -144,118 +271,15 @@ $begin 'SolutionBlock4'
 		$end 'DataMap'
 	$end 'SolverUsage'
 $end 'SolutionBlock4'
-$begin 'SolutionBlock5'
-	SimSetupID=50
-	SimSetupName='Setup1'
-	VersionID=0
-	$begin 'EmConvergenceData'
-		EmConv(VID=53, Ver=0, EmConv='DV53_S50_V0.EMConvData')
-	$end 'EmConvergenceData'
-	IsImported=false
-	IsTable=false
-	SolveSetupID=0
-	$begin 'CurrMeshes'
-		M(VID=53, Ver=0, Dir='DV53_S50_V0.cmesh/')
-	$end 'CurrMeshes'
-	MeshAssemVersionID=0
-	$begin 'NextAssemVersionID'
-		NextUniqueID=1
-		MoveBackwards=false
-	$end 'NextAssemVersionID'
-	$begin 'ADP'
-		$begin 'SubData'
-			ID=6
-			ADP(VID=53, Ver=0, Dir='DV53_S50_ADP6_V0.sd/')
-		$end 'SubData'
-	$end 'ADP'
-	$begin 'SU'
-		$begin 'SubData'
-			ID=1
-			SU(VID=53, Ver=0, File='DV53_S50_SD1_V0.su')
-		$end 'SubData'
-		$begin 'SubData'
-			ID=2
-			SU(VID=53, Ver=0, File='DV53_S50_SD2_V0.su')
-		$end 'SubData'
-		$begin 'SubData'
-			ID=3
-			SU(VID=53, Ver=0, File='DV53_S50_SD3_V0.su')
-		$end 'SubData'
-		$begin 'SubData'
-			ID=4
-			SU(VID=53, Ver=0, File='DV53_S50_SD4_V0.su')
-		$end 'SubData'
-		$begin 'SubData'
-			ID=5
-			SU(VID=53, Ver=0, File='DV53_S50_SD5_V0.su')
-		$end 'SubData'
-		$begin 'SubData'
-			ID=6
-			SU(VID=53, Ver=0, File='DV53_S50_SD6_V0.su')
-		$end 'SubData'
-	$end 'SU'
-	$begin 'WaveAdapt'
-		WA(VID=53, Ver=0, A=1)
-	$end 'WaveAdapt'
-	$begin 'LastPassNumbers'
-		LP(VID=53, Ver=0, P=6)
-	$end 'LastPassNumbers'
-	$begin 'Profiles'
-		P(VID=53, Ver=0, File='DV53_S50_V0.profile')
-	$end 'Profiles'
-	$begin 'MI'
-		$begin 'SubData'
-			ID=0
-			MI(VID=53, Ver=0, Dir='DV53_S50_MI0_V0.sd/')
-		$end 'SubData'
-	$end 'MI'
-$end 'SolutionBlock5'
-$begin 'SolutionBlock1'
-	ProductName=''
-	CircuitName='HFSSDesign1'
-	VersionID=43
-	PostProcess=false
-	LossLess=true
-	NextUniqueID=154
-	MoveBackwards=false
-	$begin 'VariationIDs'
-		Map(V='', ID=53)
-	$end 'VariationIDs'
-	$begin 'LinkedDataList'
-	$end 'LinkedDataList'
-	$begin 'InitialMeshes'
-		M(VID=53, Ver=43, Dir='DV53_V43.imesh/')
-	$end 'InitialMeshes'
-	MeshAssemVersionID=44
-	$begin 'NextAssemVersionID'
-		NextUniqueID=45
-		MoveBackwards=false
-	$end 'NextAssemVersionID'
-	$begin 'DefinitionMeshes'
-		$begin 'DefMeshes_Comp-1'
-			DefinitionID=-1
-			VersionID=43
-			VIDMap('', 109)
-			DM(VID=109, Ver=43, Dir='NDV109_V43.dmesh/')
-		$end 'DefMeshes_Comp-1'
-	$end 'DefinitionMeshes'
-	$begin 'MI'
-		$begin 'SubData'
-			ID=0
-			MI(VID=53, Ver=43, Dir='DV53_MI0_V43.sd/')
-		$end 'SubData'
-	$end 'MI'
-	VersionID2=44
-$end 'SolutionBlock1'
 $begin '$index$'
 	$begin '$index$'
-		SolutionBlock1(pos=10591, lin=203, lvl=0)
-		SolutionBlock2(pos=370, lin=1, lvl=0)
-		BlockMapName(pos=1319, lin=46, lvl=0)
-		SolutionBlock3(pos=1803, lin=53, lvl=0)
-		SolutionBlock4(pos=2449, lin=86, lvl=0)
-		SolutionBlock5(pos=9099, lin=137, lvl=0)
+		BlockMapName(pos=2138, lin=79, lvl=0)
+		SolutionBlock2(pos=3453, lin=123, lvl=0)
+		SolutionBlock3(pos=4678, lin=180, lvl=0)
+		SolutionBlock4(pos=5324, lin=213, lvl=0)
+		SolutionBlock5(pos=370, lin=1, lvl=0)
+		SolutionBlock1(pos=2622, lin=86, lvl=0)
 		$base_index$(pos=0, lin=1, lvl=0)
-		$index$(pos=11423, lin=240, lvl=0)
+		$index$(pos=11974, lin=264, lvl=0)
 	$end '$index$'
 $end '$index$'
