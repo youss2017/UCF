@@ -1,0 +1,18 @@
+$begin 'DesignData'
+	$begin 'PartsInfo'
+		Part(6, true, 'Inner', false, 'copper', 3, 9, 8, 7, true, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, false, false, -1, 143, 175, 143)
+		Part(15, true, 'Cylinder1', true, 'Teflon (tm)', 4, 18, 17, 16, 31, true, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, false, false, -1, 143, 175, 143)
+	$end 'PartsInfo'
+	$begin 'FacesInfo'
+		Face(7, 6, 3.98982e-05, 7.97965, false, 0, 0, 0, -10, -10, -10, 0)
+		Face(8, 6, 1.26677e-06, 3.98982, true, 8.3582e-17, 1.22712e-32, 0, -0, -0, -1, 0)
+		Face(9, 6, 1.26677e-06, 3.98982, true, -8.3582e-17, 6.13559e-33, 10, 0, 0, 1, 0)
+		Face(16, 15, 0.000135654, 27.1308, false, 0, 0, 0, -10, -10, -10, 0)
+		Face(17, 15, 1.33771e-05, 17.5552, true, -6.33197e-17, 4.56729e-32, 0, -0, -0, -1, 0)
+		Face(18, 15, 1.33771e-05, 17.5552, true, -3.16599e-17, 2.48119e-32, 10, 0, 0, 1, 0)
+		Face(31, 15, 3.98982e-05, 7.97965, false, 0, 0, 0, -10, -10, -10, 0)
+	$end 'FacesInfo'
+	$begin 'LayoutComp'
+		IDToNameMap()
+	$end 'LayoutComp'
+$end 'DesignData'

@@ -4,4 +4,18 @@ $begin 'SimValueInfos'
 	MoveBackwards=false
 $end 'SimValueInfos'
 $begin 'SimValueCache'
+	$begin 'DesignMap'
+		DesignID=2
+		$begin 'SolutionMap'
+			$begin 'ContextMap'
+				SolutionID=37
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=38
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=42
+			$end 'ContextMap'
+		$end 'SolutionMap'
+	$end 'DesignMap'
 $end 'SimValueCache'
