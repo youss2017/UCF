@@ -1,0 +1,13 @@
+B=100;
+i_cq = 1e-3;
+i_bq = i_cq/B;
+V_cc = 12;
+V_th = V_cc/4.49;
+V_be = 0.7;
+R_E = 1.8e3;
+R_th = (V_th - V_be - i_bq*(B + 1)*R_E)/i_bq;
+R_1 = (V_cc*R_th)/V_th;
+R_2 = (R_th*R_1)/(R_1-R_th);
+disp(R_th/1e3);
+disp(R_1/1e3);
+disp(R_2/1e3);
