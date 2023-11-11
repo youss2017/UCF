@@ -8,13 +8,13 @@ q = 1.602176634e-19; % C
 T=300;
 A = 10e-4*10e-4; % 1x1 cm^2
 ni = 1.5e10;
-Na=1e16;
-Nd=1e18;
+Na=1e17;
+Nd=1e16;
 
 V_T = (k_j*T)/q;
 V_0=V_T*log((Na*Nd)/ni^2);
 
-W = sqrt( ((2*e_r*e_0cm)/(q)) * ((Na+Nd)/(Na*Nd))*V_0  );
+W = sqrt( ((2*e_r*e_0cm)/(q)) * ((Na+Nd)/(Na*Nd))*(V_0+2)  );
 
 x_p0 = (Nd*W)/(Na+Nd);
 x_n0 = (Na*W)/(Na+Nd);
