@@ -1,0 +1,37 @@
+* 42;Circuit2.ckt
+
+.CIRCUITNAME "Circuit2"
+.rootnamemap 42;Circuit2
+.namemap
+C2=42;Circuit2;52
+C1=42;Circuit2;47
+L2=42;Circuit2;49
+L1=42;Circuit2;48
+.endnamemap
+.stringparam syslib = "C:\Program Files (x86)\Ansoft\DesignerSV2\syslib"
+.stringparam userlib = "C:\Program Files (x86)\Ansoft\DesignerSV2\userlib"
+.stringparam personallib = "C:\Users\youssef\Documents\Ansoft\PersonalLib"
+.stringparam projectdir = "U:\Fall 2023\Microwave Engineering\Project"
+
+*begin toplevel circuit
+
+.SUB FR4 MS(
++   H=30mil Er=4.40000000000000 TAND=0.0200000000000000 TANM=0 MSat=0 MRem=0
++MET1=1.72413793103448 T1=0.675mil
++ RGH=0mil)
+
+CAP:52 Port2 0 C=0.6623498pF 
+CAP:47 net_260 0 C=1.135571pF 
+IND:49 net_260 Port2 L=3.406358nH 
+IND:48 Port1 net_260 L=1.987005nH 
+PORT:Port2 Port2 0 PNUM=2 rz=59.995Ohm iz=0Ohm 
+PORT:Port1 Port1 0 PNUM=1 
+
+
+*end toplevel circuit
+.nwa:"NWA1"
++ F=LIN 1GHz 10GHz 10MHz
++ SWPORD = {F}
++ SolutionFile="C:\Users\youssef\Documents\Ansoft\temp\Prototype.results\Circuit2_NWA1_36_U2_Circuit2_38_242\Circuit2_NWA1_36_U2_Circuit2_38_242.sol"
+
+.end

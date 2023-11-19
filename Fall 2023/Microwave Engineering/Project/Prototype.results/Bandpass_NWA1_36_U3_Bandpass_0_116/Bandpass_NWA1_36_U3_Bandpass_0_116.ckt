@@ -1,0 +1,45 @@
+* 58;Bandpass.ckt
+
+.CIRCUITNAME "Bandpass"
+.rootnamemap 58;Bandpass
+.namemap
+L1=58;Bandpass;65
+C4=58;Bandpass;66
+L3=58;Bandpass;69
+C3=58;Bandpass;61
+L2=58;Bandpass;48
+C2=58;Bandpass;47
+L4=58;Bandpass;77
+C1=58;Bandpass;76
+.endnamemap
+.stringparam syslib = "C:\Program Files (x86)\Ansoft\DesignerSV2\syslib"
+.stringparam userlib = "C:\Program Files (x86)\Ansoft\DesignerSV2\userlib"
+.stringparam personallib = "C:\Users\youssef\Documents\Ansoft\PersonalLib"
+.stringparam projectdir = "U:\Fall 2023\Microwave Engineering\Project"
+
+*begin toplevel circuit
+
+.SUB FR4 MS(
++   H=30mil Er=4.40000000000000 TAND=0.0200000000000000 TANM=0 MSat=0 MRem=0
++MET1=1.72413793103448 T1=0.675mil
++ RGH=0mil)
+
+IND:65 net_281 net_289 L=51.0954nH 
+CAP:66 net_289 Port2 C=0.0383pF 
+IND:69 net_281 0 L=114.744pH 
+CAP:61 net_260 net_281 C=0.0656pF 
+IND:48 Port1 net_260 L=29.8051nH 
+CAP:47 net_281 0 C=17.0336pF 
+IND:77 Port2 0 L=196.7237pH 
+CAP:76 Port2 0 C=9.9352pF 
+PORT:Port2 Port2 0 PNUM=2 rz=59.995Ohm iz=0Ohm 
+PORT:Port1 Port1 0 PNUM=1 
+
+
+*end toplevel circuit
+.nwa:"NWA1"
++ F=LIN 2GHz 4GHz .1MHz
++ SWPORD = {F}
++ SolutionFile="C:\Users\youssef\Documents\Ansoft\temp\Prototype.results\Bandpass_NWA1_36_U3_Bandpass_0_116\Bandpass_NWA1_36_U3_Bandpass_0_116.sol"
+
+.end
