@@ -1,50 +1,44 @@
 close all;
 clc;
 spacing = [
-0;
+0.15;
+0.175;
+0.2;
+0.225;
 0.25;
-0.5;
-0.75;
-0.92248;
-0.92843;
-0.93031;
-0.93208;
-0.9327;
-1
-
+0.275;
+0.3;
 ];
-coupling = [
-0.396211275;
-0.18746698;
-0.102661752;
-0.081404923;
-0.05971762;
-0.06328726;
-0.063917006;
-0.060885153;
-0.063213793;
-0.053347023;
-
+f0 = [
+3.798;
+3.573;
+3.404;
+3.349;
+3.256;
+3.207;
+3.17;
 ];
+
+spacing = spacing .* 24.98641211;
 
 x = min(spacing):0.001:max(spacing);
-y = interp1(spacing, coupling, x, 'linear');
+y = interp1(spacing, f0, x, 'linear');
 plot(x, y, '-');
-title("k_{12} vs Spacing");
+title("Center Frequency vs Spacing");
 xlabel("Spacing (mm)","FontSize",14);
-ylabel("k_{12}", "FontSize", 14);
+ylabel("Center Frequency (GHz)", "FontSize", 14);
+ylim([3, 4]);
 hold on;
 
-plot(spacing, coupling, '.', 'MarkerSize', 15);
+plot(spacing, f0, '.', 'MarkerSize', 15);
 
 % Value for interpolation
-desired_k = 0.047388633;
-desired_k23 = 0.047388633;
+desired_f0 = 3.6;
 
 % Interpolate the offset value for the given Qext
-interpolated_spacing = interp1(coupling, spacing, desired_k, 'linear');
+interpolated_spacing = interp1(f0, spacing, desired_f0, 'linear');
 
-stem(interpolated_spacing, desired_k);
-yline(desired_k, '-', 'Desired k_{12}');
+stem(interpolated_spacing, desired_f0);
+yline(desired_f0, '-', "Spacing = " + interpolated_spacing + " mm, for f_{0} = 3.6 GHz");
 
-disp(['Interpolated Spacing for k12 = ', num2str(desired_k), ' is ', num2str(interpolated_spacing), ' mm.']);
+disp(['Interpolated Spacing for f0 = ', num2str(desired_f0), ' is ', num2str(interpolated_spacing), ' mm.']);
