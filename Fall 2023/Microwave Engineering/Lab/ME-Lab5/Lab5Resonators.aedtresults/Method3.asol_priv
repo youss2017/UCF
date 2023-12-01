@@ -1,0 +1,101 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002023, month=000000000011, day=000000000028, hour=000000000013, min=000000000043, sec=000000000017)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000000000, lin=000000000001, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock9'
+	SimSetupID=961
+	SimSetupName='Setup2'
+	VersionID=0
+	IsImported=false
+	IsTable=false
+	SolveSetupID=2
+	$begin 'CurrMeshes'
+		Vmap(0, 964)
+		M(VID=903, Ver=0, Dir='DV903_S961_V964.cmesh/')
+	$end 'CurrMeshes'
+	MeshAssemVersionID=0
+	$begin 'NextAssemVersionID'
+		NextUniqueID=1
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'ADP'
+		$begin 'SubData'
+			ID=0
+			ADP(VID=903, Ver=0, Dir='DV903_S961_ADP0_V0.sd/')
+		$end 'SubData'
+	$end 'ADP'
+	$begin 'SU'
+		$begin 'SubData'
+			ID=1
+			Vmap(0, 1038)
+			SU(VID=903, Ver=0, File='DV903_S961_SD1_V1038.su')
+		$end 'SubData'
+	$end 'SU'
+	$begin 'WaveAdapt'
+		WA(VID=903, Ver=0, A=1)
+	$end 'WaveAdapt'
+	$begin 'LastPassNumbers'
+		LP(VID=903, Ver=0, P=0)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		Vmap(0, 1002)
+		P(VID=903, Ver=0, File='DV903_S961_V1002.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			Vmap(0, 1034)
+			MI(VID=903, Ver=0, Dir='DV903_S961_MI0_V1034.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock9'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=90, Instance=\'SetupDefinition\', Solution=-1, VersionID=0)'='SolutionBlock4'
+	'SolutionKey(SimSetup=90, Instance=\'SolutionDefinition\', Solution=954, VersionID=1039)'='SolutionBlock11'
+	'SolutionKey(SimSetup=90, Instance=\'SolutionDefinition\', Solution=955, VersionID=1039)'='SolutionBlock12'
+	'SolutionKey(SimSetup=90, Instance=\'SolutionDefinition\', Solution=96, VersionID=1039)'='SolutionBlock10'
+	'SolutionKey(SimSetup=961, Instance=\'SetupDefinition\', Solution=-1, VersionID=0)'='SolutionBlock9'
+	'SolutionKey(SimSetup=961, Instance=\'SolutionDefinition\', Solution=962, VersionID=1039)'='SolutionBlock13'
+$end 'BlockMapName'
+$begin 'SolutionBlock13'
+	SolutionName='PortOnly'
+	SolutionID=962
+	V=1039
+	$begin 'States'
+		F(VID=903, Ver=1039)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(5000000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			Vmap(0, 1036, 1039, 1073)
+			M(VID=903, Ver=1039, File='DV903_SOL962_M0_V1073.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'Fields'
+		Vmap(0, 1009, 1039, 1074)
+		IDDblMap(1037, 5000000000)
+		$begin 'DataMap'
+			VID=903
+			Ver=1039
+			F(DblID=1037, Dir='DV903_S962_V1074_F1037/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock13'

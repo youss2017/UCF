@@ -1,46 +1,17 @@
 $begin '$base_index$'
   $begin 'properties'
     all_levels=000000000000
-    time(year=000000002023, month=000000000011, day=000000000029, hour=000000000023, min=000000000054, sec=000000000016)
+    time(year=000000002023, month=000000000012, day=000000000001, hour=000000000011, min=000000000017, sec=000000000000)
     version=000000000000
   $end 'properties'
   $begin '$base_index$'
-    $index$(pos=000000075129, lin=000000000103, lvl=000000000000)
+    $index$(pos=000000075127, lin=000000000103, lvl=000000000000)
   $end '$base_index$'
 $end '$base_index$'
-$begin 'BlockMapName'
-	FileHeader='SolutionBlock1'
-	'SolutionKey(SimSetup=44, Instance=\'SetupDefinition\', Solution=-1, VersionID=11663)'='SolutionBlock13'
-	'SolutionKey(SimSetup=44, Instance=\'SolutionDefinition\', Solution=45, VersionID=11665)'='SolutionBlock10'
-	'SolutionKey(SimSetup=44, Instance=\'SolutionDefinition\', Solution=46, VersionID=11665)'='SolutionBlock11'
-	'SolutionKey(SimSetup=44, Instance=\'SolutionDefinition\', Solution=50, VersionID=11665)'='SolutionBlock12'
-$end 'BlockMapName'
-$begin 'SolutionBlock1'
-	ProductName='HFSS'
-	CircuitName='FilterTuning'
-	VersionID=11663
-	PostProcess=false
-	LossLess=true
-	NextUniqueID=11766
-	MoveBackwards=false
-	$begin 'VariationIDs'
-		Map(V='a=\'0.20000000000000001\' Beta1=\'0.36309999999999998\' Beta2=\'0.36309999999999998\' F1Y=\'0mm\' FeedOffset=\'0.5mm\' Len=\'25mm\' Resonator1H=\'10.8575mm\' Resonator1W=\'5.0000000000000009mm\' Resonator2W=\'5.0000000000000009mm\' Resonator3W=\'5.0000000000000009mm\' Resonator4W=\'5.0000000000000009mm\' ResonatorsW=\'22.852mm\' Spacing1=\'0.91100000000000003mm\' Spacing2=\'1.03mm\' Spacing3=\'0.91100000000000003mm\' W=\'1.78mm\' W50=\'1.78mm\' WeakGap=\'0mm\'', ID=10759)
-	$end 'VariationIDs'
-	$begin 'LinkedDataList'
-	$end 'LinkedDataList'
-	MeshAssemVersionID=98
-	$begin 'NextAssemVersionID'
-		NextUniqueID=99
-		MoveBackwards=false
-	$end 'NextAssemVersionID'
-	$begin 'MI'
-	$end 'MI'
-	VersionID2=11664
-$end 'SolutionBlock1'
-$begin 'SolutionBlock10'
+$begin 'SolutionBlock14'
 	SolutionName='AdaptivePass'
 	SolutionID=45
-	V=11665
+	V=11820
 	$begin 'States'
 	$end 'States'
 	$begin 'Definition'
@@ -54,11 +25,18 @@ $begin 'SolutionBlock10'
 	IsMatrixDataTable=false
 	SweepID=-1
 	KeepAllFastSweepFields=false
-$end 'SolutionBlock10'
-$begin 'SolutionBlock11'
+$end 'SolutionBlock14'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=44, Instance=\'SetupDefinition\', Solution=-1, VersionID=11820)'='SolutionBlock17'
+	'SolutionKey(SimSetup=44, Instance=\'SolutionDefinition\', Solution=45, VersionID=11820)'='SolutionBlock14'
+	'SolutionKey(SimSetup=44, Instance=\'SolutionDefinition\', Solution=46, VersionID=11820)'='SolutionBlock15'
+	'SolutionKey(SimSetup=44, Instance=\'SolutionDefinition\', Solution=50, VersionID=11820)'='SolutionBlock16'
+$end 'BlockMapName'
+$begin 'SolutionBlock15'
 	SolutionName='LastAdaptive'
 	SolutionID=46
-	V=11665
+	V=11820
 	$begin 'States'
 	$end 'States'
 	$begin 'Definition'
@@ -72,11 +50,11 @@ $begin 'SolutionBlock11'
 	IsMatrixDataTable=false
 	SweepID=-1
 	KeepAllFastSweepFields=false
-$end 'SolutionBlock11'
-$begin 'SolutionBlock12'
+$end 'SolutionBlock15'
+$begin 'SolutionBlock16'
 	SolutionName='Sweep'
 	SolutionID=50
-	V=11665
+	V=11820
 	$begin 'States'
 	$end 'States'
 	$begin 'Definition'
@@ -90,17 +68,17 @@ $begin 'SolutionBlock12'
 	IsMatrixDataTable=false
 	SweepID=0
 	KeepAllFastSweepFields=false
-$end 'SolutionBlock12'
-$begin 'SolutionBlock13'
+$end 'SolutionBlock16'
+$begin 'SolutionBlock17'
 	SimSetupID=44
 	SimSetupName='Setup1'
-	VersionID=11663
+	VersionID=11820
 	IsImported=false
 	IsTable=false
 	SolveSetupID=0
-	MeshAssemVersionID=116
+	MeshAssemVersionID=128
 	$begin 'NextAssemVersionID'
-		NextUniqueID=117
+		NextUniqueID=129
 		MoveBackwards=false
 	$end 'NextAssemVersionID'
 	$begin 'ADP'
@@ -109,17 +87,38 @@ $begin 'SolutionBlock13'
 	$end 'SU'
 	$begin 'MI'
 	$end 'MI'
-$end 'SolutionBlock13'
+$end 'SolutionBlock17'
+$begin 'SolutionBlock1'
+	ProductName='HFSS'
+	CircuitName='FilterTuning'
+	VersionID=11820
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=11985
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='a=\'0.20000000000000001\' Beta1=\'0.36309999999999998\' Beta2=\'0.36309999999999998\' F1Y=\'0mm\' FeedOffset=\'0.5mm\' Len=\'25mm\' Resonator1H=\'10.8575mm\' Resonator1W=\'5.0000000000000009mm\' Resonator2W=\'5.0000000000000009mm\' Resonator3W=\'5.0000000000000009mm\' Resonator4W=\'5.0000000000000009mm\' ResonatorsW=\'22.852mm\' Spacing1=\'0.91100000000000003mm\' Spacing2=\'1.03mm\' Spacing3=\'0.91100000000000003mm\' W=\'1.78mm\' W50=\'1.78mm\' WeakGap=\'0mm\'', ID=10759)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	MeshAssemVersionID=110
+	$begin 'NextAssemVersionID'
+		NextUniqueID=111
+		MoveBackwards=false
+	$end 'NextAssemVersionID'
+	$begin 'MI'
+	$end 'MI'
+	VersionID2=0
+$end 'SolutionBlock1'
 $begin '$index$'
 	$begin '$index$'
-		SolutionBlock10(pos=1799, lin=30, lvl=0)
-		SolutionBlock11(pos=2160, lin=48, lvl=0)
-		SolutionBlock12(pos=2521, lin=66, lvl=0)
-		SolutionBlock13(pos=74782, lin=84, lvl=0)
-		SolutionBlock1(pos=874, lin=8, lvl=0)
-		BlockMapName(pos=370, lin=1, lvl=0)
+		SolutionBlock1(pos=74204, lin=81, lvl=0)
+		SolutionBlock14(pos=370, lin=1, lvl=0)
+		BlockMapName(pos=731, lin=19, lvl=0)
+		SolutionBlock15(pos=1235, lin=26, lvl=0)
+		SolutionBlock16(pos=1596, lin=44, lvl=0)
+		SolutionBlock17(pos=73857, lin=62, lvl=0)
 		$base_index$(pos=0, lin=1, lvl=0)
-		$index$(pos=75129, lin=103, lvl=0)
+		$index$(pos=75127, lin=103, lvl=0)
 	$end '$index$'
 $end '$index$'
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

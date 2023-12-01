@@ -37,10 +37,14 @@ $begin 'SimValueCache'
 						SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
 					$end 'ReportTypeSolnDef'
 					$begin 'MajorVVMap'
-						VersionID=10705
+						VersionID=11068
 						$begin 'MinorVVMap'
 							MajorVariation='a=\'0.20000000000000001\' Beta1=\'0.36309999999999998\' Beta2=\'0.36309999999999998\' F1Y=\'0mm\' FeedOffset=\'0.5mm\' Len=\'25mm\' Resonator1H=\'10.8575mm\' Resonator1W=\'5.0000000000000009mm\' Resonator2W=\'5.0000000000000009mm\' Resonator3W=\'5.0000000000000009mm\' Resonator4W=\'5.0000000000000009mm\' ResonatorsW=\'22.852mm\' Spacing1=\'0.91100000000000003mm\' Spacing2=\'1.03mm\' Spacing3=\'0.91100000000000003mm\' W=\'1.78mm\' W50=\'1.78mm\' WeakGap=\'0mm\''
-							MinorCacheFile='min136459881701317340100.tmp'
+							MinorCacheFile='min60EE11388170136355640.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='a=\'0.27000000000000002\' Beta1=\'0.33000000000000002\' Beta2=\'0.33000000000000002\' F1Y=\'0mm\' FeedOffset=\'0.5mm\' Len=\'25mm\' Resonator1H=\'10.030000000000001mm\' Resonator1W=\'6.7500000000000009mm\' Resonator2W=\'6.7500000000000009mm\' Resonator3W=\'6.7500000000000009mm\' Resonator4W=\'6.7500000000000009mm\' ResonatorsW=\'29.852mm\' Spacing1=\'0.91100000000000003mm\' Spacing2=\'1.03mm\' Spacing3=\'0.91100000000000003mm\' W=\'1.78mm\' W50=\'1.78mm\' WeakGap=\'0mm\''
+							MinorCacheFile='min431C102961701441493320.tmp'
 						$end 'MinorVVMap'
 					$end 'MajorVVMap'
 				$end 'VersionMap'

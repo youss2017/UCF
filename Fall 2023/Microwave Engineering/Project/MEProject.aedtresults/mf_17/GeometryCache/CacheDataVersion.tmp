@@ -1,8 +1,9 @@
 $begin 'CacheDataVersion'
-	DataVersion=-1
+	DataVersion=176
 $end 'CacheDataVersion'
 $begin 'VariableValues'
 	Len='25mm'
+	WeakGap='0.5mm'
 	a='0.2'
 	Beta1='0.3631'
 	Beta2='Beta1'
@@ -13,5 +14,4 @@ $begin 'VariableValues'
 	ResonatorsW='2*Resonator1W + Spacing1'
 	FeedOffset='0.5mm'
 	F1Y='0mm'
-	WeakGap='0.5mm'
 $end 'VariableValues'

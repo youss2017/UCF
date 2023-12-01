@@ -1,0 +1,42 @@
+SimValueCacheVersionID=1
+$begin 'SimValueInfos'
+	NextUniqueID=1
+	MoveBackwards=false
+	$begin 'SimValue'
+		ID=0
+		$begin 'SimValueParams'
+			QuantityName='S(1,1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+$end 'SimValueInfos'
+$begin 'SimValueCache'
+	$begin 'DesignMap'
+		DesignID=12
+		$begin 'SolutionMap'
+			$begin 'ContextMap'
+				SolutionID=5778
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=5779
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=5782
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=0
+						SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=7762
+						$begin 'MinorVVMap'
+							MajorVariation='AirboxHeight=\'50mm\' AirboxWidth=\'50mm\' BridgeR2=\'0.158\' FeedPos=\'21.705860250844999mm\' LegR1=\'0.42099999999999999\' Len=\'24.98641211mm\' MicrostripWidth=\'1.7889999999999999mm\' QextOffset=\'2.8599999999999999mm\' R1x=\'18.845860250845mm\' R1y=\'23.02607344331mm\' Thickness=\'32mil\''
+							MinorCacheFile='min5CDE34620170118261925.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+		$end 'SolutionMap'
+	$end 'DesignMap'
+$end 'SimValueCache'
