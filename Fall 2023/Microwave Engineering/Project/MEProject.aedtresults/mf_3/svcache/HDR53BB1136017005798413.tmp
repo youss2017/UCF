@@ -1,0 +1,58 @@
+SimValueCacheVersionID=1
+$begin 'SimValueInfos'
+	NextUniqueID=2
+	MoveBackwards=false
+	$begin 'SimValue'
+		ID=0
+		$begin 'SimValueParams'
+			QuantityName='S(1,1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=1
+		$begin 'SimValueParams'
+			QuantityName='S(2,1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+$end 'SimValueInfos'
+$begin 'SimValueCache'
+	$begin 'DesignMap'
+		DesignID=3
+		$begin 'SolutionMap'
+			$begin 'ContextMap'
+				SolutionID=45
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=46
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=50
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=0
+						SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=3218
+						$begin 'MinorVVMap'
+							MajorVariation='AirboxWidth=\'25mm\' BridgeR2=\'0.22\' LegR1=\'0.39000000000000001\' Len=\'24.27065996mm\' MicrostripWidth=\'1.7mm\' R1x=\'5.3646700200000019mm\' R1y=\'9.8302274044000004mm\' Thickness=\'31mil\''
+							MinorCacheFile='min55A919896170060006147.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='AirboxWidth=\'25mm\' BridgeR2=\'0.22\' LegR1=\'0.39000000000000001\' Len=\'24.27065996mm\' MicrostripWidth=\'1.6799999999999999mm\' R1x=\'5.3646700200000019mm\' R1y=\'9.8302274044000004mm\' Thickness=\'31mil\''
+							MinorCacheFile='min0D3E1673617008452435.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='AirboxWidth=\'25mm\' BridgeR2=\'0.19\' LegR1=\'0.39000000000000001\' Len=\'24.27065996mm\' MicrostripWidth=\'1.6799999999999999mm\' R1x=\'5.3646700200000019mm\' R1y=\'10.194287303799999mm\' Thickness=\'31mil\''
+							MinorCacheFile='min0E3A16736170084532018.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+		$end 'SolutionMap'
+	$end 'DesignMap'
+$end 'SimValueCache'
