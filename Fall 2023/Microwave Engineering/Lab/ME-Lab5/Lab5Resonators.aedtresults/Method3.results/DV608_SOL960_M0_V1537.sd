@@ -99,7 +99,7 @@ $begin 'soln'
 		$end 'DataPoint'
 	$end 'Frequencies'
 	$begin 'Ports'
-		Port(ModalEntryName='1', TerminalEntryName='1', PortName='1', Mode=0, ModeName='1', TerminalName='', ParameterName='1', MatrixIndex=0, PortType=0, IsPassive=true, PreferredImpedance=524288)
+		Port(ModalEntryName='1', TerminalEntryName='1', PortName='1', Mode=0, ModeName='1', TerminalName='', ParameterName='1', MatrixIndex=0, PortType=0, IsPassive=false, PreferredImpedance=524288)
 		Port(ModalEntryName='2', TerminalEntryName='2', PortName='2', Mode=0, ModeName='1', TerminalName='', ParameterName='2', MatrixIndex=1, PortType=0, IsPassive=false, PreferredImpedance=524288)
 	$end 'Ports'
 	$begin 'OtherStateSpaceModels'
