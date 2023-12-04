@@ -1,5 +1,5 @@
 $begin 'CacheDataVersion'
-	DataVersion=123
+	DataVersion=-1
 $end 'CacheDataVersion'
 $begin 'VariableValues'
 	AirboxWidth='35mm'
@@ -7,7 +7,7 @@ $begin 'VariableValues'
 	Thickness='31mil'
 	Len='25mm'
 	LegR1='0.3631'
-	BridgeR2='0.2'
+	BridgeR2='0.28'
 	R1x='AirboxHeight/2- (MicrostripWidth + LegR1*Len)/2'
 	R1y='AirboxWidth/2 - BridgeR2*Len/2'
 	AirboxHeight='30mm'

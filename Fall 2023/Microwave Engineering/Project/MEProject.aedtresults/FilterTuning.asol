@@ -1,7 +1,7 @@
 $begin '$base_index$'
   $begin 'properties'
     all_levels=000000000000
-    time(year=000000002023, month=000000000012, day=000000000001, hour=000000000011, min=000000000017, sec=000000000000)
+    time(year=000000002023, month=000000000012, day=000000000004, hour=000000000009, min=000000000025, sec=000000000032)
     version=000000000000
   $end 'properties'
   $begin '$base_index$'
@@ -94,7 +94,7 @@ $begin 'SolutionBlock1'
 	VersionID=11820
 	PostProcess=false
 	LossLess=true
-	NextUniqueID=11985
+	NextUniqueID=12040
 	MoveBackwards=false
 	$begin 'VariationIDs'
 		Map(V='a=\'0.20000000000000001\' Beta1=\'0.36309999999999998\' Beta2=\'0.36309999999999998\' F1Y=\'0mm\' FeedOffset=\'0.5mm\' Len=\'25mm\' Resonator1H=\'10.8575mm\' Resonator1W=\'5.0000000000000009mm\' Resonator2W=\'5.0000000000000009mm\' Resonator3W=\'5.0000000000000009mm\' Resonator4W=\'5.0000000000000009mm\' ResonatorsW=\'22.852mm\' Spacing1=\'0.91100000000000003mm\' Spacing2=\'1.03mm\' Spacing3=\'0.91100000000000003mm\' W=\'1.78mm\' W50=\'1.78mm\' WeakGap=\'0mm\'', ID=10759)
