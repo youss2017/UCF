@@ -1,11 +1,11 @@
 $begin '$base_index$'
   $begin 'properties'
     all_levels=000000000000
-    time(year=000000002023, month=000000000012, day=000000000005, hour=000000000021, min=000000000035, sec=000000000017)
+    time(year=000000002023, month=000000000012, day=000000000006, hour=000000000021, min=000000000003, sec=000000000009)
     version=000000000000
   $end 'properties'
   $begin '$base_index$'
-    $index$(pos=000000116330, lin=000000000723, lvl=000000000000)
+    $index$(pos=000000115904, lin=000000000709, lvl=000000000000)
   $end '$base_index$'
 $end '$base_index$'
 $begin 'SolutionBlock17'
@@ -567,20 +567,6 @@ $begin 'SolutionBlock20'
 	$end 'ADP'
 	$begin 'SU'
 	$end 'SU'
-	$begin 'WaveAdapt'
-		WA(VID=10319, Ver=10188, A=1)
-		WA(VID=10323, Ver=10188, A=1)
-		WA(VID=10326, Ver=10188, A=1)
-		WA(VID=10332, Ver=10188, A=1)
-		WA(VID=10338, Ver=10188, A=1)
-		WA(VID=10343, Ver=10188, A=1)
-		WA(VID=10348, Ver=10188, A=1)
-		WA(VID=10354, Ver=10188, A=1)
-		WA(VID=10361, Ver=10188, A=1)
-		WA(VID=10370, Ver=10188, A=1)
-		WA(VID=10372, Ver=10188, A=1)
-		WA(VID=10374, Ver=10188, A=1)
-	$end 'WaveAdapt'
 	$begin 'LastPassNumbers'
 		LP(VID=10319, Ver=10188, P=13)
 		LP(VID=10323, Ver=10188, P=13)
@@ -618,7 +604,7 @@ $begin 'SolutionBlock1'
 	VersionID=10050
 	PostProcess=false
 	LossLess=true
-	NextUniqueID=10390
+	NextUniqueID=10538
 	MoveBackwards=false
 	$begin 'VariationIDs'
 		Map(V='a=\'0.20000000000000001\' Beta1=\'0.36309999999999998\' Beta2=\'0.36309999999999998\' F1Y=\'0mm\' FeedOffset=\'0.5mm\' Len=\'25mm\' Resonator1H=\'10.8575mm\' Resonator1W=\'5.0000000000000009mm\' ResonatorsW=\'10.500000000000002mm\' Spacing1=\'0.5mm\' W=\'1.78mm\' WeakGap=\'0.5mm\'', ID=9638)
@@ -685,11 +671,8 @@ $begin 'SolutionBlock1'
 	$end 'DefinitionMeshes'
 	$begin 'MI'
 	$end 'MI'
-	VersionID2=10051
+	VersionID2=0
 $end 'SolutionBlock1'
-$begin 'ResponseSurfaceCache'
-	ResponseSurfaceCache()
-$end 'ResponseSurfaceCache'
 $begin 'OptimetricsResult1'
 	V=2
 	svi('Beta1', '0.4378')
@@ -727,21 +710,24 @@ $begin 'OptimetricsResult1'
 	var(4.378000000000000e-01, 0.000000000000000e+00, 2.352000000000000e-02, 1.250000000000000e-03, 1.780000000000000e-03, 6.800000000000000e-04, 2.500000000000000e-01)
 	gvs(1.250000000000000e-03)
 $end 'OptimetricsResult1'
+$begin 'ResponseSurfaceCache'
+	ResponseSurfaceCache()
+$end 'ResponseSurfaceCache'
 $begin 'OptimetricsResults'
 	'0:10'='OptimetricsResult1'
 $end 'OptimetricsResults'
 $begin '$index$'
 	$begin '$index$'
-		OptimetricsResults(pos=116247, lin=720, lvl=0)
+		OptimetricsResults(pos=115821, lin=706, lvl=0)
 		SolutionBlock17(pos=370, lin=1, lvl=0)
 		BlockMapName(pos=12549, lin=256, lvl=0)
 		SolutionBlock18(pos=13053, lin=263, lvl=0)
 		SolutionBlock19(pos=14536, lin=310, lvl=0)
 		SolutionBlock20(pos=69881, lin=530, lvl=0)
-		SolutionBlock1(pos=72768, lin=605, lvl=0)
-		ResponseSurfaceCache(pos=113566, lin=680, lvl=0)
-		OptimetricsResult1(pos=113648, lin=683, lvl=0)
+		SolutionBlock1(pos=72346, lin=591, lvl=0)
+		OptimetricsResult1(pos=113140, lin=666, lvl=0)
+		ResponseSurfaceCache(pos=115739, lin=703, lvl=0)
 		$base_index$(pos=0, lin=1, lvl=0)
-		$index$(pos=116330, lin=723, lvl=0)
+		$index$(pos=115904, lin=709, lvl=0)
 	$end '$index$'
 $end '$index$'
