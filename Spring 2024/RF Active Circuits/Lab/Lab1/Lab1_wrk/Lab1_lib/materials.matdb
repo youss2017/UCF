@@ -1,0 +1,12 @@
+<!DOCTYPE Materials>
+<Materials>
+    <Conductors/>
+    <Dielectrics>
+        <Dielectric highfreq="1 THz" thermal_conductivity="25.25" er_real="3.55" mur_imag="" name="R4003C" er_loss="0.0022" thermal_conductivity_in_z="" electron_path="" lowfreq="1 KHz" loss_type="1" valuefreq="1 GHz" heat_capacity="1.73E+06" er_imag="" mur_real="1"/>
+        <Dielectric highfreq="1 THz" thermal_conductivity="" er_real="2.54" mur_imag="" name="CPS" er_loss="0.0004" thermal_conductivity_in_z="" electron_path="" lowfreq="1 KHz" loss_type="1" valuefreq="1 GHz" heat_capacity="" er_imag="" mur_real="1"/>
+        <Dielectric highfreq="1 THz" thermal_conductivity="" er_real="3.55" mur_imag="" name="Rogers_RO4003" er_loss="0.0022" thermal_conductivity_in_z="" electron_path="" lowfreq="1 KHz" loss_type="1" valuefreq="10.0 GHz" heat_capacity="" er_imag="" mur_real="1"/>
+    </Dielectrics>
+    <Semiconductors/>
+    <Superconductors/>
+    <roughness/>
+</Materials>
