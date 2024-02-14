@@ -1,42 +1,37 @@
 close all;
 clc;
 spacing = [
-0.63181818
-0.709090909
-0.78636363
-0.863863864
-0.940909091
-1.018181818
-1.095454545
+0.05;
+0.29;
+0.53;
+0.77;
+1.01;
 1.25
-
 ];
 k = [
-0.077165911
-0.070370808
-0.062771378
-0.056303885
-0.049857484
-0.044595594
-0.040223219
-0.033027837
-
+0.334857986;
+0.147263776;
+0.089978213;
+0.062896923;
+0.045596258;
+0.033186339;
 ];
 
 f = figure;
-f.Position = [100, 100, 1280, 720];
+%f.Position = [100, 100, 1280, 720];
 centerfig(f);
 
 x = min(spacing):0.001:max(spacing);
 y = interp1(spacing, k, x, 'makima');
 plot(x, y, '-');
-title("Couling K vs Spacing");
+title("Couling K vs Spacing", "FontSize", 16);
 xlabel("Spacing (mm)","FontSize",14);
 ylabel("Coupling K", "FontSize", 14);
 %ylim([3, 4]);
 hold on;
 grid on;
-ylim([0.025,0.08]);
+ylim([0.025,0.15]);
+xlim([0.0, 1.25]);
 
 plot(spacing, k, '.', 'MarkerSize', 15);
 
