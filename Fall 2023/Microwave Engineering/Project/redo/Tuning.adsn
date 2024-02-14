@@ -1,0 +1,1968 @@
+$begin 'AnsoftProject'
+	Created='Fri Dec 08 11:40:19 2023'
+	Product='Designer'
+	NextUniqueID=0
+	MoveBackwards=false
+	$begin 'Desktop'
+		Version(2, 1, 'SV')
+	$end 'Desktop'
+	$begin 'DesignMgrEnvironment'
+		CompInstCounter=37
+		GPortCounter=0
+		NetCounter=252
+	$end 'DesignMgrEnvironment'
+	$begin 'Datasets'
+		NextUniqueID=0
+		MoveBackwards=false
+		$begin 'DatasetDefinitions'
+		$end 'DatasetDefinitions'
+	$end 'Datasets'
+	$begin 'Definitions'
+		$begin 'Folders'
+			Definitions(7338, 10000, 1, 1, 0, false, false)
+			Components(7338, 9000, 8, 2, 1, false, false)
+			Materials(7338, 9001, 9, 3, 1, false, false)
+			Scripts(7338, 9007, 33500, 8, 1, false, false)
+			Symbols(7338, 9002, 10, 4, 1, false, false)
+			Footprints(7338, 9003, 11, 5, 1, false, false)
+			Padstacks(7338, 9004, 12, 6, 1, false, false)
+			ToolObjects(7338, 8000, 1, 101, 0, false, false)
+		$end 'Folders'
+		$begin 'Materials'
+			$begin 'copper'
+				permeability='0.999991'
+				conductivity='58000000'
+				ModTime=1702053508
+				Library='Materials'
+				LibLocation='SysLibrary '
+			$end 'copper'
+			$begin 'FR4_epoxy'
+				permittivity='4.4'
+				dielectric_loss_tangent='0.02'
+				ModTime=1702053508
+				Library='Materials'
+				LibLocation='SysLibrary '
+			$end 'FR4_epoxy'
+		$end 'Materials'
+		$begin 'Scripts'
+		$end 'Scripts'
+		$begin 'Symbols'
+			$begin 'NportData'
+				ModTime=1702053545
+				Library=''
+				LibLocation='Project'
+				$begin 'PinDef'
+					Pin('1', -0.00508, 0, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, 0.000635, 0, 4, 5, false, 'Arial', 0, '1'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('2', -0.00508, -0.00254, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, -0.001905, 0, 4, 5, false, 'Arial', 0, '2'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('3', 0.00508, 0, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, 0.000635, 0, 4, 5, false, 'Arial', 0, '3'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('4', 0.00508, -0.00254, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, -0.001905, 0, 4, 5, false, 'Arial', 0, '4'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('1_ref', 0, -0.00254, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('2_ref', 0, -0.00508, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('3_ref', 0, -0.00762, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('4_ref', 0, -0.01016, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'Graphics'
+					Rect(0, 0, 0, 0, 0, -0.00127, 0.00508, 0.00762)
+				$end 'Graphics'
+			$end 'NportData'
+			$begin 'cap'
+				ModTime=1016056313
+				Library='Circuit Elements\\Lumped'
+				LibLocation='SysLibrary '
+				$begin 'PinDef'
+					Pin('n1', -0.00508, 3.46945e-018, 0, 'N', 0, 0, false, 0, true, '', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('n2', 0.00508, 3.46945e-018, 3.14159, 'N', 0, 0, false, 0, true, '', false, false)
+				$end 'PinDef'
+				$begin 'Graphics'
+					Line(0, 1, 12566272, -0.0006985, 0.0017145, -0.0006985, -0.0017145)
+					Line(0, 1, 12566272, 0.0006985, 0.0017145, 0.0006985, -0.0017145)
+					Line(0, 1, 12566272, 0.00508, 0, 0.0006985, 0)
+					Line(0, 1, 12566272, -0.00508, 0, -0.0006985, 0)
+				$end 'Graphics'
+				$begin 'PropDisplayMap'
+					C(2, 5, Text(2.1684e-019, -0.00378531, 0, 4, 5, false, 'Arial', 0, '[C]'))
+				$end 'PropDisplayMap'
+			$end 'cap'
+			$begin 'ground_earth'
+				ModTime=1016213689
+				Library='Symbols'
+				LibLocation='SysLibrary '
+				$begin 'PinDef'
+					Pin('n1', 0, 0.00254, 4.71239, 'N', 0, 0, false, 0, true, '', false, false)
+				$end 'PinDef'
+				$begin 'Graphics'
+					Line(0, 1, 12566272, -4.33681e-019, 0.00254, -4.33681e-019, 4.33681e-019)
+					Line(0, 1, 12566272, 0.0017145, -4.33681e-019, -0.0017145, -4.33681e-019)
+					Line(0, 1, 12566272, -0.001143, -0.000762, 0.001143, -0.000762)
+					Line(0, 1, 12566272, -0.0005715, -0.001524, 0.0005715, -0.001524)
+				$end 'Graphics'
+			$end 'ground_earth'
+			$begin 'NportData1'
+				ModTime=1702055393
+				Library=''
+				LibLocation='Project'
+				$begin 'PinDef'
+					Pin('1', -0.00508, 0.00254, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, 0.003175, 0, 4, 5, false, 'Arial', 0, '1'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('2', -0.00508, 0, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, 0.000635, 0, 4, 5, false, 'Arial', 0, '2'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('3', -0.00508, -0.00254, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, -0.001905, 0, 4, 5, false, 'Arial', 0, '3'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('4', 0.00508, 0.00254, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, 0.003175, 0, 4, 5, false, 'Arial', 0, '4'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('5', 0.00508, 0, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, 0.000635, 0, 4, 5, false, 'Arial', 0, '5'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('6', 0.00508, -0.00254, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, -0.001905, 0, 4, 5, false, 'Arial', 0, '6'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('1_ref', 0, -0.00254, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('2_ref', 0, -0.00508, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('3_ref', 0, -0.00762, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('4_ref', 0, -0.01016, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('5_ref', 0, -0.0127, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('6_ref', 0, -0.01524, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'Graphics'
+					Rect(0, 0, 0, 0, 0, 0, 0.00508, 0.01016)
+				$end 'Graphics'
+			$end 'NportData1'
+			$begin 'NportData2'
+				ModTime=1702062307
+				Library=''
+				LibLocation='Project'
+				$begin 'PinDef'
+					Pin('1', -0.00508, 0.00254, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, 0.003175, 0, 4, 5, false, 'Arial', 0, '1'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('2', -0.00508, 0, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, 0.000635, 0, 4, 5, false, 'Arial', 0, '2'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('3', -0.00508, -0.00254, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, -0.001905, 0, 4, 5, false, 'Arial', 0, '3'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('4', 0.00508, 0.00254, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, 0.003175, 0, 4, 5, false, 'Arial', 0, '4'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('5', 0.00508, 0, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, 0.000635, 0, 4, 5, false, 'Arial', 0, '5'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('6', 0.00508, -0.00254, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, -0.001905, 0, 4, 5, false, 'Arial', 0, '6'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('1_ref', 0, -0.00254, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('2_ref', 0, -0.00508, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('3_ref', 0, -0.00762, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('4_ref', 0, -0.01016, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('5_ref', 0, -0.0127, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('6_ref', 0, -0.01524, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'Graphics'
+					Rect(0, 0, 0, 0, 0, 0, 0.00508, 0.01016)
+				$end 'Graphics'
+			$end 'NportData2'
+			$begin 'Bridge275'
+				ModTime=1702062419
+				Library=''
+				LibLocation='Project'
+				$begin 'PinDef'
+					Pin('Port1', -0.00508, 0, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, 0.000635, 0, 4, 5, false, 'Arial', 0, 'Port1'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('Port2', 0.00508, 0, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, 0.000635, 0, 4, 5, false, 'Arial', 0, 'Port2'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'Graphics'
+					Rect(0, 0, 0, 0, 0, 0, 0.00508, 0.00508)
+				$end 'Graphics'
+			$end 'Bridge275'
+			$begin 'Bridge275Port'
+				ModTime=1702062454
+				Library=''
+				LibLocation='Project'
+				$begin 'PinDef'
+					Pin('1', -0.00508, 0.00254, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, 0.003175, 0, 4, 5, false, 'Arial', 0, '1'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('2', -0.00508, 0, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, 0.000635, 0, 4, 5, false, 'Arial', 0, '2'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('3', -0.00508, -0.00254, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, -0.001905, 0, 4, 5, false, 'Arial', 0, '3'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('4', 0.00508, 0.00254, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, 0.003175, 0, 4, 5, false, 'Arial', 0, '4'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('5', 0.00508, 0, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, 0.000635, 0, 4, 5, false, 'Arial', 0, '5'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('6', 0.00508, -0.00254, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, -0.001905, 0, 4, 5, false, 'Arial', 0, '6'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('1_ref', 0, -0.00254, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('2_ref', 0, -0.00508, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('3_ref', 0, -0.00762, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('4_ref', 0, -0.01016, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('5_ref', 0, -0.0127, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('6_ref', 0, -0.01524, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'Graphics'
+					Rect(0, 0, 0, 0, 0, 0, 0.00508, 0.01016)
+				$end 'Graphics'
+			$end 'Bridge275Port'
+			$begin 'NportData3'
+				ModTime=1702064741
+				Library=''
+				LibLocation='Project'
+				$begin 'PinDef'
+					Pin('1', -0.00508, 0.00254, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, 0.003175, 0, 4, 5, false, 'Arial', 0, '1'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('2', -0.00508, 0, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, 0.000635, 0, 4, 5, false, 'Arial', 0, '2'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('3', -0.00508, -0.00254, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, -0.001905, 0, 4, 5, false, 'Arial', 0, '3'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('4', 0.00508, 0.00254, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, 0.003175, 0, 4, 5, false, 'Arial', 0, '4'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('5', 0.00508, 0, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, 0.000635, 0, 4, 5, false, 'Arial', 0, '5'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('6', 0.00508, -0.00254, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, -0.001905, 0, 4, 5, false, 'Arial', 0, '6'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('1_ref', 0, -0.00254, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('2_ref', 0, -0.00508, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('3_ref', 0, -0.00762, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('4_ref', 0, -0.01016, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('5_ref', 0, -0.0127, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('6_ref', 0, -0.01524, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'Graphics'
+					Rect(0, 0, 0, 0, 0, 0, 0.00508, 0.01016)
+				$end 'Graphics'
+			$end 'NportData3'
+			$begin 'NportData4'
+				ModTime=1702068157
+				Library=''
+				LibLocation='Project'
+				$begin 'PinDef'
+					Pin('1', -0.00508, 0.00254, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, 0.003175, 0, 4, 5, false, 'Arial', 0, '1'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('2', -0.00508, 0, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, 0.000635, 0, 4, 5, false, 'Arial', 0, '2'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('3', -0.00508, -0.00254, 0, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(-0.00508, -0.001905, 0, 4, 5, false, 'Arial', 0, '3'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('4', 0.00508, 0.00254, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, 0.003175, 0, 4, 5, false, 'Arial', 0, '4'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('5', 0.00508, 0, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, 0.000635, 0, 4, 5, false, 'Arial', 0, '5'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('6', 0.00508, -0.00254, 3.14159265358979, 'N', 0, 0.00254, false, 0, true, '', true, false)
+					$begin 'PropDisplayMap'
+						PinName(2, 5, Text(0.00508, -0.001905, 0, 4, 5, false, 'Arial', 0, '6'))
+					$end 'PropDisplayMap'
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('1_ref', 0, -0.00254, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('2_ref', 0, -0.00508, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('3_ref', 0, -0.00762, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('4_ref', 0, -0.01016, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('5_ref', 0, -0.0127, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'PinDef'
+					Pin('6_ref', 0, -0.01524, 0, 'N', 0, 0, false, 0, false, '0', false, false)
+				$end 'PinDef'
+				$begin 'Graphics'
+					Rect(0, 0, 0, 0, 0, 0, 0.00508, 0.01016)
+				$end 'Graphics'
+			$end 'NportData4'
+		$end 'Symbols'
+		$begin 'Footprints'
+		$end 'Footprints'
+		$begin 'Padstacks'
+			$begin 'NoPad SMT East'
+				ModTime=1017696647
+				Library='Padstacks'
+				LibLocation='SysLibrary '
+				$begin 'layers'
+					SLayer(Layer(N='Template', ID=0, T='signal', TB='template', Col=32512, Pat=5), Elev='mid', SubL(Th='0mil', LElev='0mil', R='0mil', Mat='copper'))
+				$end 'layers'
+				$begin 'pads'
+					$begin 'pad_on_layer'
+						layer=0
+						PadPort=true
+						$begin 'connection positions'
+							$begin 'position'
+								position(0, 0)
+								directions(0)
+							$end 'position'
+						$end 'connection positions'
+						$begin 'connected'
+							name='NoPad'
+							none()
+						$end 'connected'
+					$end 'pad_on_layer'
+				$end 'pads'
+			$end 'NoPad SMT East'
+		$end 'Padstacks'
+		$begin 'DefInfo'
+			NportData(4294967295, 8, '', 1702053545, '', 'NportData', '', '', '', '', '', '', '', 'Project')
+			CAP(4294901763, 0, 'Ansoft built-in component', 1020711483, '', 'cap', '', '', 'Capacitor', 'CAP.htm', 'sercomponents.chm', 'cap.bmp', 'Circuit Elements\\Lumped\\Capacitors', 'SysLibrary ')
+			NportData1(4294967295, 12, '', 1702055393, '', 'NportData1', '', '', '', '', '', '', '', 'Project')
+			NportData2(4294967295, 12, '', 1702062307, '', 'NportData2', '', '', '', '', '', '', '', 'Project')
+			Bridge275(4294967295, 2, '', 1702062419, '', 'Bridge275', '', '', '', '', '', '', '', 'Project')
+			Bridge275Port(4294967295, 12, '', 1702062454, '', 'Bridge275Port', '', '', '', '', '', '', '', 'Project')
+			NportData3(4294967295, 12, '', 1702064741, '', 'NportData3', '', '', '', '', '', '', '', 'Project')
+			NportData4(4294967295, 12, '', 1702068157, '', 'NportData4', '', '', '', '', '', '', '', 'Project')
+		$end 'DefInfo'
+		$begin 'Compdefs'
+			$begin 'NportData'
+				Refbase='U'
+				NumParts=1
+				Terminal('1', '1', 'A', false, 0, 0, 0)
+				Terminal('2', '2', 'A', false, 1, 0, 0)
+				Terminal('3', '3', 'A', false, 2, 0, 0)
+				Terminal('4', '4', 'A', false, 3, 0, 0)
+				Terminal('1_ref', '1_ref', 'A', false, 4, 0, 0)
+				Terminal('2_ref', '2_ref', 'A', false, 5, 0, 0)
+				Terminal('3_ref', '3_ref', 'A', false, 6, 0, 0)
+				Terminal('4_ref', '4_ref', 'A', false, 7, 0, 0)
+				$begin 'Parameters'
+					ButtonProp('Data', 'D', '', 'NportData', '', 0)
+				$end 'Parameters'
+				$begin 'CompData'
+					ComponentDataType='NPortData'
+					name='NportData'
+					filename='U:\\Fall 2023\\Microwave Engineering\\Project\\redo\\MEProject_Redo_FilterTuning.s4p'
+					numberofports=4
+					filelocation='UsePath'
+					domain='frequency'
+					datamode='Link'
+					devicename=''
+					ImpedenceTab=true
+					NoiseDataTab=true
+					DCBehaviorTab=true
+					SolutionName=''
+					dcbehavior='DCOpen'
+					displayformat='MagnitudePhase'
+					datatype='SMatrix'
+					interptype='Linear'
+					extraptype='Zero padding'
+					ShowRefPin=false
+					RefNodeCheckbox=true
+				$end 'CompData'
+			$end 'NportData'
+			$begin 'CAP'
+				Refbase='C'
+				NumParts=1
+				Terminal('n1', 'n1', 'A', false, 0, 0, 0)
+				Terminal('n2', 'n2', 'A', false, 0, 0, 0)
+				$begin 'Parameters'
+					VariableProp('C', 'D', 'Capacitance', '10pF')
+					VariableProp('VCT0', 'HD', 'Initial voltage value for transient analysis', '0mV')
+					ButtonProp('CircuitNetList', 'HD', '', 'CAP:@ID %0 %1 ?C(C=@C) *VCT0(VCT0=@VCT0)', 'CAP:@ID %0 %1 ?C(C=@C) *VCT0(VCT0=@VCT0)', 1)
+					ButtonProp('SystemNetList', 'HD', '', 'CAP:@ID %0 %1 ?C(C=@C) *VCT0(VCT0=@VCT0)', 'CAP:@ID %0 %1 ?C(C=@C) *VCT0(VCT0=@VCT0)', 1)
+					TextProp('ModelName', 'HD', '', 'CAP')
+				$end 'Parameters'
+			$end 'CAP'
+			$begin 'NportData1'
+				Refbase='U'
+				NumParts=1
+				Terminal('1', '1', 'A', false, 2, 0, 0)
+				Terminal('2', '2', 'A', false, 3, 0, 0)
+				Terminal('3', '3', 'A', false, 4, 0, 0)
+				Terminal('4', '4', 'A', false, 5, 0, 0)
+				Terminal('5', '5', 'A', false, 6, 0, 0)
+				Terminal('6', '6', 'A', false, 7, 0, 0)
+				Terminal('1_ref', '1_ref', 'A', false, 8, 0, 0)
+				Terminal('2_ref', '2_ref', 'A', false, 9, 0, 0)
+				Terminal('3_ref', '3_ref', 'A', false, 10, 0, 0)
+				Terminal('4_ref', '4_ref', 'A', false, 11, 0, 0)
+				Terminal('5_ref', '5_ref', 'A', false, 12, 0, 0)
+				Terminal('6_ref', '6_ref', 'A', false, 13, 0, 0)
+				$begin 'Parameters'
+					ButtonProp('Data', 'D', '', 'NportData1', '', 0)
+				$end 'Parameters'
+				$begin 'CompData'
+					ComponentDataType='NPortData'
+					name='NportData1'
+					filename='U:\\Fall 2023\\Microwave Engineering\\Project\\redo\\MEProject_Redo_FilterTuning.s6p'
+					numberofports=6
+					filelocation='UsePath'
+					domain='frequency'
+					datamode='Link'
+					devicename=''
+					ImpedenceTab=true
+					NoiseDataTab=true
+					DCBehaviorTab=true
+					SolutionName=''
+					dcbehavior='DCOpen'
+					displayformat='MagnitudePhase'
+					datatype='SMatrix'
+					interptype='Linear'
+					extraptype='Zero padding'
+					ShowRefPin=false
+					RefNodeCheckbox=true
+				$end 'CompData'
+			$end 'NportData1'
+			$begin 'NportData2'
+				Refbase='U'
+				NumParts=1
+				Terminal('1', '1', 'A', false, 14, 0, 0)
+				Terminal('2', '2', 'A', false, 15, 0, 0)
+				Terminal('3', '3', 'A', false, 16, 0, 0)
+				Terminal('4', '4', 'A', false, 17, 0, 0)
+				Terminal('5', '5', 'A', false, 18, 0, 0)
+				Terminal('6', '6', 'A', false, 19, 0, 0)
+				Terminal('1_ref', '1_ref', 'A', false, 20, 0, 0)
+				Terminal('2_ref', '2_ref', 'A', false, 21, 0, 0)
+				Terminal('3_ref', '3_ref', 'A', false, 22, 0, 0)
+				Terminal('4_ref', '4_ref', 'A', false, 23, 0, 0)
+				Terminal('5_ref', '5_ref', 'A', false, 24, 0, 0)
+				Terminal('6_ref', '6_ref', 'A', false, 25, 0, 0)
+				$begin 'Parameters'
+					ButtonProp('Data', 'D', '', 'NportData2', '', 0)
+				$end 'Parameters'
+				$begin 'CompData'
+					ComponentDataType='NPortData'
+					name='NportData2'
+					filename='U:\\Fall 2023\\Microwave Engineering\\Project\\redo\\Bridge252_6Port.s6p'
+					numberofports=6
+					filelocation='UsePath'
+					domain='frequency'
+					datamode='Import'
+					devicename=''
+					ImpedenceTab=true
+					NoiseDataTab=true
+					DCBehaviorTab=true
+					SolutionName='Bridge252_6Port'
+					dcbehavior='DCOpen'
+					displayformat='MagnitudePhase'
+					datatype='SMatrix'
+					interptype='Linear'
+					extraptype='Zero padding'
+					ShowRefPin=false
+					RefNodeCheckbox=true
+					$begin 'NetworkSolution'
+						ObjectType='Modal'
+						SolutionType='DiscreteSweep'
+						Name='Bridge252_6Port'
+						AdaptivePass=-1
+						$begin 'Frequencies'
+							$begin 'DataPoint'
+								Frequency=3600000000
+								DataType='None'
+								$begin 'SMatrix'
+									m=6
+									n=6
+									$begin 'r0'
+										c(0.625936599035107, -0.329752168598329)
+										c(0.00258415880978129, 0.000708091701256319)
+										c(0.119037752894961, 0.662506019623281)
+										c(-0.00111490992886715, -0.00107765803463745)
+										c(0.0891174613455436, 0.127073283696303)
+										c(-0.0075779413066523, 0.0118073337399392)
+									$end 'r0'
+									$begin 'r1'
+										c(0.00258415880978129, 0.000708091701256319)
+										c(0.62238834417787, -0.330135984751981)
+										c(-0.00112398586738052, -0.00112602203894727)
+										c(0.119228608403775, 0.666048765497348)
+										c(-0.00750261680845782, 0.0119396550750189)
+										c(0.0897546195520886, 0.127504713789412)
+									$end 'r1'
+									$begin 'r2'
+										c(0.119037752894961, 0.662506019623281)
+										c(-0.00112398586738052, -0.00112602203894727)
+										c(0.699484030548407, 0.135260846449927)
+										c(0.000461771658095351, 0.00102307414319184)
+										c(-0.0454100454397976, -0.14048654012012)
+										c(0.00937686894578834, -0.00754920002457789)
+									$end 'r2'
+									$begin 'r3'
+										c(-0.00111490992886715, -0.00107765803463745)
+										c(0.119228608403775, 0.666048765497348)
+										c(0.000461771658095351, 0.00102307414319184)
+										c(0.696198825288798, 0.137298582387875)
+										c(0.00925179403782718, -0.00761674273910605)
+										c(-0.0460605480454887, -0.139794859454521)
+									$end 'r3'
+									$begin 'r4'
+										c(0.0891174613455436, 0.127073283696303)
+										c(-0.00750261680845782, 0.0119396550750189)
+										c(-0.0454100454397976, -0.14048654012012)
+										c(0.00925179403782718, -0.00761674273910605)
+										c(0.953424181555877, -0.00897689119751489)
+										c(-0.000689981205025554, 0.146661502954873)
+									$end 'r4'
+									$begin 'r5'
+										c(-0.0075779413066523, 0.0118073337399392)
+										c(0.0897546195520886, 0.127504713789412)
+										c(0.00937686894578834, -0.00754920002457789)
+										c(-0.0460605480454887, -0.139794859454521)
+										c(-0.000689981205025554, 0.146661502954873)
+										c(0.953235898524303, -0.0113707648863803)
+									$end 'r5'
+								$end 'SMatrix'
+								$begin 'PortImpedance'
+									n=6
+									$begin 'r0'
+										c(50, 0)
+										c(50, 0)
+										c(50, 0)
+										c(50, 0)
+										c(50, 0)
+										c(50, 0)
+									$end 'r0'
+								$end 'PortImpedance'
+							$end 'DataPoint'
+						$end 'Frequencies'
+						$begin 'Ports'
+							Port(ModalEntryName='Port1', TerminalEntryName='Port1', PortName='Port1', Mode=0, ModeName='', TerminalName='', MatrixIndex=0)
+							Port(ModalEntryName='Port2', TerminalEntryName='Port2', PortName='Port2', Mode=0, ModeName='', TerminalName='', MatrixIndex=1)
+							Port(ModalEntryName='Port3', TerminalEntryName='Port3', PortName='Port3', Mode=0, ModeName='', TerminalName='', MatrixIndex=2)
+							Port(ModalEntryName='Port4', TerminalEntryName='Port4', PortName='Port4', Mode=0, ModeName='', TerminalName='', MatrixIndex=3)
+							Port(ModalEntryName='Port5', TerminalEntryName='Port5', PortName='Port5', Mode=0, ModeName='', TerminalName='', MatrixIndex=4)
+							Port(ModalEntryName='Port6', TerminalEntryName='Port6', PortName='Port6', Mode=0, ModeName='', TerminalName='', MatrixIndex=5)
+						$end 'Ports'
+						HigherOrderMode=false
+						PortNames('Port1', 'Port2', 'Port3', 'Port4', 'Port5', 'Port6')
+						PortModes(1, 1, 1, 1, 1, 1)
+					$end 'NetworkSolution'
+				$end 'CompData'
+			$end 'NportData2'
+			$begin 'Bridge275'
+				Refbase='U'
+				NumParts=1
+				Terminal('Port1', 'Port1', 'A', false, 55, 0, 0)
+				Terminal('Port2', 'Port2', 'A', false, 56, 0, 0)
+				$begin 'Parameters'
+					TextProp('ModelName', 'HD', '', 'X')
+					VariableProp('K12', 'UD', '', '0')
+					VariableProp('K23', 'UD', '', '0')
+					VariableProp('C1', 'UD', '', '0.16')
+					VariableProp('C2', 'UD', '', '0.14')
+				$end 'Parameters'
+				$begin 'Properties'
+					TextProp('Representation', 'SRD', '', 'Bridge275')
+					TextProp('Owner', 'SRD', '', 'Circuit')
+				$end 'Properties'
+			$end 'Bridge275'
+			$begin 'Bridge275Port'
+				Refbase='U'
+				NumParts=1
+				Terminal('1', '1', 'A', false, 26, 0, 0)
+				Terminal('2', '2', 'A', false, 27, 0, 0)
+				Terminal('3', '3', 'A', false, 28, 0, 0)
+				Terminal('4', '4', 'A', false, 29, 0, 0)
+				Terminal('5', '5', 'A', false, 30, 0, 0)
+				Terminal('6', '6', 'A', false, 31, 0, 0)
+				Terminal('1_ref', '1_ref', 'A', false, 32, 0, 0)
+				Terminal('2_ref', '2_ref', 'A', false, 33, 0, 0)
+				Terminal('3_ref', '3_ref', 'A', false, 34, 0, 0)
+				Terminal('4_ref', '4_ref', 'A', false, 35, 0, 0)
+				Terminal('5_ref', '5_ref', 'A', false, 36, 0, 0)
+				Terminal('6_ref', '6_ref', 'A', false, 37, 0, 0)
+				$begin 'Parameters'
+					ButtonProp('Data', 'D', '', 'Bridge275Port', '', 0)
+				$end 'Parameters'
+				$begin 'CompData'
+					ComponentDataType='NPortData'
+					name='Bridge275Port'
+					filename='U:\\Fall 2023\\Microwave Engineering\\Project\\redo\\Bridge275_6Port.s6p'
+					numberofports=6
+					filelocation='UsePath'
+					domain='frequency'
+					datamode='Link'
+					devicename=''
+					ImpedenceTab=true
+					NoiseDataTab=true
+					DCBehaviorTab=true
+					SolutionName=''
+					dcbehavior='DCOpen'
+					displayformat='MagnitudePhase'
+					datatype='SMatrix'
+					interptype='Linear'
+					extraptype='Zero padding'
+					ShowRefPin=false
+					RefNodeCheckbox=true
+				$end 'CompData'
+			$end 'Bridge275Port'
+			$begin 'NportData3'
+				Refbase='U'
+				NumParts=1
+				Terminal('1', '1', 'A', false, 43, 0, 0)
+				Terminal('2', '2', 'A', false, 44, 0, 0)
+				Terminal('3', '3', 'A', false, 45, 0, 0)
+				Terminal('4', '4', 'A', false, 46, 0, 0)
+				Terminal('5', '5', 'A', false, 47, 0, 0)
+				Terminal('6', '6', 'A', false, 48, 0, 0)
+				Terminal('1_ref', '1_ref', 'A', false, 49, 0, 0)
+				Terminal('2_ref', '2_ref', 'A', false, 50, 0, 0)
+				Terminal('3_ref', '3_ref', 'A', false, 51, 0, 0)
+				Terminal('4_ref', '4_ref', 'A', false, 52, 0, 0)
+				Terminal('5_ref', '5_ref', 'A', false, 53, 0, 0)
+				Terminal('6_ref', '6_ref', 'A', false, 54, 0, 0)
+				$begin 'Parameters'
+					ButtonProp('Data', 'D', '', 'NportData3', '', 0)
+				$end 'Parameters'
+				$begin 'CompData'
+					ComponentDataType='NPortData'
+					name='NportData3'
+					filename='U:\\Fall 2023\\Microwave Engineering\\Project\\redo\\Bridge252_6Port.s6p'
+					numberofports=6
+					filelocation='UsePath'
+					domain='frequency'
+					datamode='Link'
+					devicename=''
+					ImpedenceTab=true
+					NoiseDataTab=true
+					DCBehaviorTab=true
+					SolutionName=''
+					dcbehavior='DCOpen'
+					displayformat='MagnitudePhase'
+					datatype='SMatrix'
+					interptype='Linear'
+					extraptype='Zero padding'
+					ShowRefPin=false
+					RefNodeCheckbox=true
+				$end 'CompData'
+			$end 'NportData3'
+			$begin 'NportData4'
+				Refbase='U'
+				NumParts=1
+				Terminal('1', '1', 'A', false, 57, 0, 0)
+				Terminal('2', '2', 'A', false, 58, 0, 0)
+				Terminal('3', '3', 'A', false, 59, 0, 0)
+				Terminal('4', '4', 'A', false, 60, 0, 0)
+				Terminal('5', '5', 'A', false, 61, 0, 0)
+				Terminal('6', '6', 'A', false, 62, 0, 0)
+				Terminal('1_ref', '1_ref', 'A', false, 63, 0, 0)
+				Terminal('2_ref', '2_ref', 'A', false, 64, 0, 0)
+				Terminal('3_ref', '3_ref', 'A', false, 65, 0, 0)
+				Terminal('4_ref', '4_ref', 'A', false, 66, 0, 0)
+				Terminal('5_ref', '5_ref', 'A', false, 67, 0, 0)
+				Terminal('6_ref', '6_ref', 'A', false, 68, 0, 0)
+				$begin 'Parameters'
+					ButtonProp('Data', 'D', '', 'NportData4', '', 0)
+				$end 'Parameters'
+				$begin 'CompData'
+					ComponentDataType='NPortData'
+					name='NportData4'
+					filename='U:\\Fall 2023\\Microwave Engineering\\Project\\redo\\Bridge275_6Port.s6p'
+					numberofports=6
+					filelocation='UsePath'
+					domain='frequency'
+					datamode='Link'
+					devicename=''
+					ImpedenceTab=true
+					NoiseDataTab=true
+					DCBehaviorTab=true
+					SolutionName=''
+					dcbehavior='DCOpen'
+					displayformat='MagnitudePhase'
+					datatype='SMatrix'
+					interptype='Linear'
+					extraptype='Zero padding'
+					ShowRefPin=false
+					RefNodeCheckbox=true
+				$end 'CompData'
+			$end 'NportData4'
+		$end 'Compdefs'
+	$end 'Definitions'
+	$begin 'CircuitEnvironment'
+		Version(1, 0)
+	$end 'CircuitEnvironment'
+	$begin 'PlanarEMEnvironment'
+		Version(1, 0)
+	$end 'PlanarEMEnvironment'
+	$begin 'FilterDesignEnvironment'
+	$end 'FilterDesignEnvironment'
+	$begin 'SchematicEnvironment'
+		Version(1, 0)
+	$end 'SchematicEnvironment'
+	$begin 'HFCircuit'
+		Name='Bridge275'
+		$begin 'Circuit'
+			ComponentName='Bridge275'
+			AutoFP=''
+			$begin 'GlobalPort'
+				PortName='0'
+			$end 'GlobalPort'
+			$begin 'IPort'
+				PortName='Port1'
+				Public=true
+				Connectible=true
+				Direction='AnyDirection'
+				$begin 'Properties'
+					TextProp('pnum', 'OD', '', '1')
+					ButtonProp('CircuitNetlist', 'HD', '', 'PORT:@InterfacePort %0 ?RefNode(@RefNode):( %1 ) PNUM=@pnum &($=#)^(Name,pnum,RefNode,type,InterfacePort,Direction,EditPort,PortSymbol,RefImpedance)', 'PORT:@InterfacePort %0 ?RefNode(@RefNode):( %1 ) PNUM=@pnum &($=#)^(Name,pnum,RefNode,type,InterfacePort,Direction,EditPort,PortSymbol,RefImpedance)', 1)
+					ButtonProp('EditPort', 'D', '', 'Edit', '', 0)
+				$end 'Properties'
+			$end 'IPort'
+			$begin 'IPort'
+				PortName='Port2'
+				Public=true
+				Connectible=true
+				Direction='AnyDirection'
+				$begin 'Properties'
+					TextProp('pnum', 'OD', '', '2')
+					ButtonProp('CircuitNetlist', 'HD', '', 'PORT:@InterfacePort %0 ?RefNode(@RefNode):( %1 ) PNUM=@pnum &($=#)^(Name,pnum,RefNode,type,InterfacePort,Direction,EditPort,PortSymbol,RefImpedance)', 'PORT:@InterfacePort %0 ?RefNode(@RefNode):( %1 ) PNUM=@pnum &($=#)^(Name,pnum,RefNode,type,InterfacePort,Direction,EditPort,PortSymbol,RefImpedance)', 1)
+					ButtonProp('EditPort', 'D', '', 'Edit', '', 0)
+				$end 'Properties'
+			$end 'IPort'
+			$begin 'Compinst'
+				ID='29'
+				Status='Status'
+				CompName='CAP'
+				AutoGenerated=false
+				AutoGeneratedName=''
+				$begin 'Properties'
+					TextProp('ID', 'SRID', '', '29')
+				$end 'Properties'
+				$begin 'Parameters'
+					ValueProp('C', 'OD', 'Capacitance', '(K12) p', 0)
+				$end 'Parameters'
+			$end 'Compinst'
+			$begin 'Compinst'
+				ID='30'
+				Status='Status'
+				CompName='CAP'
+				AutoGenerated=false
+				AutoGeneratedName=''
+				$begin 'Properties'
+					TextProp('ID', 'SRID', '', '30')
+				$end 'Properties'
+				$begin 'Parameters'
+					ValueProp('C', 'OD', 'Capacitance', '(C1) p', 0)
+				$end 'Parameters'
+			$end 'Compinst'
+			$begin 'Compinst'
+				ID='31'
+				Status='Status'
+				CompName='CAP'
+				AutoGenerated=false
+				AutoGeneratedName=''
+				$begin 'Properties'
+					TextProp('ID', 'SRID', '', '31')
+				$end 'Properties'
+				$begin 'Parameters'
+					ValueProp('C', 'OD', 'Capacitance', '(K12) p', 0)
+				$end 'Parameters'
+			$end 'Compinst'
+			$begin 'Compinst'
+				ID='32'
+				Status='Status'
+				CompName='CAP'
+				AutoGenerated=false
+				AutoGeneratedName=''
+				$begin 'Properties'
+					TextProp('ID', 'SRID', '', '32')
+				$end 'Properties'
+				$begin 'Parameters'
+					ValueProp('C', 'OD', 'Capacitance', '(K23) p', 0)
+				$end 'Parameters'
+			$end 'Compinst'
+			$begin 'Compinst'
+				ID='33'
+				Status='Status'
+				CompName='CAP'
+				AutoGenerated=false
+				AutoGeneratedName=''
+				$begin 'Properties'
+					TextProp('ID', 'SRID', '', '33')
+				$end 'Properties'
+				$begin 'Parameters'
+					ValueProp('C', 'OD', 'Capacitance', '(C1) p', 0)
+				$end 'Parameters'
+			$end 'Compinst'
+			$begin 'Compinst'
+				ID='34'
+				Status='Status'
+				CompName='CAP'
+				AutoGenerated=false
+				AutoGeneratedName=''
+				$begin 'Properties'
+					TextProp('ID', 'SRID', '', '34')
+				$end 'Properties'
+				$begin 'Parameters'
+					ValueProp('C', 'OD', 'Capacitance', '(C2) p', 0)
+				$end 'Parameters'
+			$end 'Compinst'
+			$begin 'Compinst'
+				ID='35'
+				Status='Status'
+				CompName='CAP'
+				AutoGenerated=false
+				AutoGeneratedName=''
+				$begin 'Properties'
+					TextProp('ID', 'SRID', '', '35')
+				$end 'Properties'
+				$begin 'Parameters'
+					ValueProp('C', 'OD', 'Capacitance', '(C2) p', 0)
+				$end 'Parameters'
+			$end 'Compinst'
+			$begin 'Compinst'
+				ID='36'
+				Status='Status'
+				CompName='NportData4'
+				AutoGenerated=false
+				AutoGeneratedName=''
+				$begin 'Properties'
+					TextProp('ID', 'SRID', '', '36')
+				$end 'Properties'
+				$begin 'Parameters'
+					ButtonProp('CircuitNetlist', 'HID', '', 'nport:@ID %0 %1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 np=6  file="U:\\\\Fall 2023\\\\Microwave Engineering\\\\Project\\\\redo\\\\Bridge275_6Port.s6p"  dc=SO  interp=Linear  extrap=Zero ', 'nport:@ID %0 %1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 np=6  file="U:\\\\Fall 2023\\\\Microwave Engineering\\\\Project\\\\redo\\\\Bridge275_6Port.s6p"  dc=SO  interp=Linear  extrap=Zero ', 1)
+				$end 'Parameters'
+				$begin 'CompData'
+					ComponentDataType='NPortData'
+					name='NportData4'
+					filename='U:\\Fall 2023\\Microwave Engineering\\Project\\redo\\Bridge275_6Port.s6p'
+					numberofports=6
+					filelocation='UsePath'
+					domain='frequency'
+					datamode='Link'
+					devicename=''
+					ImpedenceTab=true
+					NoiseDataTab=true
+					DCBehaviorTab=true
+					SolutionName=''
+					dcbehavior='DCOpen'
+					displayformat='MagnitudePhase'
+					datatype='SMatrix'
+					interptype='Linear'
+					extraptype='Zero padding'
+					ShowRefPin=false
+					RefNodeCheckbox=true
+				$end 'CompData'
+			$end 'Compinst'
+			$begin 'Net'
+				NetName='0'
+				$begin 'Properties'
+					CheckboxProp('AlignMicrowavePorts', 'D', '', false)
+				$end 'Properties'
+				NetGPorts='0'
+				NetPin('36', 6)
+				NetPin('36', 7)
+				NetPin('36', 8)
+				NetPin('36', 9)
+				NetPin('36', 10)
+				NetPin('36', 11)
+				NetPin('33', 0)
+				NetPin('34', 0)
+				NetPin('35', 0)
+				NetPin('30', 0)
+			$end 'Net'
+			$begin 'Net'
+				NetName='Port1'
+				$begin 'Properties'
+					CheckboxProp('AlignMicrowavePorts', 'D', '', true)
+				$end 'Properties'
+				NetInterfacePorts='Port1'
+				NetPin('36', 0)
+			$end 'Net'
+			$begin 'Net'
+				NetName='Port2'
+				$begin 'Properties'
+					CheckboxProp('AlignMicrowavePorts', 'D', '', true)
+				$end 'Properties'
+				NetInterfacePorts='Port2'
+				NetPin('36', 1)
+			$end 'Net'
+			$begin 'Net'
+				NetName='net_239'
+				$begin 'Properties'
+					CheckboxProp('AlignMicrowavePorts', 'D', '', true)
+				$end 'Properties'
+				NetPin('33', 1)
+				NetPin('29', 0)
+				NetPin('36', 2)
+			$end 'Net'
+			$begin 'Net'
+				NetName='net_241'
+				$begin 'Properties'
+					CheckboxProp('AlignMicrowavePorts', 'D', '', true)
+				$end 'Properties'
+				NetPin('34', 1)
+				NetPin('29', 1)
+				NetPin('32', 0)
+				NetPin('36', 4)
+			$end 'Net'
+			$begin 'Net'
+				NetName='net_243'
+				$begin 'Properties'
+					CheckboxProp('AlignMicrowavePorts', 'D', '', true)
+				$end 'Properties'
+				NetPin('35', 1)
+				NetPin('32', 1)
+				NetPin('31', 0)
+				NetPin('36', 5)
+			$end 'Net'
+			$begin 'Net'
+				NetName='net_245'
+				$begin 'Properties'
+					CheckboxProp('AlignMicrowavePorts', 'D', '', true)
+				$end 'Properties'
+				NetPin('30', 1)
+				NetPin('31', 1)
+				NetPin('36', 3)
+			$end 'Net'
+		$end 'Circuit'
+		$begin 'Schematic'
+			PPortCounter=0
+			$begin 'Page'
+				PageSize('A')
+				PageNumber=1
+				$begin 'SchGPort'
+					SchPortInst('ground_earth', '156', '0', 525, -0.00254, -0.00508, 0, false, 'ground_earth')
+					$begin 'PropDisplayMap'
+						PortName(2, 5, Text(-0.00127, -0.00508, 0, 1, 5, false, 'Arial', 0, '0'))
+					$end 'PropDisplayMap'
+				$end 'SchGPort'
+				$begin 'SchGPort'
+					SchPortInst('ground_earth', '158', '0', 529, 0.00762, -0.00508, 0, false, 'ground_earth')
+					$begin 'PropDisplayMap'
+						PortName(2, 5, Text(0.00889, -0.00508, 0, 1, 5, false, 'Arial', 0, '0'))
+					$end 'PropDisplayMap'
+				$end 'SchGPort'
+				$begin 'SchGPort'
+					SchPortInst('ground_earth', '160', '0', 533, -0.0127, -0.00508, 0, false, 'ground_earth')
+					$begin 'PropDisplayMap'
+						PortName(2, 5, Text(-0.01143, -0.00508, 0, 1, 5, false, 'Arial', 0, '0'))
+					$end 'PropDisplayMap'
+				$end 'SchGPort'
+				$begin 'SchGPort'
+					SchPortInst('ground_earth', '162', '0', 537, 0.01778, -0.00508, 0, false, 'ground_earth')
+					$begin 'PropDisplayMap'
+						PortName(2, 5, Text(0.01905, -0.00508, 0, 1, 5, false, 'Arial', 0, '0'))
+					$end 'PropDisplayMap'
+				$end 'SchGPort'
+				$begin 'SchIPort'
+					SchPortInst('defaultinterfaceport', '164', 'Port1', 541, -0.0254, 0.02032, 0, false, 'defaultinterfaceport')
+					$begin 'PropDisplayMap'
+						PortName(2, 5, Text(-0.0254, 0.02032, 0, 1, 5, false, 'Arial', 0, 'Port1'))
+					$end 'PropDisplayMap'
+				$end 'SchIPort'
+				$begin 'SchIPort'
+					SchPortInst('defaultinterfaceport', '166', 'Port2', 545, -0.0254, 0.01778, 3.14159265358979, false, 'defaultinterfaceport')
+					$begin 'PropDisplayMap'
+						PortName(2, 5, Text(-0.0291237654321137, 0.016016111111104, 0, 1, 5, false, 'Arial', 0, 'Port2'))
+					$end 'PropDisplayMap'
+				$end 'SchIPort'
+				$begin 'SchCompDef'
+					SchCompInst('CAP', 'A', '29', 511, '29', 'normal', -0.00762, 0.00762, 0, false)
+					$begin 'PropDisplayMap'
+						C(2, 5, Text(-0.00762, 0.00383469, 0, 4, 5, false, 'Arial', 0, '(K12) p'))
+					$end 'PropDisplayMap'
+				$end 'SchCompDef'
+				$begin 'SchCompDef'
+					SchCompInst('CAP', 'A', '30', 513, '30', 'normal', 0.01778, 0.00254, 1.5707963267949, false)
+					$begin 'PropDisplayMap'
+						C(2, 5, Text(0.02156531, 0.00254, 1.5707963267949, 4, 5, false, 'Arial', 0, '(C1) p'))
+					$end 'PropDisplayMap'
+				$end 'SchCompDef'
+				$begin 'SchCompDef'
+					SchCompInst('CAP', 'A', '31', 515, '31', 'normal', 0.0127, 0.00762, 0, false)
+					$begin 'PropDisplayMap'
+						C(2, 5, Text(0.0127, 0.00383469, 0, 4, 5, false, 'Arial', 0, '(K12) p'))
+					$end 'PropDisplayMap'
+				$end 'SchCompDef'
+				$begin 'SchCompDef'
+					SchCompInst('CAP', 'A', '32', 517, '32', 'normal', 0.00254, 0.00762, 0, false)
+					$begin 'PropDisplayMap'
+						C(2, 5, Text(0.00254, 0.00383469, 0, 4, 5, false, 'Arial', 0, '(K23) p'))
+					$end 'PropDisplayMap'
+				$end 'SchCompDef'
+				$begin 'SchCompDef'
+					SchCompInst('CAP', 'A', '33', 519, '33', 'normal', -0.0127, 0.00254, 1.5707963267949, false)
+					$begin 'PropDisplayMap'
+						C(2, 5, Text(-0.00891469, -2.16840434497101e-018, 1.5707963267949, 4, 5, false, 'Arial', 0, '(C1) p'))
+					$end 'PropDisplayMap'
+				$end 'SchCompDef'
+				$begin 'SchCompDef'
+					SchCompInst('CAP', 'A', '34', 521, '34', 'normal', -0.00254, 0.00254, 1.5707963267949, false)
+					$begin 'PropDisplayMap'
+						C(2, 5, Text(0.00124531, -4.33680868994202e-019, 1.5707963267949, 4, 5, false, 'Arial', 0, '(C2) p'))
+					$end 'PropDisplayMap'
+				$end 'SchCompDef'
+				$begin 'SchCompDef'
+					SchCompInst('CAP', 'A', '35', 523, '35', 'normal', 0.00762, 0.00254, 1.5707963267949, false)
+					$begin 'PropDisplayMap'
+						C(2, 5, Text(0.01140531, 0, 1.5707963267949, 4, 5, false, 'Arial', 0, '(C2) p'))
+					$end 'PropDisplayMap'
+				$end 'SchCompDef'
+				$begin 'SchCompDef'
+					SchCompInst('NportData4', 'A', '36', 549, '36', 'normal', 0, 0.01778, 0, false)
+				$end 'SchCompDef'
+				$begin 'PageNet'
+					NetName='0'
+					ID=526
+					Global('0', 525)
+				$end 'PageNet'
+				$begin 'PageNet'
+					NetName='0'
+					ID=530
+					Global('0', 529)
+				$end 'PageNet'
+				$begin 'PageNet'
+					NetName='0'
+					ID=534
+					Global('0', 533)
+				$end 'PageNet'
+				$begin 'PageNet'
+					NetName='0'
+					ID=538
+					Global('0', 537)
+				$end 'PageNet'
+				$begin 'PageNet'
+					NetName='Port1'
+					ID=542
+					Interface('Port1', 541)
+					WireSeg(-0.00508, 0.02032, -0.0254, 0.02032, 83)
+				$end 'PageNet'
+				$begin 'PageNet'
+					NetName='Port2'
+					ID=627
+					Interface('Port2', 545)
+					WireSeg(-0.00508, 0.01778, -0.0254, 0.01778, 84)
+				$end 'PageNet'
+				$begin 'PageNet'
+					NetName='net_239'
+					ID=630
+					WireSeg(-0.00508, 0.01524, -0.0127, 0.01524, 85)
+					WireSeg(-0.0127, 0.01524, -0.0127, 0.00762, 86)
+				$end 'PageNet'
+				$begin 'PageNet'
+					NetName='net_241'
+					ID=633
+					WireSeg(0.00508, 0.01778, 0.01016, 0.01778, 87)
+					WireSeg(0.01016, 0.01778, 0.01016, 0.01016, 88)
+					WireSeg(0.01016, 0.01016, -0.00254, 0.01016, 89)
+					WireSeg(-0.00254, 0.01016, -0.00254, 0.00762, 90)
+				$end 'PageNet'
+				$begin 'PageNet'
+					NetName='net_243'
+					ID=636
+					WireSeg(0.00508, 0.01524, 0.00762, 0.01524, 91)
+					WireSeg(0.00762, 0.01524, 0.00762, 0.00762, 92)
+				$end 'PageNet'
+				$begin 'PageNet'
+					NetName='net_245'
+					ID=639
+					WireSeg(0.00508, 0.02032, 0.01778, 0.02032, 93)
+					WireSeg(0.01778, 0.02032, 0.01778, 0.00762, 94)
+				$end 'PageNet'
+				$begin 'Properties'
+					TextProp('Title', 'SD', '', '<Page Title>')
+					TextProp('Author', 'SD', '', '')
+				$end 'Properties'
+			$end 'Page'
+			GridSetup(0.0254, 0.00254, 16772075, 16774645, true, true, 16777215)
+			hasWindowBeenOpened=false
+		$end 'Schematic'
+		$begin 'Layout'
+			BlackBox=false
+			DefUnits='mm'
+			NIdx=34
+			$begin 'Lyrs'
+				Layer(N='Measures', ID=0, T='measures', Col=4144959, Pat=1)
+				Layer(N='Rats', ID=1, T='rat', Col=16711680, Pat=1)
+				Layer(N='Errors', ID=2, T='error', Col=255, Pat=1)
+				Layer(N='Symbols', ID=3, T='symbol', Col=8323199, Pat=4)
+				Layer(N='Assembly', ID=4, T='assembly', TB='top', Col=16711680, Pat=3)
+				Layer(N='Silkscreen', ID=5, T='silkscreen', TB='top', Col=65280, Pat=2)
+				SLayer(Layer(N='Trace', ID=6, T='signal', Col=32512, Pat=4), Elev='mid', SubL(Th='0.675mil', LElev='29.6625mil', R='0mil', Mat='copper'))
+				SLayer(Layer(N='Dielectric', ID=7, T='dielectric', Col=127, Pat=7), Elev='none', SubL(Th='30mil', LElev='0mil', R='0mil', Mat='FR4_epoxy'))
+				SLayer(Layer(N='Ground', ID=9, T='metalizedsignal', Col=4144959, Pat=6), Elev='mid', SubL(Th='0mil', LElev='0mil', R='0mil', Mat='copper'))
+			$end 'Lyrs'
+			ActLyr='Trace'
+			Tol(2e-009, 1e-008, 1e-012)
+			$begin 'Pins'
+				$begin 'Pin'
+					Port(Id=3, PropDisps(PD(Id=0, PN='InterfacePort', DispTyp='v', Style='<DefaultAnnotation>', Lyr=3, N='text_23', x='0meter', y='0meter', F='Arial', Siz='12000mm', Wght=3, Just=4, Txt='Port1')), N='Port1')
+					Off(x='6mm', y='2mm')
+					Pstk='NoPad SMT East'
+					LyrMap(U='forward', F(-1, -1, -1, -1, -1, -1, 0, -1, -1, -1), B(6))
+				$end 'Pin'
+				$begin 'Pin'
+					Port(Id=4, PropDisps(PD(Id=0, PN='InterfacePort', DispTyp='v', Style='<DefaultAnnotation>', Lyr=3, N='text_24', x='0meter', y='0meter', F='Arial', Siz='12000mm', Wght=3, Just=4, Txt='Port2')), N='Port2')
+					Off(x='0mm', y='4mm')
+					Pstk='NoPad SMT East'
+					LyrMap(U='forward', F(-1, -1, -1, -1, -1, -1, 0, -1, -1, -1), B(6))
+				$end 'Pin'
+			$end 'Pins'
+			$begin 'Nets'
+				$begin 'Net'
+					N='Port1'
+					Cl(Ports(Ids(3)))
+					Cl(PortInsts(Ids(1702)))
+				$end 'Net'
+				$begin 'Net'
+					N='Port2'
+					Cl(Ports(Ids(4)))
+					Cl(PortInsts(Ids(1703)))
+				$end 'Net'
+				$begin 'Net'
+					N='0'
+					Cl(PortInsts(Ids(1708)))
+					Cl(PortInsts(Ids(1709)))
+					Cl(PortInsts(Ids(1710)))
+					Cl(PortInsts(Ids(1711)))
+					Cl(PortInsts(Ids(1712)))
+					Cl(PortInsts(Ids(1713)))
+					Cl(PortInsts(Ids(1402)))
+					Cl(PortInsts(Ids(1502)))
+					Cl(PortInsts(Ids(1602)))
+					Cl(PortInsts(Ids(1102)))
+				$end 'Net'
+				$begin 'Net'
+					N='net_239'
+					Cl(PortInsts(Ids(1403)))
+					Cl(PortInsts(Ids(1002)))
+					Cl(PortInsts(Ids(1704)))
+				$end 'Net'
+				$begin 'Net'
+					N='net_241'
+					Cl(PortInsts(Ids(1503)))
+					Cl(PortInsts(Ids(1003)))
+					Cl(PortInsts(Ids(1302)))
+					Cl(PortInsts(Ids(1706)))
+				$end 'Net'
+				$begin 'Net'
+					N='net_243'
+					Cl(PortInsts(Ids(1603)))
+					Cl(PortInsts(Ids(1303)))
+					Cl(PortInsts(Ids(1202)))
+					Cl(PortInsts(Ids(1707)))
+				$end 'Net'
+				$begin 'Net'
+					N='net_245'
+					Cl(PortInsts(Ids(1103)))
+					Cl(PortInsts(Ids(1203)))
+					Cl(PortInsts(Ids(1705)))
+				$end 'Net'
+			$end 'Nets'
+			$begin 'Comps'
+				$begin 'comp'
+					Lyr=3
+					N='29'
+					Def='__symbolFootprint_cap_0'
+					Pos(x='0mm', y='0mm', Scale='2')
+					Lyrs(Map(U='forward', F(0, 1, 2, 3, -1, -1, -1, -1, -1, -1), B(0, 1, 2, 3)))
+					PortInsts(PI(Id=1002, N='n1', PId=0), PI(Id=1003, N='n2', PId=0))
+					IsCirc=false
+					CompInst='29'
+					RectWidth=0.01
+				$end 'comp'
+				$begin 'comp'
+					Lyr=3
+					N='30'
+					Def='__symbolFootprint_cap_0'
+					Pos(x='24.5872000000089mm', y='0mm', Scale='2')
+					Lyrs(Map(U='forward', F(0, 1, 2, 3, -1, -1, -1, -1, -1, -1), B(0, 1, 2, 3)))
+					PortInsts(PI(Id=1102, N='n1', PId=0), PI(Id=1103, N='n2', PId=0))
+					IsCirc=false
+					CompInst='30'
+					RectWidth=0.01
+				$end 'comp'
+				$begin 'comp'
+					Lyr=3
+					N='31'
+					Def='__symbolFootprint_cap_0'
+					Pos(x='24.5872000000089mm', y='-7.5438mm', Scale='2')
+					Lyrs(Map(U='forward', F(0, 1, 2, 3, -1, -1, -1, -1, -1, -1), B(0, 1, 2, 3)))
+					PortInsts(PI(Id=1202, N='n1', PId=0), PI(Id=1203, N='n2', PId=0))
+					IsCirc=false
+					CompInst='31'
+					RectWidth=0.01
+				$end 'comp'
+				$begin 'comp'
+					Lyr=3
+					N='32'
+					Def='__symbolFootprint_cap_0'
+					Pos(x='0mm', y='-7.5438mm', Scale='2')
+					Lyrs(Map(U='forward', F(0, 1, 2, 3, -1, -1, -1, -1, -1, -1), B(0, 1, 2, 3)))
+					PortInsts(PI(Id=1302, N='n1', PId=0), PI(Id=1303, N='n2', PId=0))
+					IsCirc=false
+					CompInst='32'
+					RectWidth=0.01
+				$end 'comp'
+				$begin 'comp'
+					Lyr=3
+					N='33'
+					Def='__symbolFootprint_cap_0'
+					Pos(x='-24.5872000000089mm', y='-7.5438mm', Scale='2')
+					Lyrs(Map(U='forward', F(0, 1, 2, 3, -1, -1, -1, -1, -1, -1), B(0, 1, 2, 3)))
+					PortInsts(PI(Id=1402, N='n1', PId=0), PI(Id=1403, N='n2', PId=0))
+					IsCirc=false
+					CompInst='33'
+					RectWidth=0.01
+				$end 'comp'
+				$begin 'comp'
+					Lyr=3
+					N='34'
+					Def='__symbolFootprint_cap_0'
+					Pos(x='-24.5872000000089mm', y='4.33680868994202e-016mm', Scale='2')
+					Lyrs(Map(U='forward', F(0, 1, 2, 3, -1, -1, -1, -1, -1, -1), B(0, 1, 2, 3)))
+					PortInsts(PI(Id=1502, N='n1', PId=0), PI(Id=1503, N='n2', PId=0))
+					IsCirc=false
+					CompInst='34'
+					RectWidth=0.01
+				$end 'comp'
+				$begin 'comp'
+					Lyr=3
+					N='35'
+					Def='__symbolFootprint_cap_0'
+					Pos(x='-24.5872000000089mm', y='7.5438mm', Scale='2')
+					Lyrs(Map(U='forward', F(0, 1, 2, 3, -1, -1, -1, -1, -1, -1), B(0, 1, 2, 3)))
+					PortInsts(PI(Id=1602, N='n1', PId=0), PI(Id=1603, N='n2', PId=0))
+					IsCirc=false
+					CompInst='35'
+					RectWidth=0.01
+				$end 'comp'
+				$begin 'comp'
+					Lyr=3
+					N='36'
+					Def='__symbolFootprint_NportData4_0'
+					Pos(x='24.5872000000089mm', y='-44.704mm', Scale='2')
+					Lyrs(Map(U='forward', F(0, 1, 2, 3, -1, -1, -1, -1, -1, -1), B(0, 1, 2, 3)))
+					PortInsts(PI(Id=1702, N='1', PId=0), PI(Id=1703, N='2', PId=0), PI(Id=1704, N='3', PId=0), PI(Id=1705, N='4', PId=0), PI(Id=1706, N='5', PId=0), PI(Id=1707, N='6', PId=0), PI(Id=1708, N='1_ref', PId=0), PI(Id=1709, N='2_ref', PId=0), PI(Id=1710, N='3_ref', PId=0), PI(Id=1711, N='4_ref', PId=0), PI(Id=1712, N='5_ref', PId=0), PI(Id=1713, N='6_ref', PId=0))
+					IsCirc=false
+					CompInst='36'
+					RectWidth=0.01
+				$end 'comp'
+			$end 'Comps'
+		$end 'Layout'
+		$begin 'ConfiguredLibs'
+			$begin 'SysLibraries'
+				Components='Circuit Elements'
+				Materials='Circuit Elements;Materials'
+				Symbols='Circuit Elements;Symbols'
+				Footprints='Circuit Elements;Footprints;Distributed Footprints'
+				Padstacks='Circuit Elements;Padstacks'
+				Scripts='Circuit Elements;Scripts'
+			$end 'SysLibraries'
+		$end 'ConfiguredLibs'
+		$begin 'ControlBlocks'
+			$begin 'SubstrateData'
+				Name='FR4'
+				Type=0
+				MetalSpecifyType=1
+				DielecTempMaterial0=''
+				DielecTempMaterial1=''
+				DielecTempMaterial2=''
+				DielecTempMaterial3=''
+				DielecTempMaterial4=''
+				MetalTempMaterial=''
+				Dielectric('30mil', '4.4', '0.02', '', '0', '0', '0')
+				DielectricRef(1, 'Dielectric')
+				Metalization(Layer('Trace'), Metal('copper', '1.724137931034483', '0.675mil'), Roughness('0mil'))
+			$end 'SubstrateData'
+			$begin 'NportData'
+				Name='NportData4'
+				Dynamic=false
+				DynamicIcon=3502
+				Id='36'
+			$end 'NportData'
+		$end 'ControlBlocks'
+		sourcemgr()
+		portmgr('Port1', 'Port2')
+		$begin 'Solutions'
+			$begin 'SimSetup'
+				TypeName='LinearFrequency'
+				ID=12
+				Name='NWA1'
+				$begin 'SweepDefinition'
+					Variable='F'
+					Data='LIN 2GHz 6GHz 5MHz'
+					OffsetF1=false
+					Synchronize=0
+				$end 'SweepDefinition'
+				$begin 'Solution'
+					ID=13
+					Name='NWA1_12'
+					$begin 'SimDataExtractor'
+						SimValue('S11', 2, 90, false, 3, 0, 2, 0, true, false, -1, 1, 0, 1)
+						SimValue('S21', 2, 90, false, 3, 0, 2, 0, true, false, -1, 1, 0, 1)
+						$begin 'Sweeps'
+							$begin 'Sweep'
+								Variable='F'
+								Column='2GHz;2.005GHz;2.01GHz;2.015GHz;2.02GHz;2.025GHz;2.03GHz;2.035GHz;2.04GHz;2.045GHz;2.05GHz;2.055GHz;2.06GHz;2.065GHz;2.07GHz;2.075GHz;2.08GHz;2.085GHz;2.09GHz;2.095GHz;2.1GHz;2.105GHz;2.11GHz;2.115GHz;2.12GHz;2.125GHz;2.13GHz;2.135GHz;2.14GHz;2.145GHz;2.15GHz;2.155GHz;2.16GHz;2.165GHz;2.17GHz;2.175GHz;2.18GHz;2.185GHz;2.19GHz;2.195GHz;2.2GHz;2.205GHz;2.21GHz;2.215GHz;2.22GHz;2.225GHz;2.23GHz;2.235GHz;2.24GHz;2.245GHz;2.25GHz;2.255GHz;2.26GHz;2.265GHz;2.27GHz;2.275GHz;2.28GHz;2.285GHz;2.29GHz;2.295GHz;2.3GHz;2.305GHz;2.31GHz;2.315GHz;2.32GHz;2.325GHz;2.33GHz;2.335GHz;2.34GHz;2.345GHz;2.35GHz;2.355GHz;2.36GHz;2.365GHz;2.37GHz;2.375GHz;2.38GHz;2.385GHz;2.39GHz;2.395GHz;2.4GHz;2.405GHz;2.41GHz;2.415GHz;2.42GHz;2.425GHz;2.43GHz;2.435GHz;2.44GHz;2.445GHz;2.45GHz;2.455GHz;2.46GHz;2.465GHz;2.47GHz;2.475GHz;2.48GHz;2.485GHz;2.49GHz;2.495GHz;2.5GHz;2.505GHz;2.51GHz;2.515GHz;2.52GHz;2.525GHz;2.53GHz;2.535GHz;2.54GHz;2.545GHz;2.55GHz;2.555GHz;2.56GHz;2.565GHz;2.57GHz;2.575GHz;2.58GHz;2.585GHz;2.59GHz;2.595GHz;2.6GHz;2.605GHz;2.61GHz;2.615GHz;2.62GHz;2.625GHz;2.63GHz;2.635GHz;2.64GHz;2.645GHz;2.65GHz;2.655GHz;2.66GHz;2.665GHz;2.67GHz;2.675GHz;2.68GHz;2.685GHz;2.69GHz;2.695GHz;2.7GHz;2.705GHz;2.71GHz;2.715GHz;2.72GHz;2.725GHz;2.73GHz;2.735GHz;2.74GHz;2.745GHz;2.75GHz;2.755GHz;2.76GHz;2.765GHz;2.77GHz;2.775GHz;2.78GHz;2.785GHz;2.79GHz;2.795GHz;2.8GHz;2.805GHz;2.81GHz;2.815GHz;2.82GHz;2.825GHz;2.83GHz;2.835GHz;2.84GHz;2.845GHz;2.85GHz;2.855GHz;2.86GHz;2.865GHz;2.87GHz;2.875GHz;2.88GHz;2.885GHz;2.89GHz;2.895GHz;2.9GHz;2.905GHz;2.91GHz;2.915GHz;2.92GHz;2.925GHz;2.93GHz;2.935GHz;2.94GHz;2.945GHz;2.95GHz;2.955GHz;2.96GHz;2.965GHz;2.97GHz;2.975GHz;2.98GHz;2.985GHz;2.99GHz;2.995GHz;3GHz;3.005GHz;3.01GHz;3.015GHz;3.02GHz;3.025GHz;3.03GHz;3.035GHz;3.04GHz;3.045GHz;3.05GHz;3.055GHz;3.06GHz;3.065GHz;3.07GHz;3.075GHz;3.08GHz;3.085GHz;3.09GHz;3.095GHz;3.1GHz;3.105GHz;3.11GHz;3.115GHz;3.12GHz;3.125GHz;3.13GHz;3.135GHz;3.14GHz;3.145GHz;3.15GHz;3.155GHz;3.16GHz;3.165GHz;3.17GHz;3.175GHz;3.18GHz;3.185GHz;3.19GHz;3.195GHz;3.2GHz;3.205GHz;3.21GHz;3.215GHz;3.22GHz;3.225GHz;3.23GHz;3.235GHz;3.24GHz;3.245GHz;3.25GHz;3.255GHz;3.26GHz;3.265GHz;3.27GHz;3.275GHz;3.28GHz;3.285GHz;3.29GHz;3.295GHz;3.3GHz;3.305GHz;3.31GHz;3.315GHz;3.32GHz;3.325GHz;3.33GHz;3.335GHz;3.34GHz;3.345GHz;3.35GHz;3.355GHz;3.36GHz;3.365GHz;3.37GHz;3.375GHz;3.38GHz;3.385GHz;3.39GHz;3.395GHz;3.4GHz;3.405GHz;3.41GHz;3.415GHz;3.42GHz;3.425GHz;3.43GHz;3.435GHz;3.44GHz;3.445GHz;3.45GHz;3.455GHz;3.46GHz;3.465GHz;3.47GHz;3.475GHz;3.48GHz;3.485GHz;3.49GHz;3.495GHz;3.5GHz;3.505GHz;3.51GHz;3.515GHz;3.52GHz;3.525GHz;3.53GHz;3.535GHz;3.54GHz;3.545GHz;3.55GHz;3.555GHz;3.56GHz;3.565GHz;3.57GHz;3.575GHz;3.58GHz;3.585GHz;3.59GHz;3.595GHz;3.6GHz;3.605GHz;3.61GHz;3.615GHz;3.62GHz;3.625GHz;3.63GHz;3.635GHz;3.64GHz;3.645GHz;3.65GHz;3.655GHz;3.66GHz;3.665GHz;3.67GHz;3.675GHz;3.68GHz;3.685GHz;3.69GHz;3.695GHz;3.7GHz;3.705GHz;3.71GHz;3.715GHz;3.72GHz;3.725GHz;3.73GHz;3.735GHz;3.74GHz;3.745GHz;3.75GHz;3.755GHz;3.76GHz;3.765GHz;3.77GHz;3.775GHz;3.78GHz;3.785GHz;3.79GHz;3.795GHz;3.8GHz;3.805GHz;3.81GHz;3.815GHz;3.82GHz;3.825GHz;3.83GHz;3.835GHz;3.84GHz;3.845GHz;3.85GHz;3.855GHz;3.86GHz;3.865GHz;3.87GHz;3.875GHz;3.88GHz;3.885GHz;3.89GHz;3.895GHz;3.9GHz;3.905GHz;3.91GHz;3.915GHz;3.92GHz;3.925GHz;3.93GHz;3.935GHz;3.94GHz;3.945GHz;3.95GHz;3.955GHz;3.96GHz;3.965GHz;3.97GHz;3.975GHz;3.98GHz;3.985GHz;3.99GHz;3.995GHz;4GHz;4.005GHz;4.01GHz;4.015GHz;4.02GHz;4.025GHz;4.03GHz;4.035GHz;4.04GHz;4.045GHz;4.05GHz;4.055GHz;4.06GHz;4.065GHz;4.07GHz;4.075GHz;4.08GHz;4.085GHz;4.09GHz;4.095GHz;4.1GHz;4.105GHz;4.11GHz;4.115GHz;4.12GHz;4.125GHz;4.13GHz;4.135GHz;4.14GHz;4.145GHz;4.15GHz;4.155GHz;4.16GHz;4.165GHz;4.17GHz;4.175GHz;4.18GHz;4.185GHz;4.19GHz;4.195GHz;4.2GHz;4.205GHz;4.21GHz;4.215GHz;4.22GHz;4.225GHz;4.23GHz;4.235GHz;4.24GHz;4.245GHz;4.25GHz;4.255GHz;4.26GHz;4.265GHz;4.27GHz;4.275GHz;4.28GHz;4.285GHz;4.29GHz;4.295GHz;4.3GHz;4.305GHz;4.31GHz;4.315GHz;4.32GHz;4.325GHz;4.33GHz;4.335GHz;4.34GHz;4.345GHz;4.35GHz;4.355GHz;4.36GHz;4.365GHz;4.37GHz;4.375GHz;4.38GHz;4.385GHz;4.39GHz;4.395GHz;4.4GHz;4.405GHz;4.41GHz;4.415GHz;4.42GHz;4.425GHz;4.43GHz;4.435GHz;4.44GHz;4.445GHz;4.45GHz;4.455GHz;4.46GHz;4.465GHz;4.47GHz;4.475GHz;4.48GHz;4.485GHz;4.49GHz;4.495GHz;4.5GHz;4.505GHz;4.51GHz;4.515GHz;4.52GHz;4.525GHz;4.53GHz;4.535GHz;4.54GHz;4.545GHz;4.55GHz;4.555GHz;4.56GHz;4.565GHz;4.57GHz;4.575GHz;4.58GHz;4.585GHz;4.59GHz;4.595GHz;4.6GHz;4.605GHz;4.61GHz;4.615GHz;4.62GHz;4.625GHz;4.63GHz;4.635GHz;4.64GHz;4.645GHz;4.65GHz;4.655GHz;4.66GHz;4.665GHz;4.67GHz;4.675GHz;4.68GHz;4.685GHz;4.69GHz;4.695GHz;4.7GHz;4.705GHz;4.71GHz;4.715GHz;4.72GHz;4.725GHz;4.73GHz;4.735GHz;4.74GHz;4.745GHz;4.75GHz;4.755GHz;4.76GHz;4.765GHz;4.77GHz;4.775GHz;4.78GHz;4.785GHz;4.79GHz;4.795GHz;4.8GHz;4.805GHz;4.81GHz;4.815GHz;4.82GHz;4.825GHz;4.83GHz;4.835GHz;4.84GHz;4.845GHz;4.85GHz;4.855GHz;4.86GHz;4.865GHz;4.87GHz;4.875GHz;4.88GHz;4.885GHz;4.89GHz;4.895GHz;4.9GHz;4.905GHz;4.91GHz;4.915GHz;4.92GHz;4.925GHz;4.93GHz;4.935GHz;4.94GHz;4.945GHz;4.95GHz;4.955GHz;4.96GHz;4.965GHz;4.97GHz;4.975GHz;4.98GHz;4.985GHz;4.99GHz;4.995GHz;5GHz;5.005GHz;5.01GHz;5.015GHz;5.02GHz;5.025GHz;5.03GHz;5.035GHz;5.04GHz;5.045GHz;5.05GHz;5.055GHz;5.06GHz;5.065GHz;5.07GHz;5.075GHz;5.08GHz;5.085GHz;5.09GHz;5.095GHz;5.1GHz;5.105GHz;5.11GHz;5.115GHz;5.12GHz;5.125GHz;5.13GHz;5.135GHz;5.14GHz;5.145GHz;5.15GHz;5.155GHz;5.16GHz;5.165GHz;5.17GHz;5.175GHz;5.18GHz;5.185GHz;5.19GHz;5.195GHz;5.2GHz;5.205GHz;5.21GHz;5.215GHz;5.22GHz;5.225GHz;5.23GHz;5.235GHz;5.24GHz;5.245GHz;5.25GHz;5.255GHz;5.26GHz;5.265GHz;5.27GHz;5.275GHz;5.28GHz;5.285GHz;5.29GHz;5.295GHz;5.3GHz;5.305GHz;5.31GHz;5.315GHz;5.32GHz;5.325GHz;5.33GHz;5.335GHz;5.34GHz;5.345GHz;5.35GHz;5.355GHz;5.36GHz;5.365GHz;5.37GHz;5.375GHz;5.38GHz;5.385GHz;5.39GHz;5.395GHz;5.4GHz;5.405GHz;5.41GHz;5.415GHz;5.42GHz;5.425GHz;5.43GHz;5.435GHz;5.44GHz;5.445GHz;5.45GHz;5.455GHz;5.46GHz;5.465GHz;5.47GHz;5.475GHz;5.48GHz;5.485GHz;5.49GHz;5.495GHz;5.5GHz;5.505GHz;5.51GHz;5.515GHz;5.52GHz;5.525GHz;5.53GHz;5.535GHz;5.54GHz;5.545GHz;5.55GHz;5.555GHz;5.56GHz;5.565GHz;5.57GHz;5.575GHz;5.58GHz;5.585GHz;5.59GHz;5.595GHz;5.6GHz;5.605GHz;5.61GHz;5.615GHz;5.62GHz;5.625GHz;5.63GHz;5.635GHz;5.64GHz;5.645GHz;5.65GHz;5.655GHz;5.66GHz;5.665GHz;5.67GHz;5.675GHz;5.68GHz;5.685GHz;5.69GHz;5.695GHz;5.7GHz;5.705GHz;5.71GHz;5.715GHz;5.72GHz;5.725GHz;5.73GHz;5.735GHz;5.74GHz;5.745GHz;5.75GHz;5.755GHz;5.76GHz;5.765GHz;5.77GHz;5.775GHz;5.78GHz;5.785GHz;5.79GHz;5.795GHz;5.8GHz;5.805GHz;5.81GHz;5.815GHz;5.82GHz;5.825GHz;5.83GHz;5.835GHz;5.84GHz;5.845GHz;5.85GHz;5.855GHz;5.86GHz;5.865GHz;5.87GHz;5.875GHz;5.88GHz;5.885GHz;5.89GHz;5.895GHz;5.9GHz;5.905GHz;5.91GHz;5.915GHz;5.92GHz;5.925GHz;5.93GHz;5.935GHz;5.94GHz;5.945GHz;5.95GHz;5.955GHz;5.96GHz;5.965GHz;5.97GHz;5.975GHz;5.98GHz;5.985GHz;5.99GHz;5.995GHz;6GHz'
+								Units='GHz'
+							$end 'Sweep'
+						$end 'Sweeps'
+						$begin 'SolutionPointSets'
+							$begin 'SolutionPointSet'
+								name='NWA1_12:SolutionPointSet 1'
+								CurrentIndex=3
+								SolutionVersion=336
+								SimValueContext(3, 0, 2, 0, true, false, -1, 1, 0, 1)
+								$begin 'SubSweeps'
+									$begin 'F'
+										All=true
+										Indices()
+										$begin 'SweepBase'
+											Variable='F'
+											Column='2GHz;2.005GHz;2.01GHz;2.015GHz;2.02GHz;2.025GHz;2.03GHz;2.035GHz;2.04GHz;2.045GHz;2.05GHz;2.055GHz;2.06GHz;2.065GHz;2.07GHz;2.075GHz;2.08GHz;2.085GHz;2.09GHz;2.095GHz;2.1GHz;2.105GHz;2.11GHz;2.115GHz;2.12GHz;2.125GHz;2.13GHz;2.135GHz;2.14GHz;2.145GHz;2.15GHz;2.155GHz;2.16GHz;2.165GHz;2.17GHz;2.175GHz;2.18GHz;2.185GHz;2.19GHz;2.195GHz;2.2GHz;2.205GHz;2.21GHz;2.215GHz;2.22GHz;2.225GHz;2.23GHz;2.235GHz;2.24GHz;2.245GHz;2.25GHz;2.255GHz;2.26GHz;2.265GHz;2.27GHz;2.275GHz;2.28GHz;2.285GHz;2.29GHz;2.295GHz;2.3GHz;2.305GHz;2.31GHz;2.315GHz;2.32GHz;2.325GHz;2.33GHz;2.335GHz;2.34GHz;2.345GHz;2.35GHz;2.355GHz;2.36GHz;2.365GHz;2.37GHz;2.375GHz;2.38GHz;2.385GHz;2.39GHz;2.395GHz;2.4GHz;2.405GHz;2.41GHz;2.415GHz;2.42GHz;2.425GHz;2.43GHz;2.435GHz;2.44GHz;2.445GHz;2.45GHz;2.455GHz;2.46GHz;2.465GHz;2.47GHz;2.475GHz;2.48GHz;2.485GHz;2.49GHz;2.495GHz;2.5GHz;2.505GHz;2.51GHz;2.515GHz;2.52GHz;2.525GHz;2.53GHz;2.535GHz;2.54GHz;2.545GHz;2.55GHz;2.555GHz;2.56GHz;2.565GHz;2.57GHz;2.575GHz;2.58GHz;2.585GHz;2.59GHz;2.595GHz;2.6GHz;2.605GHz;2.61GHz;2.615GHz;2.62GHz;2.625GHz;2.63GHz;2.635GHz;2.64GHz;2.645GHz;2.65GHz;2.655GHz;2.66GHz;2.665GHz;2.67GHz;2.675GHz;2.68GHz;2.685GHz;2.69GHz;2.695GHz;2.7GHz;2.705GHz;2.71GHz;2.715GHz;2.72GHz;2.725GHz;2.73GHz;2.735GHz;2.74GHz;2.745GHz;2.75GHz;2.755GHz;2.76GHz;2.765GHz;2.77GHz;2.775GHz;2.78GHz;2.785GHz;2.79GHz;2.795GHz;2.8GHz;2.805GHz;2.81GHz;2.815GHz;2.82GHz;2.825GHz;2.83GHz;2.835GHz;2.84GHz;2.845GHz;2.85GHz;2.855GHz;2.86GHz;2.865GHz;2.87GHz;2.875GHz;2.88GHz;2.885GHz;2.89GHz;2.895GHz;2.9GHz;2.905GHz;2.91GHz;2.915GHz;2.92GHz;2.925GHz;2.93GHz;2.935GHz;2.94GHz;2.945GHz;2.95GHz;2.955GHz;2.96GHz;2.965GHz;2.97GHz;2.975GHz;2.98GHz;2.985GHz;2.99GHz;2.995GHz;3GHz;3.005GHz;3.01GHz;3.015GHz;3.02GHz;3.025GHz;3.03GHz;3.035GHz;3.04GHz;3.045GHz;3.05GHz;3.055GHz;3.06GHz;3.065GHz;3.07GHz;3.075GHz;3.08GHz;3.085GHz;3.09GHz;3.095GHz;3.1GHz;3.105GHz;3.11GHz;3.115GHz;3.12GHz;3.125GHz;3.13GHz;3.135GHz;3.14GHz;3.145GHz;3.15GHz;3.155GHz;3.16GHz;3.165GHz;3.17GHz;3.175GHz;3.18GHz;3.185GHz;3.19GHz;3.195GHz;3.2GHz;3.205GHz;3.21GHz;3.215GHz;3.22GHz;3.225GHz;3.23GHz;3.235GHz;3.24GHz;3.245GHz;3.25GHz;3.255GHz;3.26GHz;3.265GHz;3.27GHz;3.275GHz;3.28GHz;3.285GHz;3.29GHz;3.295GHz;3.3GHz;3.305GHz;3.31GHz;3.315GHz;3.32GHz;3.325GHz;3.33GHz;3.335GHz;3.34GHz;3.345GHz;3.35GHz;3.355GHz;3.36GHz;3.365GHz;3.37GHz;3.375GHz;3.38GHz;3.385GHz;3.39GHz;3.395GHz;3.4GHz;3.405GHz;3.41GHz;3.415GHz;3.42GHz;3.425GHz;3.43GHz;3.435GHz;3.44GHz;3.445GHz;3.45GHz;3.455GHz;3.46GHz;3.465GHz;3.47GHz;3.475GHz;3.48GHz;3.485GHz;3.49GHz;3.495GHz;3.5GHz;3.505GHz;3.51GHz;3.515GHz;3.52GHz;3.525GHz;3.53GHz;3.535GHz;3.54GHz;3.545GHz;3.55GHz;3.555GHz;3.56GHz;3.565GHz;3.57GHz;3.575GHz;3.58GHz;3.585GHz;3.59GHz;3.595GHz;3.6GHz;3.605GHz;3.61GHz;3.615GHz;3.62GHz;3.625GHz;3.63GHz;3.635GHz;3.64GHz;3.645GHz;3.65GHz;3.655GHz;3.66GHz;3.665GHz;3.67GHz;3.675GHz;3.68GHz;3.685GHz;3.69GHz;3.695GHz;3.7GHz;3.705GHz;3.71GHz;3.715GHz;3.72GHz;3.725GHz;3.73GHz;3.735GHz;3.74GHz;3.745GHz;3.75GHz;3.755GHz;3.76GHz;3.765GHz;3.77GHz;3.775GHz;3.78GHz;3.785GHz;3.79GHz;3.795GHz;3.8GHz;3.805GHz;3.81GHz;3.815GHz;3.82GHz;3.825GHz;3.83GHz;3.835GHz;3.84GHz;3.845GHz;3.85GHz;3.855GHz;3.86GHz;3.865GHz;3.87GHz;3.875GHz;3.88GHz;3.885GHz;3.89GHz;3.895GHz;3.9GHz;3.905GHz;3.91GHz;3.915GHz;3.92GHz;3.925GHz;3.93GHz;3.935GHz;3.94GHz;3.945GHz;3.95GHz;3.955GHz;3.96GHz;3.965GHz;3.97GHz;3.975GHz;3.98GHz;3.985GHz;3.99GHz;3.995GHz;4GHz;4.005GHz;4.01GHz;4.015GHz;4.02GHz;4.025GHz;4.03GHz;4.035GHz;4.04GHz;4.045GHz;4.05GHz;4.055GHz;4.06GHz;4.065GHz;4.07GHz;4.075GHz;4.08GHz;4.085GHz;4.09GHz;4.095GHz;4.1GHz;4.105GHz;4.11GHz;4.115GHz;4.12GHz;4.125GHz;4.13GHz;4.135GHz;4.14GHz;4.145GHz;4.15GHz;4.155GHz;4.16GHz;4.165GHz;4.17GHz;4.175GHz;4.18GHz;4.185GHz;4.19GHz;4.195GHz;4.2GHz;4.205GHz;4.21GHz;4.215GHz;4.22GHz;4.225GHz;4.23GHz;4.235GHz;4.24GHz;4.245GHz;4.25GHz;4.255GHz;4.26GHz;4.265GHz;4.27GHz;4.275GHz;4.28GHz;4.285GHz;4.29GHz;4.295GHz;4.3GHz;4.305GHz;4.31GHz;4.315GHz;4.32GHz;4.325GHz;4.33GHz;4.335GHz;4.34GHz;4.345GHz;4.35GHz;4.355GHz;4.36GHz;4.365GHz;4.37GHz;4.375GHz;4.38GHz;4.385GHz;4.39GHz;4.395GHz;4.4GHz;4.405GHz;4.41GHz;4.415GHz;4.42GHz;4.425GHz;4.43GHz;4.435GHz;4.44GHz;4.445GHz;4.45GHz;4.455GHz;4.46GHz;4.465GHz;4.47GHz;4.475GHz;4.48GHz;4.485GHz;4.49GHz;4.495GHz;4.5GHz;4.505GHz;4.51GHz;4.515GHz;4.52GHz;4.525GHz;4.53GHz;4.535GHz;4.54GHz;4.545GHz;4.55GHz;4.555GHz;4.56GHz;4.565GHz;4.57GHz;4.575GHz;4.58GHz;4.585GHz;4.59GHz;4.595GHz;4.6GHz;4.605GHz;4.61GHz;4.615GHz;4.62GHz;4.625GHz;4.63GHz;4.635GHz;4.64GHz;4.645GHz;4.65GHz;4.655GHz;4.66GHz;4.665GHz;4.67GHz;4.675GHz;4.68GHz;4.685GHz;4.69GHz;4.695GHz;4.7GHz;4.705GHz;4.71GHz;4.715GHz;4.72GHz;4.725GHz;4.73GHz;4.735GHz;4.74GHz;4.745GHz;4.75GHz;4.755GHz;4.76GHz;4.765GHz;4.77GHz;4.775GHz;4.78GHz;4.785GHz;4.79GHz;4.795GHz;4.8GHz;4.805GHz;4.81GHz;4.815GHz;4.82GHz;4.825GHz;4.83GHz;4.835GHz;4.84GHz;4.845GHz;4.85GHz;4.855GHz;4.86GHz;4.865GHz;4.87GHz;4.875GHz;4.88GHz;4.885GHz;4.89GHz;4.895GHz;4.9GHz;4.905GHz;4.91GHz;4.915GHz;4.92GHz;4.925GHz;4.93GHz;4.935GHz;4.94GHz;4.945GHz;4.95GHz;4.955GHz;4.96GHz;4.965GHz;4.97GHz;4.975GHz;4.98GHz;4.985GHz;4.99GHz;4.995GHz;5GHz;5.005GHz;5.01GHz;5.015GHz;5.02GHz;5.025GHz;5.03GHz;5.035GHz;5.04GHz;5.045GHz;5.05GHz;5.055GHz;5.06GHz;5.065GHz;5.07GHz;5.075GHz;5.08GHz;5.085GHz;5.09GHz;5.095GHz;5.1GHz;5.105GHz;5.11GHz;5.115GHz;5.12GHz;5.125GHz;5.13GHz;5.135GHz;5.14GHz;5.145GHz;5.15GHz;5.155GHz;5.16GHz;5.165GHz;5.17GHz;5.175GHz;5.18GHz;5.185GHz;5.19GHz;5.195GHz;5.2GHz;5.205GHz;5.21GHz;5.215GHz;5.22GHz;5.225GHz;5.23GHz;5.235GHz;5.24GHz;5.245GHz;5.25GHz;5.255GHz;5.26GHz;5.265GHz;5.27GHz;5.275GHz;5.28GHz;5.285GHz;5.29GHz;5.295GHz;5.3GHz;5.305GHz;5.31GHz;5.315GHz;5.32GHz;5.325GHz;5.33GHz;5.335GHz;5.34GHz;5.345GHz;5.35GHz;5.355GHz;5.36GHz;5.365GHz;5.37GHz;5.375GHz;5.38GHz;5.385GHz;5.39GHz;5.395GHz;5.4GHz;5.405GHz;5.41GHz;5.415GHz;5.42GHz;5.425GHz;5.43GHz;5.435GHz;5.44GHz;5.445GHz;5.45GHz;5.455GHz;5.46GHz;5.465GHz;5.47GHz;5.475GHz;5.48GHz;5.485GHz;5.49GHz;5.495GHz;5.5GHz;5.505GHz;5.51GHz;5.515GHz;5.52GHz;5.525GHz;5.53GHz;5.535GHz;5.54GHz;5.545GHz;5.55GHz;5.555GHz;5.56GHz;5.565GHz;5.57GHz;5.575GHz;5.58GHz;5.585GHz;5.59GHz;5.595GHz;5.6GHz;5.605GHz;5.61GHz;5.615GHz;5.62GHz;5.625GHz;5.63GHz;5.635GHz;5.64GHz;5.645GHz;5.65GHz;5.655GHz;5.66GHz;5.665GHz;5.67GHz;5.675GHz;5.68GHz;5.685GHz;5.69GHz;5.695GHz;5.7GHz;5.705GHz;5.71GHz;5.715GHz;5.72GHz;5.725GHz;5.73GHz;5.735GHz;5.74GHz;5.745GHz;5.75GHz;5.755GHz;5.76GHz;5.765GHz;5.77GHz;5.775GHz;5.78GHz;5.785GHz;5.79GHz;5.795GHz;5.8GHz;5.805GHz;5.81GHz;5.815GHz;5.82GHz;5.825GHz;5.83GHz;5.835GHz;5.84GHz;5.845GHz;5.85GHz;5.855GHz;5.86GHz;5.865GHz;5.87GHz;5.875GHz;5.88GHz;5.885GHz;5.89GHz;5.895GHz;5.9GHz;5.905GHz;5.91GHz;5.915GHz;5.92GHz;5.925GHz;5.93GHz;5.935GHz;5.94GHz;5.945GHz;5.95GHz;5.955GHz;5.96GHz;5.965GHz;5.97GHz;5.975GHz;5.98GHz;5.985GHz;5.99GHz;5.995GHz;6GHz'
+											Units='GHz'
+										$end 'SweepBase'
+									$end 'F'
+								$end 'SubSweeps'
+								$begin 'Traces'
+									$begin 'Trace2D'
+										name='NWA1_12:SolutionPointSet 1:Trace2D 1'
+										X(Desc='F', CatID=1, FuncID=0, IsInteger=false, Units='GHz', X='F')
+										Y(Desc='S11', CatID=3, FuncID=11, IsInteger=false, Units='', Y='dB(S11)')
+										$begin 'ExtTraceInfo'
+											NumPoints=4294967295
+											TraceType=0
+											Offset=0
+											XLabel=''
+											SamplingPeriod='0'
+										$end 'ExtTraceInfo'
+									$end 'Trace2D'
+								$end 'Traces'
+							$end 'SolutionPointSet'
+							$begin 'SolutionPointSet'
+								name='NWA1_12:SolutionPointSet 2'
+								CurrentIndex=3
+								SolutionVersion=336
+								SimValueContext(3, 0, 2, 0, true, false, -1, 1, 0, 1)
+								$begin 'SubSweeps'
+									$begin 'F'
+										All=true
+										Indices()
+										$begin 'SweepBase'
+											Variable='F'
+											Column='2GHz;2.005GHz;2.01GHz;2.015GHz;2.02GHz;2.025GHz;2.03GHz;2.035GHz;2.04GHz;2.045GHz;2.05GHz;2.055GHz;2.06GHz;2.065GHz;2.07GHz;2.075GHz;2.08GHz;2.085GHz;2.09GHz;2.095GHz;2.1GHz;2.105GHz;2.11GHz;2.115GHz;2.12GHz;2.125GHz;2.13GHz;2.135GHz;2.14GHz;2.145GHz;2.15GHz;2.155GHz;2.16GHz;2.165GHz;2.17GHz;2.175GHz;2.18GHz;2.185GHz;2.19GHz;2.195GHz;2.2GHz;2.205GHz;2.21GHz;2.215GHz;2.22GHz;2.225GHz;2.23GHz;2.235GHz;2.24GHz;2.245GHz;2.25GHz;2.255GHz;2.26GHz;2.265GHz;2.27GHz;2.275GHz;2.28GHz;2.285GHz;2.29GHz;2.295GHz;2.3GHz;2.305GHz;2.31GHz;2.315GHz;2.32GHz;2.325GHz;2.33GHz;2.335GHz;2.34GHz;2.345GHz;2.35GHz;2.355GHz;2.36GHz;2.365GHz;2.37GHz;2.375GHz;2.38GHz;2.385GHz;2.39GHz;2.395GHz;2.4GHz;2.405GHz;2.41GHz;2.415GHz;2.42GHz;2.425GHz;2.43GHz;2.435GHz;2.44GHz;2.445GHz;2.45GHz;2.455GHz;2.46GHz;2.465GHz;2.47GHz;2.475GHz;2.48GHz;2.485GHz;2.49GHz;2.495GHz;2.5GHz;2.505GHz;2.51GHz;2.515GHz;2.52GHz;2.525GHz;2.53GHz;2.535GHz;2.54GHz;2.545GHz;2.55GHz;2.555GHz;2.56GHz;2.565GHz;2.57GHz;2.575GHz;2.58GHz;2.585GHz;2.59GHz;2.595GHz;2.6GHz;2.605GHz;2.61GHz;2.615GHz;2.62GHz;2.625GHz;2.63GHz;2.635GHz;2.64GHz;2.645GHz;2.65GHz;2.655GHz;2.66GHz;2.665GHz;2.67GHz;2.675GHz;2.68GHz;2.685GHz;2.69GHz;2.695GHz;2.7GHz;2.705GHz;2.71GHz;2.715GHz;2.72GHz;2.725GHz;2.73GHz;2.735GHz;2.74GHz;2.745GHz;2.75GHz;2.755GHz;2.76GHz;2.765GHz;2.77GHz;2.775GHz;2.78GHz;2.785GHz;2.79GHz;2.795GHz;2.8GHz;2.805GHz;2.81GHz;2.815GHz;2.82GHz;2.825GHz;2.83GHz;2.835GHz;2.84GHz;2.845GHz;2.85GHz;2.855GHz;2.86GHz;2.865GHz;2.87GHz;2.875GHz;2.88GHz;2.885GHz;2.89GHz;2.895GHz;2.9GHz;2.905GHz;2.91GHz;2.915GHz;2.92GHz;2.925GHz;2.93GHz;2.935GHz;2.94GHz;2.945GHz;2.95GHz;2.955GHz;2.96GHz;2.965GHz;2.97GHz;2.975GHz;2.98GHz;2.985GHz;2.99GHz;2.995GHz;3GHz;3.005GHz;3.01GHz;3.015GHz;3.02GHz;3.025GHz;3.03GHz;3.035GHz;3.04GHz;3.045GHz;3.05GHz;3.055GHz;3.06GHz;3.065GHz;3.07GHz;3.075GHz;3.08GHz;3.085GHz;3.09GHz;3.095GHz;3.1GHz;3.105GHz;3.11GHz;3.115GHz;3.12GHz;3.125GHz;3.13GHz;3.135GHz;3.14GHz;3.145GHz;3.15GHz;3.155GHz;3.16GHz;3.165GHz;3.17GHz;3.175GHz;3.18GHz;3.185GHz;3.19GHz;3.195GHz;3.2GHz;3.205GHz;3.21GHz;3.215GHz;3.22GHz;3.225GHz;3.23GHz;3.235GHz;3.24GHz;3.245GHz;3.25GHz;3.255GHz;3.26GHz;3.265GHz;3.27GHz;3.275GHz;3.28GHz;3.285GHz;3.29GHz;3.295GHz;3.3GHz;3.305GHz;3.31GHz;3.315GHz;3.32GHz;3.325GHz;3.33GHz;3.335GHz;3.34GHz;3.345GHz;3.35GHz;3.355GHz;3.36GHz;3.365GHz;3.37GHz;3.375GHz;3.38GHz;3.385GHz;3.39GHz;3.395GHz;3.4GHz;3.405GHz;3.41GHz;3.415GHz;3.42GHz;3.425GHz;3.43GHz;3.435GHz;3.44GHz;3.445GHz;3.45GHz;3.455GHz;3.46GHz;3.465GHz;3.47GHz;3.475GHz;3.48GHz;3.485GHz;3.49GHz;3.495GHz;3.5GHz;3.505GHz;3.51GHz;3.515GHz;3.52GHz;3.525GHz;3.53GHz;3.535GHz;3.54GHz;3.545GHz;3.55GHz;3.555GHz;3.56GHz;3.565GHz;3.57GHz;3.575GHz;3.58GHz;3.585GHz;3.59GHz;3.595GHz;3.6GHz;3.605GHz;3.61GHz;3.615GHz;3.62GHz;3.625GHz;3.63GHz;3.635GHz;3.64GHz;3.645GHz;3.65GHz;3.655GHz;3.66GHz;3.665GHz;3.67GHz;3.675GHz;3.68GHz;3.685GHz;3.69GHz;3.695GHz;3.7GHz;3.705GHz;3.71GHz;3.715GHz;3.72GHz;3.725GHz;3.73GHz;3.735GHz;3.74GHz;3.745GHz;3.75GHz;3.755GHz;3.76GHz;3.765GHz;3.77GHz;3.775GHz;3.78GHz;3.785GHz;3.79GHz;3.795GHz;3.8GHz;3.805GHz;3.81GHz;3.815GHz;3.82GHz;3.825GHz;3.83GHz;3.835GHz;3.84GHz;3.845GHz;3.85GHz;3.855GHz;3.86GHz;3.865GHz;3.87GHz;3.875GHz;3.88GHz;3.885GHz;3.89GHz;3.895GHz;3.9GHz;3.905GHz;3.91GHz;3.915GHz;3.92GHz;3.925GHz;3.93GHz;3.935GHz;3.94GHz;3.945GHz;3.95GHz;3.955GHz;3.96GHz;3.965GHz;3.97GHz;3.975GHz;3.98GHz;3.985GHz;3.99GHz;3.995GHz;4GHz;4.005GHz;4.01GHz;4.015GHz;4.02GHz;4.025GHz;4.03GHz;4.035GHz;4.04GHz;4.045GHz;4.05GHz;4.055GHz;4.06GHz;4.065GHz;4.07GHz;4.075GHz;4.08GHz;4.085GHz;4.09GHz;4.095GHz;4.1GHz;4.105GHz;4.11GHz;4.115GHz;4.12GHz;4.125GHz;4.13GHz;4.135GHz;4.14GHz;4.145GHz;4.15GHz;4.155GHz;4.16GHz;4.165GHz;4.17GHz;4.175GHz;4.18GHz;4.185GHz;4.19GHz;4.195GHz;4.2GHz;4.205GHz;4.21GHz;4.215GHz;4.22GHz;4.225GHz;4.23GHz;4.235GHz;4.24GHz;4.245GHz;4.25GHz;4.255GHz;4.26GHz;4.265GHz;4.27GHz;4.275GHz;4.28GHz;4.285GHz;4.29GHz;4.295GHz;4.3GHz;4.305GHz;4.31GHz;4.315GHz;4.32GHz;4.325GHz;4.33GHz;4.335GHz;4.34GHz;4.345GHz;4.35GHz;4.355GHz;4.36GHz;4.365GHz;4.37GHz;4.375GHz;4.38GHz;4.385GHz;4.39GHz;4.395GHz;4.4GHz;4.405GHz;4.41GHz;4.415GHz;4.42GHz;4.425GHz;4.43GHz;4.435GHz;4.44GHz;4.445GHz;4.45GHz;4.455GHz;4.46GHz;4.465GHz;4.47GHz;4.475GHz;4.48GHz;4.485GHz;4.49GHz;4.495GHz;4.5GHz;4.505GHz;4.51GHz;4.515GHz;4.52GHz;4.525GHz;4.53GHz;4.535GHz;4.54GHz;4.545GHz;4.55GHz;4.555GHz;4.56GHz;4.565GHz;4.57GHz;4.575GHz;4.58GHz;4.585GHz;4.59GHz;4.595GHz;4.6GHz;4.605GHz;4.61GHz;4.615GHz;4.62GHz;4.625GHz;4.63GHz;4.635GHz;4.64GHz;4.645GHz;4.65GHz;4.655GHz;4.66GHz;4.665GHz;4.67GHz;4.675GHz;4.68GHz;4.685GHz;4.69GHz;4.695GHz;4.7GHz;4.705GHz;4.71GHz;4.715GHz;4.72GHz;4.725GHz;4.73GHz;4.735GHz;4.74GHz;4.745GHz;4.75GHz;4.755GHz;4.76GHz;4.765GHz;4.77GHz;4.775GHz;4.78GHz;4.785GHz;4.79GHz;4.795GHz;4.8GHz;4.805GHz;4.81GHz;4.815GHz;4.82GHz;4.825GHz;4.83GHz;4.835GHz;4.84GHz;4.845GHz;4.85GHz;4.855GHz;4.86GHz;4.865GHz;4.87GHz;4.875GHz;4.88GHz;4.885GHz;4.89GHz;4.895GHz;4.9GHz;4.905GHz;4.91GHz;4.915GHz;4.92GHz;4.925GHz;4.93GHz;4.935GHz;4.94GHz;4.945GHz;4.95GHz;4.955GHz;4.96GHz;4.965GHz;4.97GHz;4.975GHz;4.98GHz;4.985GHz;4.99GHz;4.995GHz;5GHz;5.005GHz;5.01GHz;5.015GHz;5.02GHz;5.025GHz;5.03GHz;5.035GHz;5.04GHz;5.045GHz;5.05GHz;5.055GHz;5.06GHz;5.065GHz;5.07GHz;5.075GHz;5.08GHz;5.085GHz;5.09GHz;5.095GHz;5.1GHz;5.105GHz;5.11GHz;5.115GHz;5.12GHz;5.125GHz;5.13GHz;5.135GHz;5.14GHz;5.145GHz;5.15GHz;5.155GHz;5.16GHz;5.165GHz;5.17GHz;5.175GHz;5.18GHz;5.185GHz;5.19GHz;5.195GHz;5.2GHz;5.205GHz;5.21GHz;5.215GHz;5.22GHz;5.225GHz;5.23GHz;5.235GHz;5.24GHz;5.245GHz;5.25GHz;5.255GHz;5.26GHz;5.265GHz;5.27GHz;5.275GHz;5.28GHz;5.285GHz;5.29GHz;5.295GHz;5.3GHz;5.305GHz;5.31GHz;5.315GHz;5.32GHz;5.325GHz;5.33GHz;5.335GHz;5.34GHz;5.345GHz;5.35GHz;5.355GHz;5.36GHz;5.365GHz;5.37GHz;5.375GHz;5.38GHz;5.385GHz;5.39GHz;5.395GHz;5.4GHz;5.405GHz;5.41GHz;5.415GHz;5.42GHz;5.425GHz;5.43GHz;5.435GHz;5.44GHz;5.445GHz;5.45GHz;5.455GHz;5.46GHz;5.465GHz;5.47GHz;5.475GHz;5.48GHz;5.485GHz;5.49GHz;5.495GHz;5.5GHz;5.505GHz;5.51GHz;5.515GHz;5.52GHz;5.525GHz;5.53GHz;5.535GHz;5.54GHz;5.545GHz;5.55GHz;5.555GHz;5.56GHz;5.565GHz;5.57GHz;5.575GHz;5.58GHz;5.585GHz;5.59GHz;5.595GHz;5.6GHz;5.605GHz;5.61GHz;5.615GHz;5.62GHz;5.625GHz;5.63GHz;5.635GHz;5.64GHz;5.645GHz;5.65GHz;5.655GHz;5.66GHz;5.665GHz;5.67GHz;5.675GHz;5.68GHz;5.685GHz;5.69GHz;5.695GHz;5.7GHz;5.705GHz;5.71GHz;5.715GHz;5.72GHz;5.725GHz;5.73GHz;5.735GHz;5.74GHz;5.745GHz;5.75GHz;5.755GHz;5.76GHz;5.765GHz;5.77GHz;5.775GHz;5.78GHz;5.785GHz;5.79GHz;5.795GHz;5.8GHz;5.805GHz;5.81GHz;5.815GHz;5.82GHz;5.825GHz;5.83GHz;5.835GHz;5.84GHz;5.845GHz;5.85GHz;5.855GHz;5.86GHz;5.865GHz;5.87GHz;5.875GHz;5.88GHz;5.885GHz;5.89GHz;5.895GHz;5.9GHz;5.905GHz;5.91GHz;5.915GHz;5.92GHz;5.925GHz;5.93GHz;5.935GHz;5.94GHz;5.945GHz;5.95GHz;5.955GHz;5.96GHz;5.965GHz;5.97GHz;5.975GHz;5.98GHz;5.985GHz;5.99GHz;5.995GHz;6GHz'
+											Units='GHz'
+										$end 'SweepBase'
+									$end 'F'
+								$end 'SubSweeps'
+								$begin 'Traces'
+									$begin 'Trace2D'
+										name='NWA1_12:SolutionPointSet 2:Trace2D 1'
+										X(Desc='F', CatID=1, FuncID=0, IsInteger=false, Units='GHz', X='F')
+										Y(Desc='S21', CatID=3, FuncID=11, IsInteger=false, Units='', Y='dB(S21)')
+										$begin 'ExtTraceInfo'
+											NumPoints=4294967295
+											TraceType=0
+											Offset=0
+											XLabel=''
+											SamplingPeriod='0'
+										$end 'ExtTraceInfo'
+									$end 'Trace2D'
+								$end 'Traces'
+							$end 'SolutionPointSet'
+						$end 'SolutionPointSets'
+					$end 'SimDataExtractor'
+				$end 'Solution'
+				OptionsReferred=''
+				moredata('', false, '', '')
+				IsEnabled=true
+				VersionID=336
+				LinearFrequencyData(false, 0.1)
+			$end 'SimSetup'
+			$begin 'Version ID Map'
+				V=336
+				$begin 'Setup'
+					N='NWA1'
+					V=336
+					Soln(N='NWA1_12', V=336)
+				$end 'Setup'
+			$end 'Version ID Map'
+		$end 'Solutions'
+		SParamCircuitDef=false
+		Notes=$begin_cdata$		$end_cdata$
+		$begin 'AnimationSetups'
+		$end 'AnimationSetups'
+	$end 'HFCircuit'
+	$begin 'filterdesignstructure'
+		filtername='Filter1'
+		WindowPosition(52, 52, 1805, 848, true)
+		$begin 'Filter'
+			topology=0
+			passband=0
+			filteropts=224
+			$begin 'specifications'
+				mainspecs(5, 0, 1, 0, true)
+				terminations(1, 1, 50)
+				passband(1000, 1200, 1100, 200, 45, 0.01)
+				impedances(74, 40, 50, 250, 10, 0.1, 50, 200, 20, 1.2)
+				variables(1100, 1000, 1200, 1, 45, 74, 40, 50, 250, 10, 0.1, 50, 200)
+			$end 'specifications'
+			units(0, 3, 8, 9, 14, 15, 16, 19)
+			quality(100, 2, 200, 2, 5000, 2, 0.001)
+			$begin 'maincircuit'
+				terminations(50, 50)
+				$begin 'elements'
+					elementsize=0
+				$end 'elements'
+			$end 'maincircuit'
+			$begin 'userdefcct'
+				terminations(50, 50)
+				$begin 'elements'
+					elementsize=0
+				$end 'elements'
+			$end 'userdefcct'
+			$begin 'dimensions'
+				$begin 'parts'
+					partsize=0
+				$end 'parts'
+				$begin 'values'
+					variablesize=0
+				$end 'values'
+			$end 'dimensions'
+			$begin 'substrates'
+				medium(0)
+				medium(1, 1.27, 0.003, 9.8, 0, 0.00635, 1000, 0.00635, 1000)
+				medium(2, 0.635, 0.003, 9.8, 0, 0, 0, 0.003175, 1000, 0.003175, 1000)
+				medium(3, 0.635, 0.005, 9.8, 0.635, 0.003175, 1000)
+				medium(4, 15.875, 4.7625, 1, 0, 0.079375, 1000, 0.079375, 1000)
+				medium(5, 1.27, 1, 0, 0.00635, 1000, 0.00635, 1000)
+				medium(6, 14.2875, 1, 0.0714375, 1000)
+				medium(7, 72.136, 34.036)
+				medium(8, 1)
+				selected=1
+			$end 'substrates'
+			$begin 'otherprops'
+				plottype=5
+				textformat=3
+				showallparam=false
+				showschgrids=true
+			$end 'otherprops'
+			$begin 'analysis'
+				steps=201
+				lossymode=false
+				frqrange(0, 4000)
+				psbrange(1000, 1200)
+				lphp=true
+			$end 'analysis'
+		$end 'Filter'
+	$end 'filterdesignstructure'
+	$begin 'DataInstances'
+		DesignEditor='TopLevel'
+		Refdes('12', 'U2')
+		$begin 'CompInstances'
+			$begin 'Compinst'
+				ID='12'
+				Status='Status'
+				CompName='Bridge275'
+				AutoGenerated=false
+				AutoGeneratedName=''
+				GatesInUse()
+				$begin 'Properties'
+					TextProp('ID', 'SRID', '', '12')
+				$end 'Properties'
+			$end 'Compinst'
+		$end 'CompInstances'
+		$begin 'Instance'
+			DesignEditor='Bridge275'
+			ID='12'
+			Refdes('29', 'C1')
+			Refdes('30', 'C2')
+			Refdes('31', 'C3')
+			Refdes('32', 'C4')
+			Refdes('33', 'C5')
+			Refdes('34', 'C6')
+			Refdes('35', 'C7')
+			Refdes('36', 'U1')
+			$begin 'HFCircuit'
+				$begin 'WindowPosition'
+					$begin 'EditorWindow'
+						Circuit(Schematic(View(WindowPos(5, -1, -1, -8, -31, 104, 104, 1853, 896), Extent(-0.507, -0.507, 1.015, 1.015, 3779.52755904, 3779.52755904, -0.0530291647097611, 0.030988000000002, 0.0988290909091008, 0.0406400000000041, 4.58333333335121))), Layout())
+					$end 'EditorWindow'
+					$begin 'ReportWindow'
+						'XY Plot 1'(Report2D(View(WindowPos(3, -1, -1, -8, -31, 26, 26, 1779, 822))))
+					$end 'ReportWindow'
+				$end 'WindowPosition'
+				$begin 'Reports'
+					$begin 'Report2D'
+						name='XY Plot 1'
+						ReportType=0
+						DisplayType=1
+						Title=''
+						Domain=''
+						$begin 'Graph2Ds'
+							$begin 'Graph2D'
+								TraceName='NWA1_12:SolutionPointSet 1:Trace2D 1'
+								Type='Continuous'
+								Axis='Y1'
+							$end 'Graph2D'
+							$begin 'Graph2D'
+								TraceName='NWA1_12:SolutionPointSet 2:Trace2D 1'
+								Type='Continuous'
+								Axis='Y1'
+							$end 'Graph2D'
+						$end 'Graph2Ds'
+						$begin 'PlotInfo'
+							PlotType='XYPlot'
+							Frozen=false
+							MarkDirty=false
+							Subtitle=''
+							Filename='Bridge275'
+							CircuitTitle='<Design>'
+							Title='XY Plot 1'
+							DateLabel='<08 Dec 2023>'
+							TimeLabel='<16:59:09>'
+							Name='Ansoft Corporation'
+							DefaultTitle=false
+							Arrows=false
+							ZoomMode=false
+							ZoomType=1
+							UserSelectedTrace=-1
+							Rho=0
+							RhoMin=0
+							MarkerType='NoMarker'
+							MarkerScale='Mag-Phase'
+							UserSelectedMarkerPoint=0
+							SymbolDisplay=false
+							SymbolInterval=15
+							$begin 'Axis'
+								$begin 'Axis0'
+									AxisType='XAxis'
+									AxisIndex=0
+									AxisScale='Linear'
+									AxisName='F'
+									AxisLabel='DEFAULT'
+									AxisMax=6000000000
+									AxisMin=2000000000
+									AxisMajorDivision=4
+									AxisMinorDivision=5
+									AxisManualRescale=false
+									AxisAutoUnits=true
+									AxisSide='Left'
+									$begin 'Units'
+										UnitFieldWidth=4
+										UnitPrecision=2
+										ScientificNotation=0
+										CircuitUnits='Giga'
+										BaseType='Frequency'
+									$end 'Units'
+									$begin 'Attribute'
+										Color=0
+										ColorOdd=65535
+										LineWidth=1
+										LineStyle=0
+										FillStyle=0
+										Visible=true
+										$begin 'Font'
+											FaceName='Arial'
+											FontHeight=160
+											FontWeight=700
+											FontOrientation=0
+											FontEscapement=0
+											FontItalics=false
+											FontUnderline=false
+											FontStrikeOut=false
+										$end 'Font'
+									$end 'Attribute'
+								$end 'Axis0'
+								$begin 'Axis1'
+									AxisType='YAxis'
+									AxisIndex=1
+									AxisScale='Linear'
+									AxisName='Y 1 '
+									AxisLabel='DEFAULT'
+									AxisMax=-0
+									AxisMin=-100
+									AxisMajorDivision=5
+									AxisMinorDivision=4
+									AxisManualRescale=false
+									AxisAutoUnits=true
+									AxisSide='Left'
+									$begin 'Units'
+										UnitFieldWidth=4
+										UnitPrecision=2
+										ScientificNotation=0
+										CircuitUnits='NoUnits'
+										BaseType='None'
+									$end 'Units'
+									$begin 'Attribute'
+										Color=0
+										ColorOdd=65535
+										LineWidth=1
+										LineStyle=0
+										FillStyle=0
+										Visible=true
+										$begin 'Font'
+											FaceName='Arial'
+											FontHeight=160
+											FontWeight=700
+											FontOrientation=0
+											FontEscapement=0
+											FontItalics=false
+											FontUnderline=false
+											FontStrikeOut=false
+										$end 'Font'
+									$end 'Attribute'
+								$end 'Axis1'
+							$end 'Axis'
+							DisplayMinorGrid=true
+							InitialGrid=1
+							DisplayGridLabel=true
+							DisplayTraceLabel=false
+							$begin 'Trace'
+								$begin 'TraceInfo0'
+									TraceType='Continuous'
+									$begin 'Attribute'
+										Color=16711680
+										ColorOdd=0
+										LineWidth=10
+										LineStyle=0
+										FillStyle=600
+										Visible=false
+										$begin 'Font'
+											FaceName='Arial'
+											FontHeight=160
+											FontWeight=700
+											FontOrientation=0
+											FontEscapement=0
+											FontItalics=false
+											FontUnderline=false
+											FontStrikeOut=false
+										$end 'Font'
+									$end 'Attribute'
+								$end 'TraceInfo0'
+								$begin 'TraceInfo1'
+									TraceType='Continuous'
+									$begin 'Attribute'
+										Color=255
+										ColorOdd=0
+										LineWidth=10
+										LineStyle=0
+										FillStyle=600
+										Visible=false
+										$begin 'Font'
+											FaceName='Arial'
+											FontHeight=160
+											FontWeight=700
+											FontOrientation=0
+											FontEscapement=0
+											FontItalics=false
+											FontUnderline=false
+											FontStrikeOut=false
+										$end 'Font'
+									$end 'Attribute'
+								$end 'TraceInfo1'
+							$end 'Trace'
+							$begin 'AllAttributes'
+								BackGroundColor=16777215
+								ContrastColor=16777215
+								$begin 'TitleAttr'
+									$begin 'Attribute'
+										Color=0
+										ColorOdd=65535
+										LineWidth=1
+										LineStyle=0
+										FillStyle=0
+										Visible=true
+										$begin 'Font'
+											FaceName='Arial'
+											FontHeight=168
+											FontWeight=700
+											FontOrientation=0
+											FontEscapement=0
+											FontItalics=false
+											FontUnderline=false
+											FontStrikeOut=false
+										$end 'Font'
+									$end 'Attribute'
+								$end 'TitleAttr'
+								$begin 'MajorGridAttr'
+									$begin 'Attribute'
+										Color=8421504
+										ColorOdd=65535
+										LineWidth=8
+										LineStyle=0
+										FillStyle=0
+										Visible=true
+										$begin 'Font'
+											FaceName='Arial'
+											FontHeight=100
+											FontWeight=700
+											FontOrientation=0
+											FontEscapement=0
+											FontItalics=false
+											FontUnderline=false
+											FontStrikeOut=false
+										$end 'Font'
+									$end 'Attribute'
+								$end 'MajorGridAttr'
+								$begin 'MinorGridAttr'
+									$begin 'Attribute'
+										Color=12632256
+										ColorOdd=65535
+										LineWidth=1
+										LineStyle=0
+										FillStyle=0
+										Visible=true
+										$begin 'Font'
+											FaceName='Arial'
+											FontHeight=100
+											FontWeight=700
+											FontOrientation=0
+											FontEscapement=0
+											FontItalics=false
+											FontUnderline=false
+											FontStrikeOut=false
+										$end 'Font'
+									$end 'Attribute'
+								$end 'MinorGridAttr'
+							$end 'AllAttributes'
+						$end 'PlotInfo'
+					$end 'Report2D'
+				$end 'Reports'
+				$begin 'DCDisplayOption'
+					UseDefault=true
+					Current(true, 16711807, 3)
+					Voltage(true, 128, 3)
+					Font('Arial', 'Regular', 8)
+				$end 'DCDisplayOption'
+			$end 'HFCircuit'
+			$begin 'TopLayout'
+				DefaultUnits='mm'
+				DefaultAngleUnits='deg'
+				majorSize='10'
+				minorSize='1'
+				angleSnap='5deg'
+				PixelSnapTolerance=20
+				SnapTargetVertex_on=true
+				SnapTargetEdgeCenter_on=true
+				SnapTargetObjCenter_on=false
+				SnapTargetEdge_on=false
+				SnapTargetElecConnection_on=false
+				SnapTargetIntersection_on=false
+				SnapTargetGrid_on=true
+				SnapSourceVertex_on=true
+				SnapSourceEdgeCenter_on=true
+				SnapSourceObjCenter_on=false
+				SnapSourceEdge_on=false
+				SnapSourceElecConnection_on=false
+				$begin 'TextStyles'
+					TextStyle(N='<DefaultAnnotation>', F='Arial', Hght=12, Scale=false)
+					TextStyle(N='<DefaultPlotter>', Plot=true, F='RomanSimplex', Hght=5, HghtUnt='mm')
+					TextStyle(N='<DefaultMeasure>', Plot=true, F='RomanSimplex', Hght=10, Scale=false)
+					TextStyle(N='Small', F='Arial', Hght=5, Scale=false)
+					TextStyle(N='Large', F='Arial', Hght=15, Scale=false)
+					TextStyle(N='Notes', F='Arial', Hght=10, Scale=false)
+				$end 'TextStyles'
+				$begin 'TraceStyles'
+					TraceStyle(name='2mil', size='2mil', bendStyle=0, capStyle=0)
+					TraceStyle(name='5mil', size='5mil', bendStyle=0, capStyle=0)
+					TraceStyle(name='10mil', size='10mil', bendStyle=0, capStyle=0)
+					TraceStyle(name='20mil', size='20mil', bendStyle=0, capStyle=0)
+				$end 'TraceStyles'
+				'current via style'=''
+				'current pin style'=''
+				defaultholesize='25mil'
+				fillMode=false
+				drawMode=true
+				reversed=false
+				useFixedDrawingResolution=false
+				DrawingResolution='0.002mm'
+				snapToPort=true
+				showGrid=true
+				'show connection points'=true
+				'display vertex labels'=false
+				'preview selection'=false
+				'rectangle description'=0
+				majorColor=16772075
+				minorColor=16774645
+				currentTextStyle=0
+				currentTraceStyle=0
+				'background color'=16777215
+				'primary selection color'=255
+				'secondary selection color'=3289800
+				'sym footprint scaling'=2
+				prevBounds(-1000, -1000, 1000, 1000)
+				prevMapFactor(1000, 1000)
+				prevOrigin(0, 0)
+				prevViewExtent(0, 0)
+				prevZoomScale=1
+				pageExtent(-0.1, -0.1, 0.1, 0.1)
+				$begin 'GerberPageSetup'
+				$end 'GerberPageSetup'
+			$end 'TopLayout'
+		$end 'Instance'
+	$end 'DataInstances'
+$end 'AnsoftProject'
