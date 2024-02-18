@@ -1,0 +1,22 @@
+
+hpeesofsim (*) 595.shp Oct 31 2023, MINT version 5
+    (64-bit windows built: Tue Oct 31, 2023 22:23:19 +0000)
+
+
+***** Simulation started at Thu Feb 15 11:47:57 2024
+      Running on host: "DESKTOP-45KVSD2"
+      In Directory: "C:\Users\Youssef\Desktop\UCF\Spring 2024\RF Active Circuits\Lab\Lab1\Lab1_wrk\data"
+      Process ID: 24292
+
+
+SP SP1[1] <Lab1_lib:plotting:schematic>   freq=(500 MHz->2 GHz)
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    Data in the Touchstone file `C:/Users/Youssef/Desktop/UCF/Spring 2024/RF Active Circuits/Lab/Lab1/S Measurements/Unmatched/IND_1_8_NH.S1P'
+    does not cover the requested value of `freq'.
+    Therefore, the required data was obtained by extrapolation.
+
+
+
+Resource usage:
+  Total stopwatch time     =     2.95 seconds.
+
