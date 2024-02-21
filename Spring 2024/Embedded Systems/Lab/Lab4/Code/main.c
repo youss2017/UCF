@@ -135,7 +135,6 @@ __interrupt void ISR_PORT1()
     {
         ToggleGreenLED();
     }
-    P1IFG &= ~(BUTTON1 | BUTTON2);
 #else
     if (IsButton1Pressed())
     {
@@ -156,8 +155,8 @@ __interrupt void ISR_PORT1()
     // delay 20ms to combact button debouncing
     __delay_cycles(5e5);
     // clear interrupt flags
-    P1IFG &= ~(BUTTON1 | BUTTON2);
 #endif
+    P1IFG &= ~(BUTTON1 | BUTTON2);
 }
 
 void ContinousModeInterrupt()
