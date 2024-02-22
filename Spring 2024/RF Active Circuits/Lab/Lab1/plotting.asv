@@ -1,5 +1,0 @@
-close all;
-clear all;
-clc;
-s_resistor = sparameters('S Measurements/TRL/1R.S1P');
-smithplot(s_resistor,  'TitleTop', "S Measurements of 50 ohm Resistor (TRL)");

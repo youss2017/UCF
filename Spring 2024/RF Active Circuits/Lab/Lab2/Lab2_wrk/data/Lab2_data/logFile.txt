@@ -1,0 +1,20 @@
+
+hpeesofsim (*) 571.shp Nov  8 2022, MINT version 5
+    (64-bit windows built: Wed Nov 09, 2022 05:38:21 +0000)
+
+
+***** Simulation started at Thu Feb 22 08:51:48 2024
+      Running on host: "DESKTOP-339EFSV"
+      In Directory: "U:\Spring 2024\RF Active Circuits\Lab\Lab2\Lab2_wrk\data"
+      Process ID: 21620
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with only one device attached (topology corrected): 2
+
+
+SP SP1[1] <Lab2_lib:Lab2:Matching>   freq=(300 MHz->10 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     0.70 seconds.
+

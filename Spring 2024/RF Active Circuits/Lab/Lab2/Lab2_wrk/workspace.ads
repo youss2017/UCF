@@ -1,0 +1,42 @@
+<ADSWorkspace Revision="9" Version="100">
+    <Workspace Name="">
+        <LibraryDefs Name="lib.defs" />
+        <Library Name="ads_standard_layers" />
+        <Library Name="ads_schematic_layers" />
+        <Library Name="empro_standard_layers" />
+        <Library Name="ads_builtin" />
+        <Library Name="ads_standard_layers_ic" />
+        <Library Name="ads_schematic_layers_ic" />
+        <Library Name="ads_schematic_ports_ic" />
+        <Library Name="ads_rflib" />
+        <Library Name="ads_sources" />
+        <Library Name="ads_simulation" />
+        <Library Name="ads_tlines" />
+        <Library Name="ads_bondwires" />
+        <Library Name="ads_datacmps" />
+        <Library Name="ads_behavioral" />
+        <Library Name="ads_textfonts" />
+        <Library Name="ads_common_cmps" />
+        <Library Name="ads_designs" />
+        <Library Name="ads_pelib" />
+        <Library Name="ads_serdes_ref_channel" />
+        <ConfigFile Name="de_sim.cfg" />
+        <ConfigFile Name="hpeesofsim.cfg" />
+        <Preferences Name="layout.prf" />
+        <Preferences Name="schematic.prf" />
+        <Library Name="Lab2_lib" />
+        <Log Name="search_history.log" />
+        <Preferences Name="Lab2_lib_lay.prf" />
+        <Cell Name="Lab2_lib:Lab2" />
+        <Log Name="netlist.log" />
+        <Dataset Name="Lab2.ds" />
+        <Data_Files Name="Lab2.ds" />
+        <Data_Files Name="Lab2_data\logFile.txt" />
+        <ConfigFile Name="linecalc.cfg" />
+        <Data_Display Name="Lab2.dds" />
+        <Preferences Name="Lab2_lib_sch.prf" />
+        <ConfigFile Name="dds.cfg" />
+        <Substrate Name="Lab2_lib:substrate1.subst" />
+        <Log Name="readegs.log" />
+    </Workspace>
+</ADSWorkspace>

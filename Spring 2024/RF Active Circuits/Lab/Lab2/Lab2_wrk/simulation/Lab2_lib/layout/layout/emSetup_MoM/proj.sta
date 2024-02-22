@@ -1,0 +1,43 @@
+==============================================================================
+
+                  ------ MOMENTUM STATISTICS (MW mode) ------
+
+              Momentum MomEngine_64 2023.10.445 (*) built: Nov  4 2022
+                           Thu Feb 22 09:30:47 2024
+
+==============================================================================
+
+
+------------------------------------------------------------------------------
+MESH
+------------------------------------------------------------------------------
+ Frequency          : 10 GHz
+
+ Rectangular cells  : 118903
+ Quadrangular cells : 1
+ Triangular cells   : 2
+ Via cells          : 0
+
+ Edge currents      : 237310
+
+------------------------------------------------------------------------------
+SOLVER                        USER TIME      ELAPSED TIME      MEMORY         
+PROCESSES                      (h:m:s)          (h:m:s)         (MB)          
+------------------------------------------------------------------------------
+
+SIMULATION SET-UP
+-----------------
+ Initialization           |     0: 0:20   |     0: 0:28   |    304.35   
+ Ports analysis           |     0: 0: 0   |     0: 0: 0   |      0.00   
+ Mesh processing          |     0: 0:55   |     0: 1: 2   |    682.45   
+
+ Matrix size : 237310
+ Reduced matrix size : 234639
+ Estimated process size : 63263.82 MB
+
+ Simulation temperature : 298.15 K
+
+1. SIMULATION FREQUENCY = 0 Hz 
+-------------------------
+ Green functions          |     0: 0: 0   |     0: 0: 0   |      1.49   
+ Basis creation           |     0: 1:23   |     0: 1:11   |   4360.25   
