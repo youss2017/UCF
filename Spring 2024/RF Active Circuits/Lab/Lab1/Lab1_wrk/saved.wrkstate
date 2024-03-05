@@ -1,9 +1,8 @@
 <!DOCTYPE SaveWorkspaceState>
 <SaveWorkspaceState>
     <Windows>
-        <Schematic lib="Lab1_lib" height="766" geom="1,0,1,210,105,1200,766,1500,1000" y1="79" width="1200" cell="Lab1" x1="209" view="schematic"/>
-        <Schematic lib="Lab1_lib" height="766" geom="1,0,1,230,125,1200,766,1500,1000" y1="99" width="1200" cell="plotting" x1="229" view="schematic"/>
-        <DDS name="plotting.dds"/>
+        <Schematic height="766" y1="79" geom="1,0,0,210,105,1200,766,1500,1000" cell="Lab1" view="schematic" x1="209" width="1200" lib="Lab1_lib"/>
+        <Schematic height="766" y1="99" geom="1,0,0,230,125,1200,766,1500,1000" cell="plotting" view="schematic" x1="229" width="1200" lib="Lab1_lib"/>
     </Windows>
-    <MainWindowTab tab="1"/>
+    <MainWindowTab tab="2"/>
 </SaveWorkspaceState>

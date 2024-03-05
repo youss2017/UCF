@@ -1,3 +1,5 @@
 INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
 DEFINE Lab1_lib Lab1_lib
 ASSIGN Lab1_lib libMode shared
+DEFINE AT414xx_lib $HOME/Desktop/AT414xx_lib/AT414xx_lib
+ASSIGN AT414xx_lib libMode shared
