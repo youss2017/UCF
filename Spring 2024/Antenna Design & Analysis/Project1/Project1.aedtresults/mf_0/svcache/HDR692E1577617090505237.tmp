@@ -1,6 +1,6 @@
 SimValueCacheVersionID=1
 $begin 'SimValueInfos'
-	NextUniqueID=2
+	NextUniqueID=20
 	MoveBackwards=false
 	$begin 'SimValue'
 		ID=0
@@ -18,6 +18,150 @@ $begin 'SimValueInfos'
 			MatrixSize(0, 0)
 		$end 'SimValueParams'
 	$end 'SimValue'
+	$begin 'SimValue'
+		ID=2
+		$begin 'SimValueParams'
+			QuantityName='Zot(Center_Pin_T1,Center_Pin_T1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=3
+		$begin 'SimValueParams'
+			QuantityName='Passivity'
+			ValueState(90, 15, 1, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=4
+		$begin 'SimValueParams'
+			QuantityName='Volume(Element_1)'
+			ValueState(787, 14, 1, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=5
+		$begin 'SimValueParams'
+			QuantityName='Zt(Center_Pin_T1,Center_Pin_T1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=6
+		$begin 'SimValueParams'
+			QuantityName='PeakDirectivity'
+			ValueState(90, 15, 0, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=7
+		$begin 'SimValueParams'
+			QuantityName='PeakGain'
+			ValueState(90, 15, 0, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=8
+		$begin 'SimValueParams'
+			QuantityName='Gamma(1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=9
+		$begin 'SimValueParams'
+			QuantityName='Zo(1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=10
+		$begin 'SimValueParams'
+			QuantityName='Yt(Center_Pin_T1,Center_Pin_T1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=11
+		$begin 'SimValueParams'
+			QuantityName='VSWRt(Center_Pin_T1)'
+			ValueState(90, 15, 1, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=12
+		$begin 'SimValueParams'
+			QuantityName='RealizedGainTotal'
+			ValueState(90, 15, 0, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=13
+		$begin 'SimValueParams'
+			QuantityName='RealizedGainPhi'
+			ValueState(90, 15, 0, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=14
+		$begin 'SimValueParams'
+			QuantityName='RealizedGainTheta'
+			ValueState(90, 15, 0, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=15
+		$begin 'SimValueParams'
+			QuantityName='PolarizationRatioCircularLHCP'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=16
+		$begin 'SimValueParams'
+			QuantityName='PolarizationRatioCircularRHCP'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=17
+		$begin 'SimValueParams'
+			QuantityName='AxialRatioValue'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=18
+		$begin 'SimValueParams'
+			QuantityName='rETotal'
+			ValueState(67, 9, 1, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=19
+		$begin 'SimValueParams'
+			QuantityName='DirTotal'
+			ValueState(90, 15, 0, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
 $end 'SimValueInfos'
 $begin 'SimValueCache'
 	$begin 'DesignMap'
@@ -28,35 +172,9 @@ $begin 'SimValueCache'
 			$end 'ContextMap'
 			$begin 'ContextMap'
 				SolutionID=47
-				$begin 'VersionMap'
-					$begin 'ReportTypeSolnDef'
-						ReportType=3
-						SimValueContext(0, 0, 2, 0, false, false, 1, 1, 0, 1, 1, '', 0, 0)
-					$end 'ReportTypeSolnDef'
-					$begin 'MajorVVMap'
-						VersionID=0
-						$begin 'MinorVVMap'
-							MajorVariation='Freq=\'0.55000000000000004GHz\''
-							MinorCacheFile='min558215776170907908420.tmp'
-						$end 'MinorVVMap'
-					$end 'MajorVVMap'
-				$end 'VersionMap'
 			$end 'ContextMap'
 			$begin 'ContextMap'
 				SolutionID=51
-				$begin 'VersionMap'
-					$begin 'ReportTypeSolnDef'
-						ReportType=1
-						SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-					$end 'ReportTypeSolnDef'
-					$begin 'MajorVVMap'
-						VersionID=0
-						$begin 'MinorVVMap'
-							MajorVariation=''
-							MinorCacheFile='min558215776170907908421.tmp'
-						$end 'MinorVVMap'
-					$end 'MajorVVMap'
-				$end 'VersionMap'
 			$end 'ContextMap'
 		$end 'SolutionMap'
 	$end 'DesignMap'

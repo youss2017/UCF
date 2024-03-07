@@ -404,21 +404,45 @@ uint8_t uart_read_char(void)
 // Clock: SMCLK @ 1 MHz (1,000,000 Hz)
 void Initialize_UART(void)
 {
-	// Configure pins to UART functionality
-	P3SEL1 &= ~(BIT4 | BIT5);
-	P3SEL0 |= (BIT4 | BIT5);
-	// Main configuration register
-	UCA1CTLW0 = UCSWRST; // Engage reset; change all the fields to zero
-	// Most fields in this register, when set to zero, correspond to the
-	// popular configuration
-	UCA1CTLW0 |= UCSSEL__SMCLK; // Set clock to SMCLK
-	// Configure the clock dividers and modulators (and enable oversampling)
-	UCA1BRW = 6; // divider
-	// Modulators: UCBRF = 8 = 1000 --> UCBRF3 (bit #3)
-	// UCBRS = 0x20 = 0010 0000 = UCBRS5 (bit #5)
-	UCA1MCTLW = UCBRF3 | UCBRS5 | UCOS16;
-	// Exit the reset state
-	UCA1CTLW0 &= ~UCSWRST;
+    // Configure pins to UART functionality
+    P3SEL1 &= ~(BIT4 | BIT5);
+    P3SEL0 |= (BIT4 | BIT5);
+    // Main configuration register
+    UCA1CTLW0 = UCSWRST; // Engage reset; change all the fields to zero
+    // Most fields in this register, when set to zero, correspond to the
+    // popular configuration
+    UCA1CTLW0 |= UCSSEL__SMCLK; // Set clock to SMCLK
+    // Configure the clock dividers and modulators (and enable oversampling)
+    UCA1BRW = 6; // divider
+    // Modulators: UCBRF = 8 = 1000 --> UCBRF3 (bit #3)
+    // UCBRS = 0x20 = 0010 0000 = UCBRS5 (bit #5)
+    UCA1MCTLW = UCBRF3 | UCBRS5 | UCOS16;
+    // Exit the reset state
+    UCA1CTLW0 &= ~UCSWRST;
+}
+
+// Configure UART to the popular configuration
+// 9600 baud, 8-bit data, LSB first, no parity bits, 1 stop bit
+// no flow control, oversampling reception
+// Clock: SMCLK @ 1 MHz (1,000,000 Hz)
+void Initialize_UART_2(void)
+{
+    // Configure pins to UART functionality
+    P3SEL1 &= ~(BIT4 | BIT5);
+    P3SEL0 |= (BIT4 | BIT5);
+    // Main configuration register
+    UCA1CTLW0 = UCSWRST; // Engage reset; change all the fields to zero
+    // Most fields in this register, when set to zero, correspond to the
+    // popular configuration
+    UCA1CTLW0 |= UCSSEL__SMCLK; // Set clock to SMCLK
+    // Configure the clock dividers and modulators (and enable oversampling)
+    UCA1BRW = 6; // divider
+    // Modulators: UCBRF = 8 = 1000 --> UCBRF3 (bit #3)
+    // UCBRS = 0x20 = 0010 0000 = UCBRS5 (bit #5)
+    UCA1MCTLW = UCBRS7 | UCBRS6 | UCBRS5 | UCBRS3 | UCBRS2 | UCBRS1;
+    UCA1MCTLW &= ~UCOS16;
+    // Exit the reset state
+    UCA1CTLW0 &= ~UCSWRST;
 }
 
 void LightRedLED(bool state)
