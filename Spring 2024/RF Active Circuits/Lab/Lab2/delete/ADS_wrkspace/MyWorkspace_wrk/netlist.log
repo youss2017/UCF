@@ -1,14 +1,19 @@
-; Top Design: "MyLibrary_lib:cell_1:schematic"
+; Top Design: "MyLibrary_lib:Bias:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary_lib:cell_1:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
-model MSub1 MSUB H=32 mil Er=3.55 Mur=1 Cond=1.0E+50 Hu=3.93701e+34 mil T=35 um TanD=.0027 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
-C:C1  N__2 0 C=2.56 pF 
-L:L1  N__5 N__2 L=2.36 nH Noise=yes  
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary_lib:Bias:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+model Rogers_4003C MSUB H=32 mil Er=3.55 Mur=1 Cond=1.0E+50 Hu=3.93701e+34 mil T=35 um TanD=.0027 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+MRSTUB:Stub1  N__1 Subst="Rogers_4003C" Wi=25.0 mil L=1.7878e3 mil opt{ 889 mil to 2670 mil } Angle=95 opt{ 35 to 105 } 
+MLIN2:TL1  N__1 N__2 Subst="Rogers_4003C" W=20 mil L=1.70065e3 mil opt{ 889 mil to 2670 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL2  N__0 N__4 Subst="Rogers_4003C" W=70 mil L=500 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL3  N__5 N__3 Subst="Rogers_4003C" W=70 mil L=500 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+Port:TermG1  N__0 0 Num=1 Z=50 Ohm Noise=yes 
+Port:TermG2  N__3 0 Num=2 Z=50 Ohm Noise=yes 
+MTEE_ADS:Tee1  N__5 N__4 N__2 Subst="Rogers_4003C" W1=70 mil W2=70 mil W3=20 mil 
 S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
 SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
 
-SweepPlan: SP1_stim Start=0.01 GHz Stop=10 GHz Step=0.1 GHz 
+SweepPlan: SP1_stim Start=0.3 GHz Stop=10.0 GHz Step=.1 GHz 
 
 OutputPlan:SP1_Output \
       Type="Output" \
@@ -19,22 +24,9 @@ OutputPlan:SP1_Output \
 
 #load "python","LinearCollapse"
 Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
-Port:TermG1  N__5 0 Num=1 Z=50 Ohm Noise=yes 
-Port:TermG2  N__2 0 Num=2 Z=50 Ohm Noise=yes 
-MLIN2:TL3  N__3 N__10 Subst="MSub1" W=70 mil L=402 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-TLIN:TL2  N__6 N__7 Z=50.0 Ohm E=30 F=1 GHz 
-TLIN:TL1  N__1 N__6 Z=50.0 Ohm E=20.4 F=1 GHz 
-Port:TermG3  N__1 0 Num=3 Z=50 Ohm Noise=yes 
-Port:TermG4  N__6 0 Num=4 Z=50 Ohm Noise=yes 
-MLIN2:TL4  N__10 N__9 Subst="MSub1" W=70 mil L=592 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-Port:TermG5  N__10 0 Num=5 Z=50 Ohm Noise=yes 
-Port:TermG6  N__3 0 Num=6 Z=50 Ohm Noise=yes 
-MTEE_ADS:Tee1  N__11 N__12 N__4 Subst="MSub1" W1=70 mil W2=70 mil W3=70 mil 
-MLIN2:TL5  N__4 N__14 Subst="MSub1" W=70 mil L=592 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MLIN2:TL6  N__13 N__11 Subst="MSub1" W=70 mil L=402 mil Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-Port:TermG7  N__12 0 Num=7 Z=50 Ohm Noise=yes 
-Port:TermG8  N__13 0 Num=8 Z=50 Ohm Noise=yes 
-#uselib "ckt" , "S2P"
-S2P:SNP1  N__15 N__17 0 File="U:\Spring 2024\RF Active Circuits\Lab\Lab2\delete\SnP\Matching.s2p" Type="touchstone" InterpMode="linear" InterpDom="" ExtrapMode="constant" Temp=27.0 CheckPassivity=0 
-Port:TermG9  N__15 0 Num=9 Z=50 Ohm Noise=yes 
-Port:TermG10  N__17 0 Num=10 Z=50 Ohm Noise=yes 
+
+Optim:"Optim1" OptimType="hpVMO" ErrorForm="L2" SAProgressReport=0 MaxIters=50 P=2 DesiredError=0.0 StatusLevel=4 FinalAnalysis="None" NormalizeGoals=yes SetBestValues=yes SaveSolns=yes SaveGoals=yes SaveOptimVars=no UpdateDataset=yes SaveNominal=no SaveAllIterations=no UseAllOptVars=yes UseAllGoals=yes SaveCurrentEF=no InitialTempControlMode=0 SANumTrialsPerIter=10 NumShootsPerIter=20 SATempControlAlpha=0.8 EnableCockpit=yes NormalizeError=yes SaveAllTrials=no UseAdvTermCriteria=no CostRelativeTol=1.0e-8 LimitOfContSmallImprovement=5 
+
+OptimGoal:OptimGoal1 Expr="dB(S(1,1))" SimInstanceName="SP1" Weight=1 \
+SpecLimitLine[1]="OptimGoal1_limit1" 
+SpecLimitLine:"OptimGoal1_limit1" Type="LessThan" Max=-35 Weight=1 

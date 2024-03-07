@@ -1,0 +1,57 @@
+
+hpeesofsim (*) 571.shp Nov  8 2022, MINT version 5
+    (64-bit windows built: Wed Nov 09, 2022 05:38:21 +0000)
+
+
+***** Simulation started at Sun Mar  3 22:41:56 2024
+      Running on host: "DESKTOP-339EFSV"
+      In Directory: "U:\Spring 2024\RF Active Circuits\Lab\Lab2\delete\ADS_wrkspace\MyWorkspace_wrk\data"
+      Process ID: 32668
+
+
+SP SP1[1] <MyLibrary_lib:biasing_opt:schematic>   freq=(100 MHz->10 GHz)
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    A virtual resistance of 1 TOhms was added between each node and ground,
+    during AC/SP analysis at 100 MHz.
+
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    A virtual resistance of 1 TOhms was added between each node and ground,
+    during AC/SP analysis at 200 MHz.
+
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    A virtual resistance of 1 TOhms was added between each node and ground,
+    during AC/SP analysis at 300 MHz.
+
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    A virtual resistance of 1 TOhms was added between each node and ground,
+    during AC/SP analysis at 400 MHz.
+
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    A virtual resistance of 1 TOhms was added between each node and ground,
+    during AC/SP analysis at 500 MHz.
+
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    A virtual resistance of 1 TOhms was added between each node and ground,
+    during AC/SP analysis at 600 MHz.
+
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    A virtual resistance of 1 TOhms was added between each node and ground,
+    during AC/SP analysis at 700 MHz.
+
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    A virtual resistance of 1 TOhms was added between each node and ground,
+    during AC/SP analysis at 800 MHz.
+
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    A virtual resistance of 1 TOhms was added between each node and ground,
+    during AC/SP analysis at 900 MHz.
+
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    A virtual resistance of 1 TOhms was added between each node and ground,
+    during AC/SP analysis at 1 GHz.
+
+
+
+Resource usage:
+  Total stopwatch time     =     0.56 seconds.
+

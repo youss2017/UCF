@@ -1,5 +1,5 @@
 jobName=EmPpMsgs
 jobType=emprep
-designName=MyLibrary_lib:Biasing:layout
+designName=MyLibrary_lib:pain:layout
 ruleFilePath=
 addInfo="EM preprocessor messages displayed as DRC errors"

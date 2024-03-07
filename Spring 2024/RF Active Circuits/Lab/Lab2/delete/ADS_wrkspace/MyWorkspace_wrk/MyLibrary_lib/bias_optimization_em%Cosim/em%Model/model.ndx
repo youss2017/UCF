@@ -1,0 +1,8 @@
+COMPONENT: em_data;
+NROFMODELS: 1;
+MODEL: RF, Layout, 0, 10, 20, 45, 0, 1;
+SUBSTRATE: definedInState;
+NROFPARAM: 2;
+PARAM: StubLen, 0.0, 0.0, 0.0, 0.00299999, 2.54e-9, None, -1;
+PARAM: Ang, 0.0, 0.0, 0.0, 10, 0.1, None, -1;
+NROFSAMPLES: 0;

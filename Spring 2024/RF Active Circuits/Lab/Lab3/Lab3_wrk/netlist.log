@@ -1,0 +1,80 @@
+; Top Design: "Lab3_lib:Lab-3:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="Lab3_lib:Lab-3:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: AT414xx_lib
+; Cell Name: AT414die
+; View Name: schematic
+define AT414die ( P1  P2  P3 ) 
+;parameters 
+model BJTM1 BJT NPN=1 PNP=0 Is=1.65e-18 Bf=100 Nf=1.03 Vaf=20 Ikf=1.3e-4 Ise=5e-15 Ne=2.5 Br=2.5 Cje=2.4e-15 Vje=1.01 Mje=0.6 Vjc=0.76 Mjc=0.53 Xcjc=0.2 Xtf=4 Tf=12e-12 Vtf=6 Itf=3e-4 Ptf=25 Iss=0 Ns=1 Lateral=0 RbModel=0 Approxqb=1 Xtb=1.818 
+model DIODEM1 Diode Is=1e-25 Cjo=2.45e-16 Vj=0.76 M=0.53 Bv=45 Ibv=1e-9 AllowScaling=0 
+C:CCB  N__6 P1 C=0.032 pF 
+"DIODEM1":DCD1  P1 N__6 Area=572.4 Mode=1 Noise=yes 
+"DIODEM1":DCD2  N__1 N__6 Area=680.4 Mode=1 Noise=yes 
+"DIODEM1":DCD3  N__2 N__6 Area=340.2 Mode=1 Noise=yes 
+C:CCE  N__6 P2 C=0.032 pF 
+R:RRB1  P1 N__1 R=1.07 Ohm TC1=0.0008 Noise=yes 
+R:RRB2  N__1 N__2 R=3.19 Ohm TC1=0.0012 Noise=yes 
+R:RRB3  N__2 N__5 R=2.68 Ohm TC1=0.0018 Noise=yes 
+R:RRE  N__4 P2 R=0.24 Ohm TC1=0.0006 Noise=yes 
+"BJTM1":BJT1  N__6 N__5 N__4 Area=420 Mode=1 Noise=yes 
+R:RRC  P3 N__6 R=5 Ohm TC1=0.0006 Noise=yes 
+end AT414die
+
+; Library Name: AT414xx_lib
+; Cell Name: AT41486
+; View Name: schematic
+define AT41486 ( P1  P2  P3  P4 ) 
+;parameters 
+AT414die:X1  N__1 N__2 N__11 
+C:CCEB  N__4 N__10 C=0.02 pF 
+L:LT3  N__11 N__5 L=0.3 nH Noise=yes  
+C:C1T1  N__3 0 C=0.06 pF 
+L:LT1  N__3 N__4 L=0.48 nH Noise=yes  
+L:LLB  N__4 N__1 L=0.55 nH Noise=yes  
+L:LLE  N__2 N__10 L=0.1 nH Noise=yes  
+C:C1T3  N__5 0 C=0.04 pF 
+C:C2T3  N__11 0 C=0.04 pF 
+C:CCBC  N__4 N__11 C=0.03 pF 
+C:C1T2  0 N__8 C=0.02 pF 
+L:LT2  N__8 N__10 L=0.16 nH Noise=yes  
+C:C2T2  0 N__10 C=0.02 pF 
+L:LL1  P1 N__3 L=0.55 nH Noise=yes  
+C:C2T1  N__4 0 C=0.06 pF 
+L:LL3  N__5 P2 L=0.25 nH Noise=yes  
+L:LL2a  P4 N__9 L=0.12 nH Noise=yes  
+L:LL2  P3 N__8 L=0.12 nH Noise=yes  
+C:C1T2a  N__9 0 C=0.02 pF 
+L:LT2a  N__9 N__10 L=0.16 nH Noise=yes  
+C:C2T2a  N__10 0 C=0.02 pF 
+C:CCEC  N__11 N__10 C=0.03 pF 
+end AT41486
+
+AT41486:X1  N__7 N__9 0 0 
+Short:DC_Block1  N__2 N__7 Mode=1 
+Short:DC_Block2  N__9 N__5 Mode=1 
+Short:DC_Feed1  N__11 N__7 Mode=-1 
+Short:DC_Feed2  N__13 N__9 Mode=-1 
+R:R1  N__14 N__11 R=110 kOhm Noise=yes 
+R:R2  N__14 N__13 R=200 Ohm Noise=yes 
+V_Source:SRC1  N__14 0 Type="V_DC" Vdc=10 V SaveCurrent=1 
+Port:TermG1  N__2 0 Num=1 Z=50 Ohm Noise=yes 
+Port:TermG2  N__5 0 Num=2 Z=50 Ohm Noise=yes 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0 GHz Stop=1 GHz Step=10 MHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+model MSub1 MSUB H=32 mil Er=3.55 Mur=1 Cond=1.0E+50 Hu=3.93701e+34 mil T=35 um TanD=0.0027 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+aele MaxGain1=max_gain(S);
+aele StabFact1=stab_fact(S);

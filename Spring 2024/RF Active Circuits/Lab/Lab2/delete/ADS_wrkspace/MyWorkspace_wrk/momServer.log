@@ -1,0 +1,27 @@
+Momentum Server logfile: momServer.log
+
+EM Model generation from "MyLibrary_lib:Bias_emCosim:emModel"
+  parameterNames = list("IndLen","RadStubLen","RadStubAng","Substrate","MeshDensity")
+  parameterValues = list("0.04498057044","0.04513900294","70","definedInState","20")
+  topLevel design name = "MyLibrary_lib:bias_optimization:schematic"
+  instance name = "X1.em_data"
+  processID = "62342@127.0.0.1:hpeesofsim:_unique61911_5"
+  visible = TRUE
+Connected to external process by processID
+..handle = 20
+..pid = 62342@127.0.0.1:hpeesofsim:_unique61911_5
+..name = hpeesofsim
+Creating work design MyLibrary_lib:Bias:layout_hpeesofsim
+..new work design opened
+..inserting instance of MyLibrary_lib:Bias:layout
+Successfully created the work design
+Successfully created the associated schematic of the work design
+..disable simulation log popup
+..simulation M240303234340 started
+..ERROR: Analysis "Solve" (M240303234340) of design MyLibrary_lib:Bias:layout_hpeesofsim was aborted by the user.
+..simulation M240303234340 ended
+EM simulation failed
+..deleting layout_hpeesofsim view for work design
+..deleting schematic_hpeesofsim view for work design
+..deleting simulation directory for work design
+..sending DONE to parent

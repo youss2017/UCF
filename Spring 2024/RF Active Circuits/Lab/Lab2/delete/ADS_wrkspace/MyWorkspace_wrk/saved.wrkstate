@@ -1,8 +1,7 @@
 <!DOCTYPE SaveWorkspaceState>
 <SaveWorkspaceState>
     <Windows>
-        <Layout cell="Biasing" height="1113" y1="27" view="layout" x1="51" geom="1,0,0,52,58,2048,1113,2560,1440" lib="MyLibrary_lib" width="2048"/>
-        <DDS name="Biasing.dds"/>
+        <DDS name="measurements.dds"/>
     </Windows>
     <MainWindowTab tab="1"/>
 </SaveWorkspaceState>

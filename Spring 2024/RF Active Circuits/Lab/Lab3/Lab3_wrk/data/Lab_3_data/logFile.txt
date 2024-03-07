@@ -1,0 +1,53 @@
+
+hpeesofsim (*) 571.shp Nov  8 2022, MINT version 5
+    (64-bit windows built: Wed Nov 09, 2022 05:38:21 +0000)
+
+
+***** Simulation started at Tue Mar  5 19:22:27 2024
+      Running on host: "DESKTOP-339EFSV"
+      In Directory: "U:\Spring 2024\RF Active Circuits\Lab\Lab3\Lab3_wrk\data"
+      Process ID: 35024
+
+    Matrix is singular (detected at node or branch `X1.LT2a.i').
+Adding gmin to branches
+    Matrix is singular (detected between nodes or branches `X1.LT2a.i' and `X1.LT2.i').
+Adding gmin to branches
+    Matrix is singular (detected between nodes or branches `X1.LT2a.i' and `X1.LT2.i').
+Adding gmin to branches
+    Matrix is singular (detected between nodes or branches `X1.LT2a.i' and `X1.LT2.i').
+Adding gmin to branches
+    Matrix is singular (detected between nodes or branches `X1.LT2a.i' and `X1.LT2.i').
+Adding gmin to branches
+    Matrix is singular (detected between nodes or branches `X1.LT2a.i' and `X1.LT2.i').
+Adding gmin to branches
+    Matrix is singular (detected between nodes or branches `X1.LT2a.i' and `X1.LT2.i').
+Adding gmin to branches
+    Matrix is singular (detected between nodes or branches `X1.LT2a.i' and `X1.LT2.i').
+Adding gmin to branches
+    Matrix is singular (detected between nodes or branches `X1.LT2a.i' and `X1.LT2.i').
+Adding gmin to branches
+    Matrix is singular (detected between nodes or branches `X1.LT2a.i' and `X1.LT2.i').
+Adding gmin to branches
+The final gnode step did NOT converge in 1 iteration(s) with gnode=1.000000e-18
+    Matrix is singular (detected between nodes or branches `X1.LT2a.i' and `X1.LT2.i').
+Adding gmin to branches
+    Matrix is singular (detected between nodes or branches `X1.LT2a.i' and `X1.LT2.i').
+Adding gmin to branches
+Warning detected by hpeesofsim during DC analysis `SP1'.
+    Circuit converged after a virtual resistance of 1 TOhms 
+    was added between each node and ground, and a virtual 
+    resistance of 1 pOhms was inserted in each current branch. 
+    Possible causes include floating nodes or missing ground.
+
+
+SP SP1[1] <Lab3_lib:Lab-3:schematic>   freq=(0 Hz->1 GHz)
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    A virtual resistance of 1 TOhms was added between each node and ground,
+    and a virtual resistance of 1 pOhms was inserted in each current branch,
+    during AC/SP analysis at 0 Hz.
+
+
+
+Resource usage:
+  Total stopwatch time     =     0.59 seconds.
+

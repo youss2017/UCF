@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+    <parameter name="SLen" value="449.5312 mil"/>
+    <parameter name="OLen" value="467.3111 mil"/>
+</parameters>

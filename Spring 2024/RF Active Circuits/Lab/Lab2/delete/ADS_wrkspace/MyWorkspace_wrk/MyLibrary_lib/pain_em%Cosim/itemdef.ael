@@ -1,0 +1,3 @@
+create_item("pain_emCosim","pain_emCosim","X",16,-1,NULL,"Component Parameters",NULL,"%43?global %;%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","pain_emCosim","%t%b%r%38?%:\n%30?%s%:%k%?[%1i]%;=%s%;%;%e%e%;","",3,NULL,0,
+create_parm("Len","Subnetwork 1777 mil",66560,"StdFormSet",5,prm("StdForm","1777 mil")),
+create_parm("Ang","Subnetwork 70",66560,"StdFormSet",7,prm("StdForm","70 ")));

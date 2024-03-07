@@ -1,0 +1,10 @@
+<emDataViewOptions>
+  <version minor="2" major="1"/>
+  <Options portTerminalPinsNetlistMode="Shorted" extrapolationMode="Linear" enforcePassivity="DuringExtrapolation" symbolNetlistMode="All pins"/>
+  <cellParameters useInterpolation="no">
+    <parameters>
+      <cellParameter name="StubLen" delta="49.2126 mil" resolution="0.0001 mil"/>
+      <cellParameter name="Ang" delta="10.0" resolution="0.1"/>
+    </parameters>
+  </cellParameters>
+</emDataViewOptions>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+    <parameter name="IndLen" value="1777.85 mil"/>
+    <parameter name="RadStubLen" value="1777.85 mil"/>
+    <parameter name="RadStubAng" value="70"/>
+</parameters>

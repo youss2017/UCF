@@ -1,0 +1,10 @@
+<emDataViewOptions>
+  <version minor="2" major="1"/>
+  <Options extrapolationMode="Linear" symbolNetlistMode="All pins" portTerminalPinsNetlistMode="Shorted" enforcePassivity="DuringExtrapolation"/>
+  <cellParameters useInterpolation="no">
+    <parameters>
+      <cellParameter name="SLen" delta="5.90551 mil" resolution="0.0001 mil"/>
+      <cellParameter name="OLen" delta="5.90551 mil" resolution="0.0001 mil"/>
+    </parameters>
+  </cellParameters>
+</emDataViewOptions>

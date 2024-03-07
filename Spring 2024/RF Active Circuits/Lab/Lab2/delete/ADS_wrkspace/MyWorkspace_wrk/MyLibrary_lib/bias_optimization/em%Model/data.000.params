@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+    <parameter name="StubLen" value="1777 mil"/>
+    <parameter name="Ang" value="70"/>
+</parameters>

@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dc_annotation_options>
+ <options view="schematic" ToggleCurrent="true" library="Lab3_lib" cell="Lab-3" ToggleVoltage="true"/>
+</dc_annotation_options>

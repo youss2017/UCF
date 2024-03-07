@@ -1,0 +1,10 @@
+<emDataViewDatabaseIndex>
+  <version minor="1" major="1"/>
+  <emDatabase>
+    <ParameterNames>
+      <parameterName>StubLen</parameterName>
+      <parameterName>Ang</parameterName>
+    </ParameterNames>
+    <databaseItems/>
+  </emDatabase>
+</emDataViewDatabaseIndex>

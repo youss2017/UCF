@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      youssef
+HostName                       DESKTOP-339EFSV
+ProcessIdentifier              11324
+ProcessCreationTime_UTC        1709683105
+ProcessCreationTime_Readable   Tue Mar  5 18:58:25 2024 Eastern Standard Time
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         U:\Spring 2024\RF Active Circuits\Lab\Lab3\Lab3_wrk\Lab3_lib\tech.db.cdslck
+TimeEditLocked                 Tue Mar  5 18:59:40 2024 Eastern Standard Time
