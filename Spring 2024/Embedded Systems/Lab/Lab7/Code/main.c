@@ -8,6 +8,195 @@
 #define DEVICE_ID 0x7F
 #define SENSOR_GND 0x44
 
+#define VK_ENTER 0x0A
+#define VK_BACKSPACE 0x08
+
+uint16_t sensor_read_lux()
+{
+	uint16_t lux = 0;
+	i2c_read_word(SENSOR_GND, RESULT, &lux);
+	return 1.28 * lux;
+}
+
+void part1_read_deviceinfo()
+{
+	uint16_t manufacturerId = 0, deviceId = 0, lux = 0;
+	i2c_read_word(0x44, 0x7E, &manufacturerId);
+	i2c_read_word(0x44, 0x7F, &deviceId);
+	for (;;)
+	{
+		uart_write_string("Manufacturer Id: ");
+		uart_write_nstring(&manufacturerId, 2);
+		uart_write_string(", Device Id: ");
+		uart_write_uint16(deviceId);
+		uart_write_string("\r\n");
+		__delay_cycles(1e6);
+	}
+}
+
+void sensor_config_register()
+{
+	// configure the sensor: RN = 0b0111, CT = 0, M = 0b11,  ME = 1
+	uint16_t configReg = 0b0111011000000100;
+	i2c_write_word(SENSOR_GND, CONFIGURATION, sensorconfig);
+}
+
+void part2_read_lux()
+{
+	sensor_config_register();
+	for (;;)
+	{
+		uart_write_string("LUX: ");
+		uart_write_uint16(sensor_read_lux());
+		uart_write_string("\r\n");
+	}
+}
+
+void add_minute(uint8_t* hour, uint8_t* minute) {
+	*minute += 1;
+	if(*minute >= 60) {
+		*minute = 0;
+		*hour += 1;
+	}
+	if(*hour > 12) {
+		*hour = 1;
+	}
+}
+
+void part3_application()
+{
+	sensor_config_register();
+	P1DIR &= ~(BUTTON1 | BUTTON2); // direction
+	P1REN |= BUTTON1 | BUTTON2;	   // pull up
+	// wait until button 1 and 2 are pressed to begin LUX
+	while (P1IN & BUTTON1 || P1IN & BUTTON2)
+	{
+	}
+	// begin LUX
+	uart_write_string("*** Lux Logger ***\r\n\r\n");
+	uart_write_string("Enter the time...(3 or 4 digits then hit Enter)\r\n");
+	uart_write_string("Time is set to ");
+	char szBuffer[5] = {0};
+	char currentKey = VK_ENTER;
+	uint8_t index = 0;
+	do
+	{
+		currentKey = uart_read_char();
+		if (currentKey)
+		{
+			if (currentKey == VK_BACKSPACE)
+			{
+				szBuffer[index] = 0;
+				// move the cursor back
+				uart_write_char('\b');
+				index--;
+				if (index == UINT8_MAX)
+				{
+					// overflow, reset to 0
+					index = 0;
+				}
+			}
+			else
+			{
+				// is this an acceptable key?
+				if (key >= 48 && key <= 58)
+				{
+					// yes, key is a number or colon
+					uart_write_char(key); // write key again so it is displayed on UART terminal.
+					if (index == 5)
+						index = 4; // prevent buffer overflow
+					szBuffer[index] = currentKey;
+					index++;
+				}
+			}
+		}
+	} while (currentKey != VK_ENTER && currentKey != NULL);
+	// parse input
+	// if user did not input time, the default time is 12:00
+	uint8_t hour = 12;
+	uint8_t minute = 0;
+	if (index)
+	{
+		uint8_t i;
+		bool meetColon = false;
+		for (i = 0; i < index; i++)
+		{
+			char key = szBuffer[i] - 48;
+			if (key >= 48 && key <= 58)
+			{
+				// input key is either a number or colon
+				if (key == ':')
+				{
+					if (meetColon)
+					{
+						goto parse_error;
+					}
+					meetColon = true;
+				}
+				else
+				{
+					// convert ascii number to integer
+					uint8_t number = key - '0';
+					if (!meetColon)
+					{
+						// hour
+						hour = (hour * 10) + number;
+						if (hour > 12)
+						{
+							// invalid time
+							goto parse_error;
+						}
+					}
+					else
+					{
+						// minute
+						minute = (minute * 10) + number;
+						if (minute > 60)
+						{
+							// invalid time
+							goto parse_error;
+						}
+					}
+				}
+			}
+			continue;
+		parse_error:
+			// invalid input use default time
+			hour = 12;
+			minute = 0;
+			uart_write_string("Invalid time input, using default time (12:00).\r\n");
+			break;
+		}
+	}
+
+	uint16_t baseline_lux = sensor_read_lux();
+	if (baseline_lux < 10)
+		baseline_lux = 10; // clamp to 10 to avoid underflow problems
+	for (;;)
+	{
+		uint16_t lux = sensor_read_lux();
+		uart_write_uint16(hour);
+		uart_write_char(':');
+		uart_write_uint16(minute);
+		uart_write_char('\t');
+		uart_write_uint16(lux);
+		uart_write_string(" lux");
+		if (lux >= baseline_lux + 10)
+		{
+			uart_write_string("\t <Up>");
+			baseline_lux = lux;
+		}
+		else if (lux <= baseline_lux - 10)
+		{
+			uart_write_string("\t <Down>");
+			baseline_lux = lux;
+		}
+		uart_write_string("\r\n");
+		__delay_cycles(60e6); // wait one minute
+		add_minute(&hour, &second);
+	}
+}
+
 /**
  * main.c
  */
@@ -19,25 +208,12 @@ int main(void)
 	Initialize_UART();
 	Initialize_I2C();
 
-	uint16_t manufacturerId = 0, deviceId = 0, lux = 0;
-	//i2c_read_word(0x44, 0x7E, &manufacturerId);
-	//i2c_read_word(0x44, 0x7F, &deviceId);
-
 	// configure the sensor
 	// RN = 0b0111
 	// CT = 0
 	// M = 0b11
 	// ME = 1
-	uint8_t RN = 0b0111;
-	uint8_t CT = 0;
-	uint8_t M = 0b11;
-	uint8_t ME = 0b1;
-	uint16_t configurationRegister = 0b0111011000000100; // (RN << 15) | (CT << 11) | (M << 10) | (ME << 2);
-
-	uart_write_string("Configuration Register value: ");
-	uart_write_uint16(configurationRegister);
-	uart_write_string("\r\n");
-	__delay_cycles(4e6);
+	uint16_t configReg = 0b0111011000000100;
 
 	unsigned int sensorconfig;
 	sensorconfig = 0b0111011000000100; // In hex this is 0x7604
@@ -53,9 +229,9 @@ int main(void)
 		uart_write_string(", Device Id: ");
 		uart_write_uint16(deviceId);
 		uart_write_string(", LUX: ");
-		
+
 		i2c_read_word(SENSOR_GND, RESULT, &data);
-    	uart_write_uint16(1.28 * data);
+		uart_write_uint16(1.28 * data);
 
 		uart_write_string("\r\n");
 		__delay_cycles(1e6);

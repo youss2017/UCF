@@ -8,6 +8,9 @@
 #define TXBUFFER UCA1TXBUF // Transmit buffer
 #define RXBUFFER UCA1RXBUF // Receive buffer
 
+#define BUTTON1 BIT1
+#define BUTTON2 BIT2
+
 int i2c_read_word(unsigned char i2c_addrs, unsigned char i2c_reg, unsigned int *data); //
 int i2c_write_word(unsigned char i2c_addrs, unsigned char i2c_reg, unsigned int data); //
 void Initialize_I2C(void);

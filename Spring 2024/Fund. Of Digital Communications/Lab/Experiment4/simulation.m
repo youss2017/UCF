@@ -8,8 +8,8 @@ signalLength = 10000;
 % Generate a random binary signal
 binarySignal = randi([0 1], 1, signalLength);
 
-PulseWidth = 1000e-3; % 100 ms
-time_step = 450e-3; % 10 ms
+PulseWidth = 10e-3; % 100 ms
+time_step = 1e-3; % 10 ms
 
 x = zeros(signalLength * (PulseWidth / time_step), 1);
 x2 = x;
@@ -40,6 +40,9 @@ subplot(3, 1, 1);
 plot(time, x);
 xlim([0, 10/signalLength]);
 ylim([-.2, 1.2]);
+title("Message Signal");
+xlabel("time (sec)");
+ylabel("Amplitude");
 
 grid on;
 
@@ -47,11 +50,15 @@ subplot(3, 1, 2);
 plot(time, x2);
 xlim([0, 10/signalLength]);
 ylim([-1.2, 1.2]);
+title("Manchester Encoded Signal");
+xlabel("time (sec)");
+ylabel("Amplitude");
 grid on;
 
 data = [transpose(time), x2];
-writematrix(data, 'message_manchester.csv');
+%writematrix(data, 'message_manchester.csv');
 
+x2 = x2 ./ max(x2);
 Fs = (2*signalLength);            % Sampling frequency                    
 T = 1;             % Sampling period       
 L = length(x2);             % Length of signal
@@ -63,3 +70,21 @@ plot(Fs/L*(0:L-1),abs(M),"LineWidth",3)
 title("Complex Magnitude of fft Spectrum")
 xlabel("f (Hz)")
 ylabel("|fft(X)|")
+
+% compute PSD
+figure
+Tb = time_step/16;
+total_time = PulseWidth * signalLength;
+S = (abs(M) .^ 2) ./ total_time;
+subplot(2,1,1);
+plot(Fs/L*(0:L-1), S, "LineWidth",3);
+title("S_{g}(f) -- Pulse Width 10 ms with 10k random bits");
+xlabel("Frequency (Hz)");
+ylabel("Amplitude");
+subplot(2,1,2);
+f = linspace(-2e4, 2e4, 10e3);
+Sg = (Tb/4) .* (sinc(pi*f*Tb/2) .^ 2) .* (sin(pi*f*Tb) .^ 2);
+plot(f, Sg);
+title("Theoretical S_{g}(f) of 1 bit");
+xlabel("Frequency (Hz)");
+ylabel("Amplitude");
