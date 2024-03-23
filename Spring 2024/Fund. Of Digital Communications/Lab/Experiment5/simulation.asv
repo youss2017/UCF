@@ -1,0 +1,32 @@
+clear all;
+close all;
+clc;
+
+Tb = 1;
+f1 = 1000/Tb;
+f2 = f1 + 1/Tb;
+phi = pi/4; % delay tranmission
+N=5000;
+Bits = 10;
+
+t = linspace(0, Bits, N);
+u1 = cos(2.*pi.*f1.*t);
+u2 = cos(2.*pi.*f2.*t);
+v1 = sin(2.*pi.*f1.*t);
+v2 = sin(2.*pi.*f2.*t);
+
+message = linspace(0, 1, N);
+
+last_bit = 1;
+for b=1:1:Bits
+    len = N / Bits;
+    offset = ((b - 1) * len) + 1;
+    last_bit = ~last_bit;
+    fprintf("%d %d %d\n", b, offset, length(message));
+    for i=offset:1:min((len+offset), N)
+        message(i) = last_bit;
+    end
+end
+
+plot(t, message);
+ylim([-0.2, ])

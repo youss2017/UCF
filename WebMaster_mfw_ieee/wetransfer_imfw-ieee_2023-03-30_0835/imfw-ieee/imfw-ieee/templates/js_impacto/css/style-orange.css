@@ -1,0 +1,159 @@
+@charset "utf-8"; 
+body.home{
+	
+  
+}
+
+.navbar-inner {
+	box-shadow: none;
+}
+
+
+.navbar-inverse .brand, 
+.navbar-inverse .nav > li > a,
+.navbar .nav > li > a{
+}
+
+.navbar .nav li.dropdown > .dropdown-toggle .caret{
+	border-bottom-color: #fff;
+    border-top-color: #fff;
+}
+
+/******** li  hover *******************/
+
+.dropdown-menu li > span:hover,
+.dropdown-menu .active > span {
+	background-image: none;
+	background-color: #FF6D28;
+}
+
+.navbar .nav > li:hover > a {
+    	
+}
+.navbar .nav li.dropdown:hover > .dropdown-toggle .caret{
+	border-bottom-color: #FE5C11;
+    border-top-color: #FE5C11;
+}
+
+.nav-collapse .dropdown-menu a:hover,
+.navbar-inverse .nav-collapse .dropdown-menu a:hover {
+	background-color: #DA6707;
+}
+
+
+/******** Parent active *******************/
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle{
+	color: #7F2800;
+	text-shadow:1px 1px 1px #FEA356;
+	background-color: #F57108;
+  background-image: -moz-linear-gradient(top, #FF9332, #F57108);
+  background-image: -ms-linear-gradient(top, #FF9332, #F57108);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF9332), to(#F57108));
+  background-image: -webkit-linear-gradient(top, #FF9332, #F57108);
+  background-image: -o-linear-gradient(top, #FF9332, #F57108);
+  background-image: linear-gradient(top, #FF9332, #F57108);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9332', endColorstr='#F57108', GradientType=0);
+  *background-color: #F57108;
+}
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus{
+	color: #7F2800;
+	
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle .caret, .navbar .nav li.dropdown.active > .dropdown-toggle .caret, .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret{
+	border-bottom-color: #7F2800;
+    border-top-color: #7F2800;
+}
+
+/***************** Sub  Menu **************************************/
+
+
+.dropdown-menu a{
+	color: white;
+}
+.dropdown-menu li > a:hover, 
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a{
+	background-color: #2D873A;
+	background-image: none;
+}
+
+/*********************************************/
+
+
+/*********************************************/
+
+#footer h3 {
+    color: #E94E04;
+    height: 60px;
+    letter-spacing: normal;
+    line-height: 51px;
+    text-shadow: 1px -1px 1px #000000;
+}
+/*********************************************/
+
+
+@media (max-width: 969px) {
+		.wrapper-menu,
+		.wrapper-bottom-menu  {
+		/*background-image: url("../images/orange/bg-menu-movil.jpg");
+		background-repeat: repeat-x;
+		background-color: black;*/
+	}
+	.navbar .nav > li > a{
+		text-shadow: 0 0 ;
+	}
+	.navbar-inner{
+		background-color: transparent;
+		background-image: none;
+	}
+}
+/************ Input & textarea color  ****************************************************************/
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+input[type="number"]:focus, input[type="email"]:focus, 
+input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus,
+input[type="color"]:focus, .uneditable-input:focus,
+input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, select:focus:required:invalid:focus{
+  	border-color: #F68A2B;
+  	box-shadow:0 1px 1px #F3BB8D inset, 0 0 8px #F3BB8D;
+}
+
+
+/************ read more  ****************************************************************/
+p.readmore .btn{
+	color: #E46C07;
+}
+
+
+
+
+.nav-tabs {
+	border-bottom-color: #E46C07;
+}
+
+.nav-tabs .tabs a,
+#myTab.nav-tabs > li > a {
+    border-color: #E46C07;
+	background-color: #E46C07;
+	color: #FFFFFF;
+}
+
+.nav-tabs > .open a {
+	background-color: #FFFFFF;
+	color: #E46C07;
+	border-bottom: 5px solid #fff;
+}
+#myTab.nav-tabs > .active > a, #myTab.nav-tabs > .active > a:hover{
+	border-color:#E46C07 #E46C07 transparent;
+}
+#myTab.nav-tabs > li > a:hover{
+	border-color: #E46C07 ;
+	background-color: #E46C07;
+}
+#sliderNav .active a{
+	background: url("../images/orange/pagination.png") no-repeat scroll 50% 0 transparent !important;
+}
+body #sliderNav ul li a{
+	background: url("../images/orange/pagination.png") no-repeat scroll 50% 100% transparent !important;
+}
