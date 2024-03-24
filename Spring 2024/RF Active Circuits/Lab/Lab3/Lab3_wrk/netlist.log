@@ -1,7 +1,7 @@
-; Top Design: "Lab3_lib:Lab-3:schematic"
+; Top Design: "Lab3_lib:Lab-3:circuit_schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="Lab3_lib:Lab-3:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="Lab3_lib:Lab-3:circuit_schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
 ; Library Name: AT414xx_lib
 ; Cell Name: AT414die
 ; View Name: schematic
@@ -51,20 +51,19 @@ C:C2T2a  N__10 0 C=0.02 pF
 C:CCEC  N__11 N__10 C=0.03 pF 
 end AT41486
 
-AT41486:X1  N__7 N__9 0 0 
-Short:DC_Block1  N__2 N__7 Mode=1 
-Short:DC_Block2  N__9 N__5 Mode=1 
-Short:DC_Feed1  N__11 N__7 Mode=-1 
-Short:DC_Feed2  N__13 N__9 Mode=-1 
-R:R1  N__14 N__11 R=110 kOhm Noise=yes 
-R:R2  N__14 N__13 R=200 Ohm Noise=yes 
-V_Source:SRC1  N__14 0 Type="V_DC" Vdc=10 V SaveCurrent=1 
-Port:TermG1  N__2 0 Num=1 Z=50 Ohm Noise=yes 
-Port:TermG2  N__5 0 Num=2 Z=50 Ohm Noise=yes 
+; Library Name: Lab3_lib
+; Cell Name: Lab-3
+; View Name: symbol_schematic
+define "Lab-3" ( P1  P2  P3  P4  P5  P6  P7  P8  P9  P10  P11  P12  P13  P14  P15  P16  P17  P18  P19 ) 
+;parameters 
+#uselib "ckt" , "S19P"
+S19P:SNP1  P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11 P12 P13 P14 P15 P16 P17 P18 P19 0 File="U:\Spring 2024\RF Active Circuits\Lab\Lab3\SnP\Lab3.s19p" Type="touchstone" InterpMode="linear" InterpDom="" ExtrapMode="constant" Temp=27.0 CheckPassivity=0 
+end "Lab-3"
+
 S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
 SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
 
-SweepPlan: SP1_stim Start=0 GHz Stop=1 GHz Step=10 MHz 
+SweepPlan: SP1_stim Start=0 GHz Stop=6 GHz Step=10 MHz 
 
 OutputPlan:SP1_Output \
       Type="Output" \
@@ -78,3 +77,17 @@ Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
 model MSub1 MSUB H=32 mil Er=3.55 Mur=1 Cond=1.0E+50 Hu=3.93701e+34 mil T=35 um TanD=0.0027 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
 aele MaxGain1=max_gain(S);
 aele StabFact1=stab_fact(S);
+aele L_StabCircle1=l_stab_circle(S,51);
+aele S_StabCircle1=s_stab_circle(S,51);
+aele GpCircle1=gp_circle(S,2,51);
+AT41486:X2  N__12 N__11 N__29 N__28 
+Port:TermG2  N__17 0 Num=2 Z=50 Ohm Noise=yes 
+Port:TermG1  N__18 0 Num=1 Z=50 Ohm Noise=yes 
+Short:DC_Block2  N__14 N__27 Mode=1 
+"Lab-3":X1  N__18 N__17 N__16 N__15 N__14 N__27 N__12 N__11 N__28 N__29 N__8 N__7 N__6 N__5 N__4 N__3 N__2 N__13 N__0 
+Short:DC_Block1  N__16 N__15 Mode=1 
+Short:DC_Feed1  N__7 N__8 Mode=-1 
+Short:DC_Feed2  N__3 N__4 Mode=-1 
+R:R1  N__5 N__6 R=110 kOhm Noise=yes 
+R:R2  N__13 N__2 R=200 Ohm Noise=yes 
+V_Source:SRC1  N__0 0 Type="V_DC" Vdc=10 V SaveCurrent=1 

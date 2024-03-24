@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DCOPData Simulator="hpeesofsim" Version="1.0" Time="Tue Mar 5 19:22:27 2024">
+<DCOPData Version="1.0" Time="Sat Mar 23 14:00:48 2024" Simulator="hpeesofsim">
  <Controller name="SP1">
   <SweepCondition>
-   <P>freq: 0.0000000000000000e+00</P>
+   <P>freq: 1.0000000000000000e+09</P>
   </SweepCondition>
   <DC_OPDeclaration/>
   <DC_Voltages>
