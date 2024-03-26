@@ -1,6 +1,6 @@
-pathBend 2
+pathBend 5
 pathMiterPercent 30.000000
-pathEndCap 3
+pathEndCap 2
 pathLayerName default
 textFontName Arial For CAE
 textPoint 12
@@ -26,7 +26,7 @@ scaleX 1.000000
 scaleY 1.000000
 toArcRadius 3.000000
 miterVertexLength 10.000000
-portOrientation 10000.000000
+portOrientation 0.000000
 plottingDepth 10
 bboxColor 3
 selectColor 99
@@ -55,7 +55,7 @@ majorGridDisplayY 5
 majorGridDisplayOn 1
 gridDisplayMode 0
 gridSnapOn 1
-gridSnapMode 119
+gridSnapMode 3
 gridColor 104
 windowLLX -200.000000
 windowLLY -200.000000

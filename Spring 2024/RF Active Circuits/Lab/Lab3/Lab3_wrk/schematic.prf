@@ -67,7 +67,7 @@ schemUnits 2
 layoutPrec -2
 layoutIncr 1
 layoutUnits 1
-backupCount 10000
+backupCount 20
 placePopUp 0
 placePinPopUp 1
 checkIntersection 0

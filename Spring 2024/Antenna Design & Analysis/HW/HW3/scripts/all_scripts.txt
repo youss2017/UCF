@@ -1,0 +1,264 @@
+%%% Question 1 Part A
+clear all;
+close all;
+clc;
+
+%% Field Definition
+syms theta phi
+ks = pi;
+AF(theta, phi) = 2*(cos(ks*sin(theta)*sin(phi)) - cos(ks*sin(theta)*cos(phi)));
+E(theta, phi) = sin(theta) * AF(theta, phi);
+
+%% Directivity
+U_inten = matlabFunction( E ^ 2 );
+Prad = matlabFunction(abs(U_inten * sin(theta)));
+Prad_value = integral2(Prad, 0, pi, 0, 2*pi);
+[theta_max, phi_max, Umax] = find_max_U(U_inten);
+
+D0 = (4*pi*Umax)/Prad_value;
+disp(D0);
+
+%% E Plane
+%E(theta, phi) = sin(theta) + 1e-100*sin(phi);
+
+phi = pi/2;
+theta = linspace(-pi, pi, 1000);
+
+E_eval = abs(eval(E(theta, phi) .^ 2));
+E_plot = 10.0 * log10(E_eval ./ max(E_eval));
+E_plot(E_plot < -30) = -30;
+%subplot(2, 1, 1);
+polarplot(theta, E_plot);
+rlim([-30, 0]);
+title("Question 1, Part A) E Plane, phi=pi/2");
+
+%% H Plane
+figure
+phi = linspace(0, 2*pi, 200);
+theta = pi/2;
+
+Hplane_eval = abs(eval(E(theta, phi)));
+Hplane_plot = 20 .* log10(Hplane_eval / max(Hplane_eval));
+Hplane_plot(Hplane_plot < -30) = -30;
+%subplot(2, 1, 2);
+polarplot(phi, Hplane_plot);
+title("Question 1, Part A) H Plane, theta=pi/2");
+rlim([-30, 0]);
+
+function [theta_max, phi_max, U_max] = find_max_U(U_func)
+    % Define a nested function to be minimized
+    neg_U_func = @(x) -U_func(x(1), x(2));
+
+    % Initial guess for theta and phi
+    x0 = [0, 0];
+
+    % Perform the optimization
+    [x_max, U_max] = fminsearch(neg_U_func, x0);
+
+    % Extract theta_max and phi_max
+    theta_max = x_max(1);
+    phi_max = x_max(2);
+    U_max = -U_max;
+end
+%%%%%%%%%%%%%%%%%%%%%%%%%% QUESTION 1 PART C
+clear all;
+close all;
+clc;
+
+%% E Plane
+f = figure;
+f.Position = [0, 0, 1280, 720];
+spacing = [0.66, 0.8, 1.2, 1.5];
+centerfig(f);
+
+for i=1:1:length(spacing)
+    %% Field Definition
+    syms theta phi
+
+    v = spacing(i);
+    k = 2 * pi / 1;
+    k = k / v;
+    s = 1 / 2;
+    ks = k * s;
+    %ks = 2*pi*spacing(i);
+
+    AF(theta, phi) = 2*(cos(ks*sin(theta)*sin(phi)) - cos(ks*sin(theta)*cos(phi)));
+    E(theta, phi) = sin(theta) * AF(theta, phi);
+
+    phi = pi/2;
+    theta = linspace(0, pi, 1000);
+    
+    E_eval = abs(eval(E(theta, phi) .^ 2));
+    E_plot = 10.0 * log10(E_eval ./ max(E_eval));
+    E_plot(E_plot < -15) = -15;
+    polarplot(theta, E_plot, 'DisplayName', sprintf("%.2ff_{0}", spacing(i)));
+    hold on;
+end
+title("Question 1, Part C) E Plane(s), phi=pi/2");
+rlim([-15, 0]);
+legend();
+
+half_pwr = zeros([1, length(theta)]) - 3;
+polarplot(theta, half_pwr, "DisplayName", "Half Power");
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% QUESTION 2 PART A
+clear all
+close all
+clc
+% https://www.desmos.com/calculator/7dmxksal1e
+%% Design Parameters
+lambda = 299792458/800e6;
+C = lambda;
+alpha = 13.5;
+S = C * tan(deg2rad(alpha));
+N = 5;
+D_0 = 10*log10(15*N*(C^2*S)/(lambda^3));
+HPBW = ((52*lambda^(3/2))/(C*sqrt(N*S)));
+
+f = figure;
+f.Position = [0,0,1280,720];
+centerfig(f);
+
+%% E-Plane Plot
+syms theta
+k_0 = (2*pi)/lambda;
+L_0 = sqrt(S^2 + C^2);
+p = (L_0/lambda)/(S/lambda + 1);
+psi = k_0 * (S * cos(theta) - L_0/p);
+
+E(theta) = sin(pi/(2*N))*cos(theta)*( (sin((N/2)*psi)) / (sin(psi/2))  );
+theta = linspace(-pi, pi, 1000);
+E_eval = eval(E) .^ 2;
+E_eval = 10.0 .*log10(E_eval ./ max(E_eval));
+E_eval(E_eval < -30) = -30;
+polarplot(theta, E_eval);
+rlim([-30, 0]);
+title("E Plane, phi=pi/2")
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% QUESTION 2 PART B
+clear all
+close all
+clc
+% https://www.desmos.com/calculator/7dmxksal1e
+%% Design Parameters
+lambda = 299792458/800e6;
+C = lambda;
+alpha = 13.5;
+S = C * tan(deg2rad(alpha));
+N = 5;
+D_0 = 10*log10(15*N*(C^2*S)/(lambda^3));
+HPBW = ((52*lambda^(3/2))/(C*sqrt(N*S)));
+
+%% E-Plane Plot
+ syms theta phi
+ f = figure;
+ f.Position = [0, 0, 1280, 720];
+ centerfig(f);
+
+k_0 = (2*pi)/lambda;
+L_0 = sqrt(S^2 + C^2);
+p = (L_0/lambda)/(S/lambda + 1);
+psi = k_0 * (S * cos(theta) - L_0/p);
+
+des = linspace(0.7, 1.2, 6);
+
+for i=1:1:length(des)
+    d = des(i);
+    kd = (2*pi)*(d/2);
+
+    syms theta phi
+    
+    
+    AF(theta, phi) = 2*cos(pi*d*sqrt(2) * sin(theta)*cos(phi)) + 2*cos(pi*d*sqrt(2)*sin(theta)*sin(phi));
+        
+    phi = 0;
+    
+    E(theta) = sin(pi/(2*N))*cos(theta)*( (sin((N/2)*psi)) / (sin(psi/2))  ) * AF(theta, phi);
+    
+    U_inten = matlabFunction( E ^ 2 );
+    Prad = matlabFunction(abs(U_inten * sin(theta)));
+    Prad_value = 2*pi*integral(Prad, 0, pi);
+    [theta_max, Umax] = find_max_U(U_inten);
+    
+    D0 = (4*pi*Umax)/Prad_value;
+
+    theta = linspace(-pi, pi, 1000);
+    E_eval = eval(E) .^ 2;
+    E_eval = 10.0 .*log10(E_eval ./ max(E_eval));
+    E_eval(E_eval < -30) = -30;
+    polarplot(theta, E_eval, "DisplayName", sprintf("d = %.2f, D0 = %.2fdB", d, D0));
+    hold on
+end
+rlim([-30, 0]);
+title("Directivity Design Plot");
+legend();
+
+function [theta_max, U_max] = find_max_U(U_func)
+    % Define a nested function to be minimized
+    neg_U_func = @(x) -U_func(x(1));
+
+    % Initial guess for theta and phi
+    x0 = [0];
+
+    % Perform the optimization
+    [x_max, U_max] = fminsearch(neg_U_func, x0);
+
+    % Extract theta_max and phi_max
+    theta_max = x_max(1);
+    U_max = -U_max;
+
+end
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% QUESTION 3
+clear all
+close all
+clc
+
+syms theta
+
+f = figure;
+f.Position = [0,0,1280,720];
+centerfig(f);
+
+Element_Factor(theta) = cos(theta);
+
+Array_Factor(theta) = 0.9*exp(j*0.4*pi*(-cos(theta) + 1)) + ...
+    1 + ...
+    0.7*exp(j*0.6*pi*(cos(theta) - 1)) + ...
+    0.5*exp(j*pi*(cos(theta) - 1));
+
+Electric_Trans(theta) = Element_Factor(theta) * Array_Factor(theta);
+
+% Find the front-to-back ratio in the radiation pattern. 
+U_inten = matlabFunction( abs(Electric_Trans ^ 2) );
+Prad = matlabFunction(abs(U_inten * sin(theta)));
+Prad_value = 2*pi*integral(Prad, 0, pi);
+[theta_max,  Umax] = find_max_U(U_inten);
+U0 = (4*pi)/Prad_value;
+Gain_0degree = abs(U_inten(0))/U0;
+Gain_180degree = abs(U_inten(pi))/U0;
+fprintf("Front to back ratio is %f\n", Gain_0degree/Gain_180degree);
+
+D0 = (4*pi*Umax)/Prad_value;
+fprintf("D0 = %.2f --- D0(dB) = %.2f\n", D0, 10*log10(D0));
+theta = linspace(-pi, pi, 1000);
+
+E_eval = abs(eval(Electric_Trans));
+E_eval = E_eval ./ max(E_eval);
+E_eval = 20.0 .* log10(E_eval);
+E_eval(E_eval < -20) = -20;
+polarplot(theta, E_eval);
+rlim([-20, 0]);
+title("E Plane Radiation Pattern " + sprintf("D_{0} = %.2f --- D_{0}(dB) = %.2f\n", D0, 10*log10(D0)));
+
+function [theta_max, U_max] = find_max_U(U_func)
+    % Define a nested function to be minimized
+    neg_U_func = @(x) -U_func(x(1));
+
+    % Initial guess for theta
+    x0 = [0];
+
+    % Perform the optimization
+    [x_max, U_max] = fminsearch(neg_U_func, x0);
+
+    % Extract theta_max and phi_max
+    theta_max = x_max(1);
+    U_max = -U_max;
+end

@@ -3,15 +3,19 @@ hpeesofsim (*) 571.shp Nov  8 2022, MINT version 5
     (64-bit windows built: Wed Nov 09, 2022 05:38:21 +0000)
 
 
-***** Simulation started at Sat Mar 23 16:20:53 2024
+***** Simulation started at Sun Mar 24 23:01:02 2024
       Running on host: "DESKTOP-339EFSV"
       In Directory: "U:\Spring 2024\RF Active Circuits\Lab\Lab3\Lab3_wrk\data"
-      Process ID: 11252
+      Process ID: 2320
 
 
 SP SP1[1] <Lab3_lib:Lab-3:circuit_schematic>   freq=(0 Hz->6 GHz)
 
+Warning detected by hpeesofsim during circuit set up.
+    Evaluation failed for ` GpCircle1=gp_circle(S,2,51)':  "GpCircle1":
+      right operand: real divide by zero.
+
 
 Resource usage:
-  Total stopwatch time     =     1.34 seconds.
+  Total stopwatch time     =     1.15 seconds.
 

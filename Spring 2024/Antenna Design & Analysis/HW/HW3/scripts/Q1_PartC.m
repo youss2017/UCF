@@ -6,7 +6,6 @@ clc;
 f = figure;
 f.Position = [0, 0, 1280, 720];
 spacing = [0.66, 0.8, 1.2, 1.5];
-spacing1 = [0.66, 1.2, 0.8, 1.5];
 centerfig(f);
 
 for i=1:1:length(spacing)
@@ -29,7 +28,7 @@ for i=1:1:length(spacing)
     E_eval = abs(eval(E(theta, phi) .^ 2));
     E_plot = 10.0 * log10(E_eval ./ max(E_eval));
     E_plot(E_plot < -15) = -15;
-    polarplot(theta, E_plot, 'DisplayName', sprintf("%.2ff_{0}", spacing1(i)));
+    polarplot(theta, E_plot, 'DisplayName', sprintf("%.2ff_{0}", spacing(i)));
     hold on;
 end
 title("Question 1, Part C) E Plane(s), phi=pi/2");
