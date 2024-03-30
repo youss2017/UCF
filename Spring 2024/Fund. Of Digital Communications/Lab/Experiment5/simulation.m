@@ -52,5 +52,7 @@ end
 subplot(2,1,2);
 plot(t, modulated_signal);
 ylim([-1.2, 1.2]);
-
+title("Modulated Signal");
+xlabel("time");
+ylabel("Amplitude");
 
