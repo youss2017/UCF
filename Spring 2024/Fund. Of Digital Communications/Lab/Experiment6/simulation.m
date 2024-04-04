@@ -2,9 +2,9 @@ clear all;
 close all;
 clc;
 
-Tb = 0.1;
-N=5000;
-Bits = 10;
+Tb = 0.5;
+N=500;
+Bits = 2;
 
 t = linspace(0, Bits*Tb, N);
 
@@ -34,7 +34,7 @@ phi = sqrt(2)*cos(2*pi*fc*t);
 s1 = sqrt(2*E)*phi;
 s2 = -sqrt(2*E)*phi;
 % noise
-N0 = (10^(0/10) * E);
+N0 = (10^(3/10) * E);
 sigma = sqrt(N0/2);
 
 noise_matrix = randn(length(t), 1) * sigma;

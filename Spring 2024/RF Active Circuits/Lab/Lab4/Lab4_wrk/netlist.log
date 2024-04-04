@@ -51,6 +51,11 @@ C:C2T2a  N__10 0 C=0.02 pF
 C:CCEC  N__11 N__10 C=0.03 pF 
 end AT41486
 
+AT41486:X1  N__3 N__9 0 0 
+Short:DC_Feed1  N__11 N__3 Mode=-1 
+Short:DC_Feed2  N__13 N__9 Mode=-1 
+Short:DC_Block1  N__7 N__3 Mode=1 
+Short:DC_Block2  N__9 N__5 Mode=1 
 R:R1  N__14 N__11 R=5.5 kOhm Noise=yes 
 R:R2  N__14 N__13 R=22 Ohm Noise=yes 
 V_Source:SRC1  N__14 0 Type="V_DC" Vdc=10 V SaveCurrent=1 
@@ -75,18 +80,15 @@ aele StabFact1=stab_fact(S);
 aele GpCircle1=gp_circle(S,17,101);
 aele MaxGain1=max_gain(S);
 Port:TermG2  N__0 0 Num=2 Z=(35.3-j*7.4) Ohm Noise=yes 
+#uselib "ckt" , "P_Probe"
+P_Probe:P_out  N__5 N__0 
 aele Zin1=zin(S11,PortZ1);
 
 Pin=15
-#uselib "ckt" , "P_Probe"
-P_Probe:P_out  N__5 N__0 
-Short:DC_Block2  N__9 N__5 Mode=1 
-Short:DC_Feed2  N__13 N__9 Mode=-1 
-Short:DC_Feed1  N__11 N__3 Mode=-1 
-Short:DC_Block1  N__7 N__3 Mode=1 
-AT41486:X1  N__3 N__9 0 0 
 Port:PORT1  N__7 0 Num=1 Z=(11.2-j*8.8) Ohm P[1]=polar(dbmtow(Pin),0) Freq[1]=1 GHz    Noise=yes Pac=polar(dbmtow(0),0) LimitPhaseNoiseToCarrier=no 
-HB:HB1 MaxOrder=4 Freq[1]=1.0 GHz Order[1]=5 StatusLevel=2 HBSS_WSP=0 OutputPlan="HB1_Output" 
+HB:HB1 MaxOrder=4 Freq[1]=1.0 GHz Order[1]=5 StatusLevel=2 HBSS_WSP=0 SweepVar="Pin" SweepPlan="HB1_stim" OutputPlan="HB1_Output" 
+
+SweepPlan: HB1_stim Start=1 Stop=10 Step=1 
 
 OutputPlan:HB1_Output \
       Type="Output" \
