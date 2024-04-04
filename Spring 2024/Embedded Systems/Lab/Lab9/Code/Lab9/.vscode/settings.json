@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        ".fantomasignore": "ignore",
+        "grlib.h": "c",
+        "lcd_driver.h": "c"
+    }
+}
