@@ -1,5 +1,5 @@
 INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
 DEFINE Lab4_lib Lab4_lib
 ASSIGN Lab4_lib libMode shared
-DEFINE AT414xx_lib U:/Spring${__SPACE}2024/RF${__SPACE}Active${__SPACE}Circuits/Lab/Lab3/AT414xx_lib/AT414xx_lib
+DEFINE AT414xx_lib $HOME/Desktop/UCF/Spring${__SPACE}2024/RF${__SPACE}Active${__SPACE}Circuits/Lab/Lab3/AT414xx_lib/AT414xx_lib
 ASSIGN AT414xx_lib libMode shared
