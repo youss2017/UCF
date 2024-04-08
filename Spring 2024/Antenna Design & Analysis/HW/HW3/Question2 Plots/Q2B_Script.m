@@ -108,7 +108,7 @@ function [theta_max, U_max] = find_max_U(U_func)
     neg_U_func = @(x) -U_func(x(1));
 
     % Initial guess for theta and phi
-    x0 = [0];
+    x0 = 0;
 
     % Perform the optimization
     [x_max, U_max] = fminsearch(neg_U_func, x0);

@@ -1,7 +1,7 @@
-; Top Design: "Lab4_lib:SpecificGainPA_BJT:schematic"
+; Top Design: "Lab4_lib:SpecificGainPA_BJT_TwoTone:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="Lab4_lib:SpecificGainPA_BJT:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="Lab4_lib:SpecificGainPA_BJT_TwoTone:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
 ; Library Name: AT414xx_lib
 ; Cell Name: AT414die
 ; View Name: schematic
@@ -51,19 +51,19 @@ C:C2T2a  N__10 0 C=0.02 pF
 C:CCEC  N__11 N__10 C=0.03 pF 
 end AT41486
 
-AT41486:X1  N__3 N__9 0 0 
-Short:DC_Feed1  N__11 N__3 Mode=-1 
-Short:DC_Feed2  N__13 N__9 Mode=-1 
-Short:DC_Block1  N__7 N__3 Mode=1 
-Short:DC_Block2  N__9 N__5 Mode=1 
-R:R1  N__14 N__11 R=5.5 kOhm Noise=yes 
-R:R2  N__14 N__13 R=22 Ohm Noise=yes 
-V_Source:SRC1  N__14 0 Type="V_DC" Vdc=10 V SaveCurrent=1 
-model MSub1 MSUB H=32 mil Er=3.55 Mur=1 Cond=1.0E+50 Hu=3.93701e+34 mm T=17.5 um TanD=0.0001 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+AT41486:X1  N__3 N__4 0 0 
+Short:DC_Feed1  N__2 N__3 Mode=-1 
+Short:DC_Feed2  N__5 N__4 Mode=-1 
+Short:DC_Block1  N__12 N__3 Mode=1 
+Short:DC_Block2  N__4 N__15 Mode=1 
+R:R1  N__1 N__2 R=5.5 kOhm Noise=yes 
+R:R2  N__1 N__5 R=25 Ohm Noise=yes 
+V_Source:SRC1  N__1 0 Type="V_DC" Vdc=10 V SaveCurrent=1 
+model MSub1 MSUB H=32 mil Er=3.55 Mur=1 Cond=1.0E+50 Hu=3.93701e+34 mm T=35 um TanD=0.0027 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
 S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
 SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
 
-SweepPlan: SP1_stim Start=1 GHz Stop=1 GHz Step=10 MHz 
+SweepPlan: SP1_stim Start=.2 GHz Stop=2 GHz Step=10 MHz 
 
 OutputPlan:SP1_Output \
       Type="Output" \
@@ -77,17 +77,16 @@ Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
 aele L_StabCircle1=l_stab_circle(S,51);
 aele S_StabCircle1=s_stab_circle(S,51);
 aele StabFact1=stab_fact(S);
-aele GpCircle1=gp_circle(S,17,101);
+aele GpCircle1=gp_circle(S,17,200);
 aele MaxGain1=max_gain(S);
-Port:TermG2  N__0 0 Num=2 Z=(35.3-j*7.4) Ohm Noise=yes 
 #uselib "ckt" , "P_Probe"
-P_Probe:P_out  N__5 N__0 
-aele Zin1=zin(S11,PortZ1);
+P_Probe:P_out  N__9 vout 
+aele VSWR_Port2=vswr(S22);
 
 Pin=15
-HB:HB1 MaxOrder=4 Freq[1]=1.0 GHz Order[1]=5 StatusLevel=2 HBSS_WSP=0 SweepVar="Pin" SweepPlan="HB1_stim" OutputPlan="HB1_Output" 
+HB:HB1 MaxOrder=4 Freq[1]=1.0 GHz Freq[2]=1.005 GHz Order[1]=9 Order[2]=9 StatusLevel=2 Restart=no HBSS_WSP=0 SweepVar="Pin" SweepPlan="HB1_stim" OutputPlan="HB1_Output" 
 
-SweepPlan: HB1_stim Start=-30 Stop=10 Lin=100 
+SweepPlan: HB1_stim Start=-25 Stop=10 Lin=61 
 
 OutputPlan:HB1_Output \
       Type="Output" \
@@ -108,9 +107,20 @@ OutputPlan:HB1_Output \
       DeviceVoltageDeviceType="All"
 
 Tran:HB1_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
-Freq[1]=1.0 GHz Order[1]=5 
+Freq[1]=1.0 GHz Order[1]=9 
 
 Component:tahb_HB1 Module="ATAHB" Type="ModelExtractor" \ 
  Tran_Analysis="HB1_tran" HB_Analysis="HB1" 
 
-Port:PORT1  N__7 0 Num=1 Z=(11.2-j*8.8) Ohm P[1]=polar(dbmtow(Pin),0) Freq[1]=1 GHz    Noise=yes Pac=polar(dbmtow(0),0) LimitPhaseNoiseToCarrier=no 
+Port:PORT1  vin 0 Num=1  Z=50 Ohm  Freq[1]=1 GHz Freq[2]=1.005 GHz    P[1]=polar(dbmtow(Pin),0) P[2]=polar(dbmtow(Pin),0) Noise=yes Pac=polar(dbmtow(0),0) 
+Port:TermG2  vout 0 Num=2 Z=50 Ohm Noise=yes 
+aele VSWR_Port1=vswr(S11);
+MLIN2:TL5  N__8 N__13 Subst="MSub1" W=70 mil L=1090.76 mil Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MTEE_ADS:Tee2  N__17 N__9 N__7 Subst="MSub1" W1=70 mil W2=70 mil W3=70 mil 
+MTEE_ADS:Tee1  vin N__16 N__8 Subst="MSub1" W1=70 mil W2=70 mil W3=70 mil 
+MLIN2:TL6  N__16 N__12 Subst="MSub1" W=70 mil L=626.45 mil Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL7  N__15 N__17 Subst="MSub1" W=70 mil L=292.1 mil Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL8  N__7 N__18 Subst="MSub1" W=70 mil L=1100.8 mil Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+aele IP3in1=ip3_in(vin,0,{1,0},{2,-1},50);
+aele OIP3_Upper=ip3_out(vout,{0,1},{-1,2},50);
+aele OIP3_Lower=ip3_out(vout,{1,0},{2,-1},50);

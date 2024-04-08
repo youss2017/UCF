@@ -1,0 +1,7 @@
+<emDataViewOptions>
+  <version major="1" minor="2"/>
+  <Options symbolNetlistMode="All pins" extrapolationMode="Linear" enforcePassivity="DuringExtrapolation" portTerminalPinsNetlistMode="Shorted"/>
+  <cellParameters useInterpolation="no">
+    <parameters/>
+  </cellParameters>
+</emDataViewOptions>

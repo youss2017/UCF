@@ -1,17 +1,17 @@
 <!DOCTYPE Materials>
 <Materials>
     <Conductors>
-        <Conductor imag="" tc2="" mur_real="1" heat_capacity="2.49E+06" mur_imag="" thermal_conductivity="401" name="Copper" electron_path="" tnom="" thermal_conductivity_in_z="" parmtype="1" real="5.8e7 Siemens/m" tc1=""/>
-        <Conductor imag="" tc2="" mur_real="1" heat_capacity="" mur_imag="" thermal_conductivity="" name="Typical_solder" electron_path="" tnom="" thermal_conductivity_in_z="" parmtype="1" real="0.71e7 Siemens/m" tc1=""/>
+        <Conductor heat_capacity="2.49E+06" imag="" parmtype="1" real="5.8e7 Siemens/m" tc1="" electron_path="" thermal_conductivity="401" mur_real="1" mur_imag="" name="Copper" thermal_conductivity_in_z="" tc2="" tnom=""/>
+        <Conductor heat_capacity="" imag="" parmtype="1" real="0.71e7 Siemens/m" tc1="" electron_path="" thermal_conductivity="" mur_real="1" mur_imag="" name="Typical_solder" thermal_conductivity_in_z="" tc2="" tnom=""/>
     </Conductors>
     <Dielectrics>
-        <Dielectric er_imag="" mur_real="1" lowfreq="1 KHz" heat_capacity="" mur_imag="" er_loss="0.01" highfreq="1 THz" loss_type="1" thermal_conductivity="" name="FR_4_Core" electron_path="" thermal_conductivity_in_z="" er_real="4.6" valuefreq="1 GHz"/>
-        <Dielectric er_imag="" mur_real="1" lowfreq="1 KHz" heat_capacity="" mur_imag="" er_loss="0.01" highfreq="1 THz" loss_type="1" thermal_conductivity="" name="FR_4_Prepreg" electron_path="" thermal_conductivity_in_z="" er_real="4.6" valuefreq="1 GHz"/>
-        <Dielectric er_imag="" mur_real="1" lowfreq="1 KHz" heat_capacity="" mur_imag="" er_loss="" highfreq="1 THz" loss_type="1" thermal_conductivity="" name="SolderMask" electron_path="" thermal_conductivity_in_z="" er_real="3.3" valuefreq="1 GHz"/>
-        <Dielectric er_imag="" mur_real="1" lowfreq="1 KHz" heat_capacity="1.73E+06" mur_imag="" er_loss="" highfreq="1 THz" loss_type="1" thermal_conductivity="25.25" name="Alumina" electron_path="" thermal_conductivity_in_z="" er_real="9.6" valuefreq="1 GHz"/>
-        <Dielectric er_imag="" mur_real="1" lowfreq="1 KHz" heat_capacity="" mur_imag="" er_loss="0.0009" highfreq="1 THz" loss_type="1" thermal_conductivity="" name="Arlon_Intermod" electron_path="" thermal_conductivity_in_z="" er_real="2.17" valuefreq="10.0 GHz"/>
-        <Dielectric er_imag="" mur_real="1" lowfreq="1 KHz" heat_capacity="" mur_imag="" er_loss="0.0022" highfreq="1 THz" loss_type="1" thermal_conductivity="" name="Rogers_RO4003" electron_path="" thermal_conductivity_in_z="" er_real="3.55" valuefreq="10.0 GHz"/>
-        <Dielectric er_imag="" mur_real="1" lowfreq="1 KHz" heat_capacity="" mur_imag="" er_loss="8.7e-4" highfreq="1 THz" loss_type="1" thermal_conductivity="" name="RogersRO3003" electron_path="" thermal_conductivity_in_z="" er_real="3.0" valuefreq="3.0 GHz"/>
+        <Dielectric er_real="4.6" heat_capacity="" loss_type="1" lowfreq="1 KHz" electron_path="" er_imag="" thermal_conductivity="" mur_real="1" mur_imag="" name="FR_4_Core" thermal_conductivity_in_z="" er_loss="0.01" valuefreq="1 GHz" highfreq="1 THz"/>
+        <Dielectric er_real="4.6" heat_capacity="" loss_type="1" lowfreq="1 KHz" electron_path="" er_imag="" thermal_conductivity="" mur_real="1" mur_imag="" name="FR_4_Prepreg" thermal_conductivity_in_z="" er_loss="0.01" valuefreq="1 GHz" highfreq="1 THz"/>
+        <Dielectric er_real="3.3" heat_capacity="" loss_type="1" lowfreq="1 KHz" electron_path="" er_imag="" thermal_conductivity="" mur_real="1" mur_imag="" name="SolderMask" thermal_conductivity_in_z="" er_loss="" valuefreq="1 GHz" highfreq="1 THz"/>
+        <Dielectric er_real="9.6" heat_capacity="1.73E+06" loss_type="1" lowfreq="1 KHz" electron_path="" er_imag="" thermal_conductivity="25.25" mur_real="1" mur_imag="" name="Alumina" thermal_conductivity_in_z="" er_loss="" valuefreq="1 GHz" highfreq="1 THz"/>
+        <Dielectric er_real="2.17" heat_capacity="" loss_type="1" lowfreq="1 KHz" electron_path="" er_imag="" thermal_conductivity="" mur_real="1" mur_imag="" name="Arlon_Intermod" thermal_conductivity_in_z="" er_loss="0.0009" valuefreq="10.0 GHz" highfreq="1 THz"/>
+        <Dielectric er_real="3.55" heat_capacity="" loss_type="1" lowfreq="1 KHz" electron_path="" er_imag="" thermal_conductivity="" mur_real="1" mur_imag="" name="Rogers_RO4003" thermal_conductivity_in_z="" er_loss="0.0022" valuefreq="10.0 GHz" highfreq="1 THz"/>
+        <Dielectric er_real="3.0" heat_capacity="" loss_type="1" lowfreq="1 KHz" electron_path="" er_imag="" thermal_conductivity="" mur_real="1" mur_imag="" name="RogersRO3003" thermal_conductivity_in_z="" er_loss="8.7e-4" valuefreq="3.0 GHz" highfreq="1 THz"/>
     </Dielectrics>
     <Semiconductors/>
     <roughness/>
