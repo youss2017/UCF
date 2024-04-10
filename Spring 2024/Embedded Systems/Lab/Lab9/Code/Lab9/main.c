@@ -25,6 +25,28 @@ extern void HAL_LCD_writeCommand(uint8_t command);
 
 void Initialize_Clock_System();
 
+
+void Initialize_I2C(void)
+{
+    // Configure the MCU in Master mode
+    // Configure pins to I2C functionality
+    // (UCB1SDA same as P4.0) (UCB1SCL same as P4.1)
+    // (P4SEL1=11, P4SEL0=00) (P4DIR=xx)
+    P4SEL1 |= (BIT1 | BIT0);
+    P4SEL0 &= ~(BIT1 | BIT0);
+    // Enter reset state and set all fields in this register to zero
+    UCB1CTLW0 = UCSWRST;
+    // Fields that should be nonzero are changed below
+    // (Master Mode: UCMST) (I2C mode: UCMODE_3) (Synchronous mode: UCSYNC)
+    // (UCSSEL 1:ACLK, 2,3:SMCLK)
+    UCB1CTLW0 |= UCMST | UCMODE_3 | UCSYNC | UCSSEL_3;
+    // Clock frequency: SMCLK/8 = 1 MHz/8 = 125 KHz
+    UCB1BRW = 8;
+    // Chip Data Sheet p. 53 (Should be 400 KHz max)
+    // Exit the reset mode at the end of the configuration
+    UCB1CTLW0 &= ~UCSWRST;
+}
+
 // Function to draw a pixel at (x, y) with color
 void draw_pixel(float r, float g, float b)
 {
@@ -82,6 +104,8 @@ void main(void)
 
     // Configure clock system
     Initialize_Clock_System();
+
+    Initialize_I2C();
 
     ////////////////////////////////////////////////////////////////////////////////////////////
     // Graphics functions

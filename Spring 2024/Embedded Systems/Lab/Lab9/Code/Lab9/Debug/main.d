@@ -19,7 +19,7 @@ main.obj: C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/sys/
 main.obj: C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdbool.h
 main.obj: C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/assert.h
 main.obj: ../LcdDriver/lcd_driver.h
-main.obj: C:/Users/youssef/workspace_v12/Lab9/Grlib/grlib/grlib.h
+main.obj: C:/Users/Youssef/Desktop/UCF/Spring\ 2024/Embedded\ Systems/Lab/Lab9/Code/Lab9/Grlib/grlib/grlib.h
 main.obj: C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdio.h
 main.obj: C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdarg.h
 main.obj: C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/math.h
@@ -67,7 +67,7 @@ C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/assert.h:
 
 ../LcdDriver/lcd_driver.h:
 
-C:/Users/youssef/workspace_v12/Lab9/Grlib/grlib/grlib.h:
+C:/Users/Youssef/Desktop/UCF/Spring\ 2024/Embedded\ Systems/Lab/Lab9/Code/Lab9/Grlib/grlib/grlib.h:
 
 C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdio.h:
 

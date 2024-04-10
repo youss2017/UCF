@@ -1,7 +1,7 @@
 # FIXED
 
 GrLib/fonts/fontcm12.obj: ../GrLib/fonts/fontcm12.c
-GrLib/fonts/fontcm12.obj: C:/Users/youssef/workspace_v12/Lab9/Grlib/grlib/grlib.h
+GrLib/fonts/fontcm12.obj: C:/Users/Youssef/Desktop/UCF/Spring\ 2024/Embedded\ Systems/Lab/Lab9/Code/Lab9/Grlib/grlib/grlib.h
 GrLib/fonts/fontcm12.obj: C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdint.h
 GrLib/fonts/fontcm12.obj: C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/_ti_config.h
 GrLib/fonts/fontcm12.obj: C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/linkage.h
@@ -17,7 +17,7 @@ GrLib/fonts/fontcm12.obj: C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.
 
 ../GrLib/fonts/fontcm12.c:
 
-C:/Users/youssef/workspace_v12/Lab9/Grlib/grlib/grlib.h:
+C:/Users/Youssef/Desktop/UCF/Spring\ 2024/Embedded\ Systems/Lab/Lab9/Code/Lab9/Grlib/grlib/grlib.h:
 
 C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdint.h:
 

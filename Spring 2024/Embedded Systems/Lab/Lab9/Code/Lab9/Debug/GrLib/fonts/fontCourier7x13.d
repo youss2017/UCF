@@ -12,7 +12,7 @@ GrLib/fonts/fontCourier7x13.obj: C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_
 GrLib/fonts/fontCourier7x13.obj: C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/machine/_stdint.h
 GrLib/fonts/fontCourier7x13.obj: C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/sys/_stdint.h
 GrLib/fonts/fontCourier7x13.obj: C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdbool.h
-GrLib/fonts/fontCourier7x13.obj: C:/Users/youssef/workspace_v12/Lab9/GrLib/grlib/grlib.h
+GrLib/fonts/fontCourier7x13.obj: C:/Users/Youssef/Desktop/UCF/Spring\ 2024/Embedded\ Systems/Lab/Lab9/Code/Lab9/GrLib/grlib/grlib.h
 GrLib/fonts/fontCourier7x13.obj: C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/assert.h
 
 ../GrLib/fonts/fontCourier7x13.c:
@@ -39,7 +39,7 @@ C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/sys/_stdint.h:
 
 C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdbool.h:
 
-C:/Users/youssef/workspace_v12/Lab9/GrLib/grlib/grlib.h:
+C:/Users/Youssef/Desktop/UCF/Spring\ 2024/Embedded\ Systems/Lab/Lab9/Code/Lab9/GrLib/grlib/grlib.h:
 
 C:/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/assert.h:
 

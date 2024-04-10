@@ -1,37 +1,129 @@
 close all
 clear all
 clc
-syms n theta
+syms n theta z
 lambda = 1;
 d = 0.62 * lambda;
 l = 0.62 * lambda * 6 * 2;
-u = cos(theta) * (pi*l)/lambda;
+u = cos(theta) * (pi*d)/lambda;
 
-SF_cosine_squared(theta) = (  pi^2 / (pi^2 - u^2) ) * (l/2)*sin(u)/u;
-SF_uniform(theta) = l * sin(u)/u;
+%SF_cosine_squared(theta) = (  pi^2 / (pi^2 - u^2) ) * (l/2)*sin(u)/u;
+%SF_uniform(theta) = l * sin(u)/u;
 
-t = [0.38];
+
+t = linspace(0.1, 0.5, 50);
+t = [0.255, 0.255];
+betas = [55, 55];
+loss_factor = [1, 0.9676];
+SLLs = zeros(1, length(t));
+previous_max = 0;
 for i=1:1:length(t)
-    SF(theta) = t(i)*SF_uniform(theta) + SF_cosine_squared(theta);
+    %SF(theta) = t(i)*SF_uniform(theta) + SF_cosine_squared(theta);
+    E = t(i);
+    n = -6:1:6;
+    Amp(z) = loss_factor(i) * (E + (1-E)*(cos(z*pi/l))^2);
+    k = (2*pi)/lambda;
+    beta = -k*d*n*cos(deg2rad(betas(i)));
+    A = Amp(d*n);
+    if i == 2
+        for idx=1:1:length(beta)
+            A(idx) = lossFactor(rad2deg(beta(idx))) * A(idx);
+            beta(idx) = deg2rad(digitizedPhase(rad2deg(beta(idx))));
+        end
+    end
+    AF(theta) = sum(A .* exp(1j*k*d*n*cos(theta) + 1j*beta) );
+    SF = matlabFunction(AF);
     
-    theta1 = linspace(0, pi, 1000);
-    SF_points = eval(SF(theta1));
-    SF_points = SF_points ./ max(SF_points);
+    theta1 = linspace(0, pi, 512);
+    SF_points = (SF(theta1));
+    if i == 1
+        previous_max = max(SF_points);
+    end
+    SF_points = SF_points ./ previous_max;
+
     SF_points = 20.0 .* log10(vpa(abs(SF_points), 9));
     %SF_points(SF_points < -40) = -40;
     %polarplot(theta1, SF_points);
-    plot(theta1, SF_points);
+    %%plot(rad2deg(theta1), SF_points, "DisplayName", sprintf("%d^\\circ", betas(i)));
+    plot(rad2deg(theta1), SF_points, "DisplayName", sprintf("%f loss\\circ", 20.0*log10(loss_factor(i))));
+    yline(-3, '--', 'Half Power', 'HandleVisibility', 'off');
+    yline(-27, '--', 'DisplayName', 'Target SLL', 'LineWidth', 2, 'HandleVisibility', 'off');
+    title('Array Factor Pattern', 'FontSize', 18)
+    xlabel("\theta\circ (deg)", 'FontSize', 16);
+    ylabel("dBi", 'FontSize', 16);
+    ylim([-40, 0]);
+    %xlim([0, 180]);
+    grid on;
     %rlim([-40, 0]);
     hold on
 
-    db3 = zeros(1, length(SF_points)) - 3;
-    polarplot(theta1, db3);
+    % db3 = zeros(1, length(SF_points)) - 3;
+    %polarplot(theta1, db3);
 
     SLL = findLobelLevel(eval(SF_points));
+    SLLs(i) = SLL;
     disp(SLL);
 
-    [peakIndex, leftIndex, rightIndex, hpbw] = findPoints(theta1, eval(SF_points))
+    % [peakIndex, leftIndex, rightIndex, hpbw] = findPoints(theta1, eval(SF_points))
     
+end
+legend();
+return;
+
+figure
+plot(t, SLLs, 'LineWidth', 2);
+
+grid on
+title('E Affect on SLL', 'FontSize', 18);
+xlabel('E value')
+ylabel('SLL')
+xlabel('E value', 'FontSize', 14)
+ylabel('SLL', 'FontSize', 14)
+
+figure
+i=-6:1:6;
+plot(i, Amp(d*n))
+grid on
+title("Amplitude Tapering")
+xlabel("Array Element Index")
+ylabel("Normalized Amplitude")
+
+function x_wrapped = wrapTo360(x)
+    % Wrap x to the range [-360, 360]
+    x_wrapped = mod(x, 360);
+    
+    % Convert negative values to their positive counterparts in the range [0, 360]
+    x_wrapped(x_wrapped < 0) = x_wrapped(x_wrapped < 0) + 360;
+end
+
+function x = lossFactor(phi)
+    phi = mod(phi, 360) - 360;
+    if phi == -360
+        phi = 0;
+    end
+    x = (2/315) * abs(phi);
+    x = 10^(-x/20);
+end
+
+function phase = digitizedPhase(phi)
+    fprintf("in(before mode): %f ", phi);
+    phi = mod(phi, 360) - 360;
+    if phi == -360
+        phi = 0;
+    end
+    allowed_phase = linspace(0, 315, 8);
+    allowed_phase = [-allowed_phase, allowed_phase];
+    % Calculate absolute differences
+    current_min = 360;
+    idx = 1;
+    for i=1:1:length(allowed_phase)
+        if abs(allowed_phase(i) - phi) < current_min
+            idx = i;
+            current_min = abs(allowed_phase(i) - phi);
+        end
+    end
+    phase = allowed_phase(idx);
+    fprintf("in: %f out: %f\n", phi, phase);
 end
 
 function lobeLevel = findLobelLevel(E_eval)
