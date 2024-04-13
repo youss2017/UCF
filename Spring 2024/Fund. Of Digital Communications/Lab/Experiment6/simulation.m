@@ -2,9 +2,9 @@ clear all;
 close all;
 clc;
 
-Tb = 0.5;
-N=500;
-Bits = 2;
+Tb = 0.01;
+N=10000;
+Bits = 100;
 
 t = linspace(0, Bits*Tb, N);
 
@@ -29,15 +29,17 @@ ylabel("Amplitude");
 %% Generating BSK signal
 E = 1;
 M = 2;
-fc = 10;
+fc = 100;
 phi = sqrt(2)*cos(2*pi*fc*t);
 s1 = sqrt(2*E)*phi;
 s2 = -sqrt(2*E)*phi;
 % noise
-N0 = (10^(3/10) * E);
+N0 = (10^(-15/10) * 2);
 sigma = sqrt(N0/2);
 
 noise_matrix = randn(length(t), 1) * sigma;
+noise_matrix = noise_matrix .* noise_matrix;
+noise_matrix = sqrt(noise_matrix);
 
 modulated_signal = linspace(0, 1, N);
 for i=1:1:length(modulated_signal)
@@ -113,3 +115,7 @@ xlim([0, 1]);
 title("Demodulated Signal (BSK) with Noise");
 xlabel("time");
 ylabel("Amplitude");
+
+error = demodulated_signal - message;
+error = sum(sqrt(error .* error)) / (Bits * Tb * N);
+disp(error);

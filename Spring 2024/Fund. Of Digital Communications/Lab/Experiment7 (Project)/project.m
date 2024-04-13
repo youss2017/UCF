@@ -1,0 +1,28 @@
+clear all
+close all
+clc
+A = sqrt(2);
+
+data = zeros(1, 1e4);
+qpsk_symbols = [(1-1j), (1+1j), (-1-1j), (-1+1j)];
+for i=1:1:length(data)
+    data(i) = A * qpsk_symbols(randi(length(qpsk_symbols)));
+end
+
+plot(real(data), imag(data), '.');
+grid on;
+
+figure;
+g = [1 0 0 cl0.65];
+AWGN = awgn(data, 12, 2, 'dB');
+ych = conv(data, g, 'same');
+y = ych + AWGN;
+
+plot(real(ych), imag(ych), '.');
+
+grid on;
+hold off;
+
+figure
+
+plot(real(y), imag(y), '.');

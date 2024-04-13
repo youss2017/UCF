@@ -1,0 +1,11 @@
+$begin 'CacheDataVersion'
+	DataVersion=10
+$end 'CacheDataVersion'
+$begin 'VariableValues'
+	sub_w='lambda'
+	sub_length='2.25*lambda/2'
+	lambda='2362.205mil'
+	mlin_width='71.874803mil'
+	p_w='650mil'
+	p_y='600mil'
+$end 'VariableValues'
