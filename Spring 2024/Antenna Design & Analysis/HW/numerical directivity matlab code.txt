@@ -1,3 +1,4 @@
+
 function [theta_max, phi_max, U_max] = findUmax(U_func)
     if nargin(U_func) == 2
         % Define a nested function to be minimized
@@ -13,13 +14,14 @@ function [theta_max, phi_max, U_max] = findUmax(U_func)
     elseif nargin(U_func) == 1
         % Define a nested function to be minimized
         neg_U_func = @(x) -U_func(x(1));
-        % Initial guess for theta
-        x0 = [0];
         % Perform the optimization
-        [x_max, U_max] = fminsearch(neg_U_func, x0);
+        options = optimset('Display','iter');
+        %  Bug in MATLAB
+        xValue = fminbnd(neg_U_func, -pi, pi, options);
         % Extract theta_max and phi_max
-        theta_max = x_max(1);
-        U_max = -U_max;
+        theta_max = xValue;
+        U_max = U_func(xValue);
+        phi_max = 0;
     else
         error('Incorrect number of input arguments.');
     end
@@ -28,7 +30,7 @@ end
 function D0 = compute_directivity(field)
     if nargin(matlabFunction(field)) == 2
         syms theta phi
-        U_inten = matlabFunction(field * conj(field));
+        U_inten = matlabFunction(abs(field) .^ 2);
         Prad = matlabFunction(U_inten(theta, phi) * sin(theta), 'Vars', {theta, phi});
         Prad_value = integral2(Prad, 0, pi, 0, 2*pi);
         [~, ~, Umax] = findUmax(U_inten);
@@ -36,10 +38,10 @@ function D0 = compute_directivity(field)
         D0 = (4*pi*Umax)/Prad_value;
     elseif nargin(matlabFunction(field)) == 1
         syms theta
-        U_inten = matlabFunction(field * conj(field));
+        U_inten = matlabFunction(abs(field) .^ 2);
         Prad = matlabFunction(U_inten(theta) * sin(theta), 'Vars', {theta});
         Prad_value = 2*pi*integral(Prad, 0, pi);
-        [~, Umax] = findUmax(U_inten);
+        [~, ~, Umax] = findUmax(U_inten);
 
         D0 = (4*pi*Umax)/Prad_value;
     else
