@@ -5,48 +5,12 @@ $begin 'RFSM'
 	$end 'CustomSurfs'
 	$begin 'SetupSolns'
 		$begin 'SetupSolnEntry'
-			Key(ParentID=1, VersID=12, ParentID=68, VersID=1971, Context='[0:0]', DesVarn='inset_length=\'150mil\' inset_width=\'1.75\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'19.879999999999999mm\' p_y=\'29.7176715511mm\' sub_length=\'50.467673884433339mm\' sub_w=\'1771.6537499999999mil\'', IntrVarn='Freq=\'5GHz\'')
-			SetupSolnFBOFile='4E4F13432171315247046.tmp'
+			Key(ParentID=1, VersID=26, ParentID=68, VersID=3947, Context='[0:0]', DesVarn='a=\'1.1799999999999999mm\' inset_length=\'0.40000000000000002cm\' inset_width=\'164.87480299999999mil\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'1.98898cm\' p_y=\'1.5cm\' sub_length=\'55.000004666666669mm\' sub_w=\'49.889803499999992mm\'', IntrVarn='Freq=\'5GHz\'')
+			SetupSolnFBOFile='198931904171339919230.tmp'
 		$end 'SetupSolnEntry'
 		$begin 'SetupSolnEntry'
-			Key(ParentID=1, VersID=12, ParentID=68, VersID=1971, Context='[0:0]', DesVarn='inset_length=\'150mil\' inset_width=\'1.75\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'19.879999999999999mm\' p_y=\'29.7176715511mm\' sub_length=\'50.49267388443333mm\' sub_w=\'1771.6537499999999mil\'', IntrVarn='Freq=\'5GHz\'')
-			SetupSolnFBOFile='4EF213432171315252059.tmp'
-		$end 'SetupSolnEntry'
-		$begin 'SetupSolnEntry'
-			Key(ParentID=1, VersID=12, ParentID=68, VersID=1971, Context='[0:0]', DesVarn='inset_length=\'150mil\' inset_width=\'1.75\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'19.879999999999999mm\' p_y=\'29.7176715511mm\' sub_length=\'50.717673884433339mm\' sub_w=\'1771.6537499999999mil\'', IntrVarn='Freq=\'5GHz\'')
-			SetupSolnFBOFile='4D0F13432171315237236.tmp'
-		$end 'SetupSolnEntry'
-		$begin 'SetupSolnEntry'
-			Key(ParentID=1, VersID=12, ParentID=68, VersID=1971, Context='[0:0]', DesVarn='inset_length=\'150mil\' inset_width=\'1.75\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'19.879999999999999mm\' p_y=\'32mm\' sub_length=\'52.800002333333339mm\' sub_w=\'1771.6537499999999mil\'', IntrVarn='Freq=\'5GHz\'')
-			SetupSolnFBOFile='560D13432171315307794.tmp'
-		$end 'SetupSolnEntry'
-		$begin 'SetupSolnEntry'
-			Key(ParentID=1, VersID=12, ParentID=68, VersID=1971, Context='[0:0]', DesVarn='inset_length=\'150mil\' inset_width=\'1.75\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'19.879999999999999mm\' p_y=\'31.82mm\' sub_length=\'52.820002333333335mm\' sub_w=\'1771.6537499999999mil\'', IntrVarn='Freq=\'5GHz\'')
-			SetupSolnFBOFile='59CA134321713153370112.tmp'
-		$end 'SetupSolnEntry'
-		$begin 'SetupSolnEntry'
-			Key(ParentID=1, VersID=12, ParentID=68, VersID=1971, Context='[0:0]', DesVarn='a=\'1.1799999999999999mm\' inset_length=\'184.84313304995499mil\' inset_width=\'2.1972535463077998\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'19.879999999999999mm\' p_y=\'31.806463759316795mm\' sub_length=\'52.986466092650133mm\' sub_w=\'1771.6537499999999mil\'', IntrVarn='Freq=\'5GHz\'')
-			SetupSolnFBOFile='418C134321713161504311.tmp'
-		$end 'SetupSolnEntry'
-		$begin 'SetupSolnEntry'
-			Key(ParentID=1, VersID=12, ParentID=68, VersID=1971, Context='[0:0]', DesVarn='inset_length=\'150mil\' inset_width=\'1.75\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'19.879999999999999mm\' p_y=\'31.82mm\' sub_length=\'53mm\' sub_w=\'4.5000005249999999cm\'', IntrVarn='Freq=\'5GHz\'')
-			SetupSolnFBOFile='67C8134321713154467145.tmp'
-		$end 'SetupSolnEntry'
-		$begin 'SetupSolnEntry'
-			Key(ParentID=1, VersID=12, ParentID=68, VersID=1971, Context='[0:0]', DesVarn='inset_length=\'187mil\' inset_width=\'2.3999999999999999\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'19.879999999999999mm\' p_y=\'31.82mm\' sub_length=\'5.3000002333333338cm\' sub_w=\'4.5000005249999999cm\'', IntrVarn='Freq=\'5GHz\'')
-			SetupSolnFBOFile='0349134321713156623177.tmp'
-		$end 'SetupSolnEntry'
-		$begin 'SetupSolnEntry'
-			Key(ParentID=1, VersID=12, ParentID=68, VersID=1971, Context='[0:0]', DesVarn='inset_length=\'150mil\' inset_width=\'1.75\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'19.879999999999999mm\' p_y=\'29.7176715511mm\' sub_length=\'53.217673884433339mm\' sub_w=\'1771.6537499999999mil\'', IntrVarn='Freq=\'5GHz\'')
-			SetupSolnFBOFile='4AA313432171315218227.tmp'
-		$end 'SetupSolnEntry'
-		$begin 'SetupSolnEntry'
-			Key(ParentID=1, VersID=12, ParentID=68, VersID=1971, Context='[0:0]', DesVarn='inset_length=\'150mil\' inset_width=\'1.75\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'19.879999999999999mm\' p_y=\'29.7176715511mm\' sub_length=\'50.517673884433336mm\' sub_w=\'2125.9845mil\'', IntrVarn='Freq=\'5GHz\'')
-			SetupSolnFBOFile='45C613432171315180112.tmp'
-		$end 'SetupSolnEntry'
-		$begin 'SetupSolnEntry'
-			Key(ParentID=1, VersID=12, ParentID=68, VersID=1971, Context='[0:0]', DesVarn='inset_length=\'150mil\' inset_width=\'1.75\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'19.879999999999999mm\' p_y=\'15.68mm\' sub_length=\'2125.9845mil\' sub_w=\'2125.9845mil\'', IntrVarn='Freq=\'5GHz\'')
-			SetupSolnFBOFile='47C5152201713031545152.tmp'
+			Key(ParentID=1, VersID=26, ParentID=68, VersID=3947, Context='[0:0]', DesVarn='a=\'1.1799999999999999mm\' inset_length=\'0.654642748cm\' inset_width=\'164.87480299999999mil\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'1.98898cm\' p_y=\'1.5cm\' sub_length=\'55.000004666666669mm\' sub_w=\'49.889803499999992mm\'', IntrVarn='Freq=\'5GHz\'')
+			SetupSolnFBOFile='14F831904171339883411.tmp'
 		$end 'SetupSolnEntry'
 	$end 'SetupSolns'
 	$begin 'MonostaticRcsSolns'

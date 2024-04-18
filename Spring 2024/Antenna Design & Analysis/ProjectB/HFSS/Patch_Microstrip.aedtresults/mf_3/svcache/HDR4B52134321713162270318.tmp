@@ -1,6 +1,6 @@
 SimValueCacheVersionID=1
 $begin 'SimValueInfos'
-	NextUniqueID=6
+	NextUniqueID=15
 	MoveBackwards=false
 	$begin 'SimValue'
 		ID=0
@@ -50,6 +50,122 @@ $begin 'SimValueInfos'
 			MatrixSize(0, 0)
 		$end 'SimValueParams'
 	$end 'SimValue'
+	$begin 'SimValue'
+		ID=6
+		$begin 'SimValueParams'
+			QuantityName='GainTotal'
+			ValueState(90, 15, 0, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=7
+		$begin 'SimValueParams'
+			QuantityName='GainZ'
+			ValueState(90, 15, 0, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=8
+		$begin 'SimValueParams'
+			QuantityName='St(feed_T1,feed_T1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=9
+		$begin 'SimValueParams'
+			QuantityName='Zot(feed_T1,feed_T1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=10
+		$begin 'SimValueParams'
+			QuantityName='Volume(substrate)'
+			ValueState(787, 14, 1, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=11
+		$begin 'SimValueParams'
+			QuantityName='Passivity'
+			ValueState(90, 15, 1, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=12
+		$begin 'SimValueParams'
+			QuantityName='Area(ground_plane)'
+			ValueState(235, 35, 1, 1)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=13
+		$begin 'SimValueParams'
+			QuantityName='Yt(feed_T1,feed_T1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
+	$begin 'SimValue'
+		ID=14
+		$begin 'SimValueParams'
+			QuantityName='Zt(feed_T1,feed_T1)'
+			ValueState(90, 15, 1, 2)
+			MatrixSize(0, 0)
+		$end 'SimValueParams'
+	$end 'SimValue'
 $end 'SimValueInfos'
 $begin 'SimValueCache'
+	$begin 'DesignMap'
+		DesignID=3
+		$begin 'SolutionMap'
+			$begin 'ContextMap'
+				SolutionID=67
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=68
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=9
+						SimValueContext(0, 0, 2, 0, false, false, 1, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=3947
+						$begin 'MinorVVMap'
+							MajorVariation='a=\'1.1799999999999999mm\' Freq=\'5GHz\' inset_length=\'0.654642748cm\' inset_width=\'164.87480299999999mil\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'1.98898cm\' p_y=\'1.5cm\' sub_length=\'55.000004666666669mm\' sub_w=\'49.889803499999992mm\''
+							MinorCacheFile='min181231904171339907713.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='a=\'1.1799999999999999mm\' Freq=\'5GHz\' inset_length=\'0.40000000000000002cm\' inset_width=\'164.87480299999999mil\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'1.98898cm\' p_y=\'1.5cm\' sub_length=\'55.000004666666669mm\' sub_w=\'49.889803499999992mm\''
+							MinorCacheFile='min244A31904171340003532.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=72
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=1
+						SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=3947
+						$begin 'MinorVVMap'
+							MajorVariation='a=\'1.1799999999999999mm\' inset_length=\'0.654642748cm\' inset_width=\'164.87480299999999mil\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'1.98898cm\' p_y=\'1.5cm\' sub_length=\'55.000004666666669mm\' sub_w=\'49.889803499999992mm\''
+							MinorCacheFile='min181231904171339907714.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+		$end 'SolutionMap'
+	$end 'DesignMap'
 $end 'SimValueCache'
