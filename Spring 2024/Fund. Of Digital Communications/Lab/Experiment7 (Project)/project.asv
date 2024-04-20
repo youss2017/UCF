@@ -9,13 +9,12 @@ for i=1:1:length(data)
     data(i) = A * qpsk_symbols(randi(length(qpsk_symbols)));
 end
 
-AWGN = awgn(data, 12, 2, 'dB');
-data = data + AWGN;
 plot(real(data), imag(data), '.');
 grid on;
 
 figure;
 g = [1 0 0 0.65];
+AWGN = awgn(data, 12, 2, 'dB');
 ych = conv(data, g, 'same');
 y = ych + AWGN;
 
@@ -28,3 +27,9 @@ figure
 
 plot(real(y), imag(y), '.');
 
+%% Invert Channel
+y_inverted_channel = deconv(y, g);
+
+figure
+
+plot(real(y_inverted_channel), imag(y_inverted_channel), '.');
