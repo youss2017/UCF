@@ -6,7 +6,7 @@ $begin 'RFSM'
 	$begin 'SetupSolns'
 		$begin 'SetupSolnEntry'
 			Key(ParentID=1, VersID=26, ParentID=68, VersID=3947, Context='[0:0]', DesVarn='a=\'1.1799999999999999mm\' inset_length=\'0.40000000000000002cm\' inset_width=\'164.87480299999999mil\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'1.98898cm\' p_y=\'1.5cm\' sub_length=\'55.000004666666669mm\' sub_w=\'49.889803499999992mm\'', IntrVarn='Freq=\'5GHz\'')
-			SetupSolnFBOFile='198931904171339919230.tmp'
+			SetupSolnFBOFile='26BA1578817134002267.tmp'
 		$end 'SetupSolnEntry'
 		$begin 'SetupSolnEntry'
 			Key(ParentID=1, VersID=26, ParentID=68, VersID=3947, Context='[0:0]', DesVarn='a=\'1.1799999999999999mm\' inset_length=\'0.654642748cm\' inset_width=\'164.87480299999999mil\' lambda=\'2362.2049999999999mil\' mlin_width=\'71.874803mil\' p_w=\'1.98898cm\' p_y=\'1.5cm\' sub_length=\'55.000004666666669mm\' sub_w=\'49.889803499999992mm\'', IntrVarn='Freq=\'5GHz\'')

@@ -415,4 +415,161 @@ $begin 'Profile'
 		$end 'ProfileGroup'
 		ProfileFootnote('I(2, 1, \'Stop Time\', \'04/17/2024 20:27:11\', 1, \'Status\', \'Aborted\')', 1)
 	$end 'ProfileGroup'
+	$begin 'ProfileGroup'
+		MajorVer=2023
+		MinorVer=2
+		Name='Solution Process'
+		$begin 'StartInfo'
+			I(1, 'Start Time', '04/17/2024 20:30:04')
+			I(1, 'Host', 'DESKTOP-339EFSV')
+			I(1, 'Processor', '12')
+			I(1, 'OS', 'NT 10.0')
+			I(1, 'Product', 'HFSS Version 2023.2.0')
+		$end 'StartInfo'
+		$begin 'TotalInfo'
+			I(1, 'Elapsed Time', '00:00:06')
+			I(1, 'ComEngine Memory', '64 M')
+		$end 'TotalInfo'
+		GroupOptions=8
+		TaskDataOptions('CPU Time'=8, Memory=8, 'Real Time'=8)
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 1, \'Executing From\', \'C:\\\\Program Files\\\\AnsysEM\\\\Ansys Student\\\\v232\\\\Win64\\\\HFSSCOMENGINE.exe\')', false, true)
+		$begin 'ProfileGroup'
+			MajorVer=2023
+			MinorVer=2
+			Name='HPC'
+			$begin 'StartInfo'
+				I(1, 'Type', 'Auto')
+				I(1, 'MPI Vendor', 'Intel')
+				I(1, 'MPI Version', '2021')
+			$end 'StartInfo'
+			$begin 'TotalInfo'
+				I(0, ' ')
+			$end 'TotalInfo'
+			GroupOptions=0
+			TaskDataOptions(Memory=8)
+			ProfileItem('Machine', 0, 0, 0, 0, 0, 'I(5, 1, \'Name\', \'DESKTOP-339EFSV\', 1, \'Memory\', \'47.9 GB\', 3, \'RAM Limit\', 90, \'%f%%\', 2, \'Cores\', 4, false, 1, \'Free Disk Space\', \'313 GB\')', false, true)
+		$end 'ProfileGroup'
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 1, \'Allow off core\', \'True\')', false, true)
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 1, \'Solution Basis Order\', \'1\')', false, true)
+		ProfileItem('Design Validation', 0, 0, 0, 0, 0, 'I(1, 0, \'Elapsed time : 00:00:00 , HFSS ComEngine Memory : 61.2 M\')', false, true)
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Perform full validations with standard port validations\')', false, true)
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Adaptive Passes converged\')', false, true)
+		$begin 'ProfileGroup'
+			MajorVer=2023
+			MinorVer=2
+			Name='Frequency Sweep'
+			$begin 'StartInfo'
+				I(1, 'Time', '04/17/2024 20:30:05')
+			$end 'StartInfo'
+			$begin 'TotalInfo'
+				I(1, 'Elapsed Time', '00:00:05')
+			$end 'TotalInfo'
+			GroupOptions=4
+			TaskDataOptions('CPU Time'=8, Memory=8, 'Real Time'=8)
+			ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 1, \'HPC\', \'Enabled\')', false, true)
+			ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+			ProfileItem('Solution Sweep', 0, 0, 0, 0, 0, 'I(1, 0, \'Fast Sweep\')', false, true)
+			ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'From 4 GHz to 7 GHz, 1599 Steps\')', false, true)
+			ProfileItem('Simulation Setup', 0, 0, 0, 0, 94152, 'I(1, 1, \'Disk\', \'0 Bytes\')', true, true)
+			ProfileItem('Matrix Assembly', 2, 0, 3, 0, 320192, 'I(3, 2, \'Tetrahedra\', 24457, false, 2, \'Lumped ports\', 1, false, 1, \'Disk\', \'23 Bytes\')', true, true)
+		$end 'ProfileGroup'
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+		$begin 'ProfileGroup'
+			MajorVer=2023
+			MinorVer=2
+			Name='Simulation Summary'
+			$begin 'StartInfo'
+			$end 'StartInfo'
+			$begin 'TotalInfo'
+				I(0, ' ')
+			$end 'TotalInfo'
+			GroupOptions=0
+			TaskDataOptions('CPU Time'=8, Memory=8, 'Real Time'=8)
+			ProfileItem('Design Validation', 0, 0, 0, 0, 0, 'I(2, 1, \'Elapsed Time\', \'00:00:00\', 1, \'Total Memory\', \'61.2 MB\')', false, true)
+			ProfileItem('Initial Meshing', 0, 0, 0, 0, 0, 'I(2, 1, \'Elapsed Time\', \'00:00:00\', 1, \'Total Memory\', \'0 Bytes\')', false, true)
+			ProfileItem('Frequency Sweep', 0, 0, 0, 0, 0, 'I(2, 1, \'Elapsed Time\', \'00:00:05\', 1, \'Total Memory\', \'0 Bytes\')', false, true)
+		$end 'ProfileGroup'
+		ProfileFootnote('I(2, 1, \'Stop Time\', \'04/17/2024 20:30:10\', 1, \'Status\', \'Aborted\')', 1)
+	$end 'ProfileGroup'
+	$begin 'ProfileGroup'
+		MajorVer=2023
+		MinorVer=2
+		Name='Solution Process'
+		$begin 'StartInfo'
+			I(1, 'Start Time', '04/17/2024 20:30:25')
+			I(1, 'Host', 'DESKTOP-339EFSV')
+			I(1, 'Processor', '12')
+			I(1, 'OS', 'NT 10.0')
+			I(1, 'Product', 'HFSS Version 2023.2.0')
+		$end 'StartInfo'
+		$begin 'TotalInfo'
+			I(1, 'Elapsed Time', '00:00:38')
+			I(1, 'ComEngine Memory', '63.2 M')
+		$end 'TotalInfo'
+		GroupOptions=8
+		TaskDataOptions('CPU Time'=8, Memory=8, 'Real Time'=8)
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 1, \'Executing From\', \'C:\\\\Program Files\\\\AnsysEM\\\\Ansys Student\\\\v232\\\\Win64\\\\HFSSCOMENGINE.exe\')', false, true)
+		$begin 'ProfileGroup'
+			MajorVer=2023
+			MinorVer=2
+			Name='HPC'
+			$begin 'StartInfo'
+				I(1, 'Type', 'Auto')
+				I(1, 'MPI Vendor', 'Intel')
+				I(1, 'MPI Version', '2021')
+			$end 'StartInfo'
+			$begin 'TotalInfo'
+				I(0, ' ')
+			$end 'TotalInfo'
+			GroupOptions=0
+			TaskDataOptions(Memory=8)
+			ProfileItem('Machine', 0, 0, 0, 0, 0, 'I(5, 1, \'Name\', \'DESKTOP-339EFSV\', 1, \'Memory\', \'47.9 GB\', 3, \'RAM Limit\', 90, \'%f%%\', 2, \'Cores\', 4, false, 1, \'Free Disk Space\', \'313 GB\')', false, true)
+		$end 'ProfileGroup'
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 1, \'Allow off core\', \'True\')', false, true)
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 1, \'Solution Basis Order\', \'1\')', false, true)
+		ProfileItem('Design Validation', 0, 0, 0, 0, 0, 'I(1, 0, \'Elapsed time : 00:00:00 , HFSS ComEngine Memory : 60.4 M\')', false, true)
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Perform full validations with standard port validations\')', false, true)
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Adaptive Passes converged\')', false, true)
+		$begin 'ProfileGroup'
+			MajorVer=2023
+			MinorVer=2
+			Name='Frequency Sweep'
+			$begin 'StartInfo'
+				I(1, 'Time', '04/17/2024 20:30:26')
+			$end 'StartInfo'
+			$begin 'TotalInfo'
+				I(1, 'Elapsed Time', '00:00:37')
+			$end 'TotalInfo'
+			GroupOptions=4
+			TaskDataOptions('CPU Time'=8, Memory=8, 'Real Time'=8)
+			ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 1, \'HPC\', \'Enabled\')', false, true)
+			ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+			ProfileItem('Solution Sweep', 0, 0, 0, 0, 0, 'I(1, 0, \'Fast Sweep\')', false, true)
+			ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'From 4 GHz to 7 GHz, 1599 Steps\')', false, true)
+			ProfileItem('Simulation Setup', 0, 0, 0, 0, 93120, 'I(1, 1, \'Disk\', \'0 Bytes\')', true, true)
+			ProfileItem('Matrix Assembly', 2, 0, 3, 0, 319044, 'I(3, 2, \'Tetrahedra\', 24457, false, 2, \'Lumped ports\', 1, false, 1, \'Disk\', \'23 Bytes\')', true, true)
+			ProfileItem('Matrix Solve', 33, 0, 58, 0, 999848, 'I(20, 1, \'Type\', \'DCS\', 2, \'Cores\', 4, false, 2, \'Lumped ports\', 1, false, 2, \'Lumped ports\', 1, false, 2, \'Lumped ports\', 1, false, 2, \'Lumped ports\', 1, false, 2, \'Lumped ports\', 1, false, 2, \'Lumped ports\', 1, false, 2, \'Lumped ports\', 1, false, 2, \'Lumped ports\', 1, false, 2, \'Lumped ports\', 1, false, 2, \'Matrix size\', 155129, false, 3, \'Matrix bandwidth\', 21.0719, \'%5.1f\', 2, \'Reduced matrix size\', 20, false, 2, \'Lumped ports\', 1, false, 2, \'Lumped ports\', 1, false, 2, \'Lumped ports\', 1, false, 2, \'Lumped ports\', 1, false, 2, \'Lumped ports\', 1, false, 1, \'Disk\', \'47.5 MB\')', true, true)
+			ProfileItem('Field Recovery', 0, 0, 0, 0, 999848, 'I(2, 2, \'Excitations\', 1, false, 1, \'Disk\', \'6.26 MB\')', true, true)
+		$end 'ProfileGroup'
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+		$begin 'ProfileGroup'
+			MajorVer=2023
+			MinorVer=2
+			Name='Simulation Summary'
+			$begin 'StartInfo'
+			$end 'StartInfo'
+			$begin 'TotalInfo'
+				I(0, ' ')
+			$end 'TotalInfo'
+			GroupOptions=0
+			TaskDataOptions('CPU Time'=8, Memory=8, 'Real Time'=8)
+			ProfileItem('Design Validation', 0, 0, 0, 0, 0, 'I(2, 1, \'Elapsed Time\', \'00:00:00\', 1, \'Total Memory\', \'60.4 MB\')', false, true)
+			ProfileItem('Initial Meshing', 0, 0, 0, 0, 0, 'I(2, 1, \'Elapsed Time\', \'00:00:00\', 1, \'Total Memory\', \'0 Bytes\')', false, true)
+			ProfileItem('Frequency Sweep', 0, 0, 0, 0, 0, 'I(2, 1, \'Elapsed Time\', \'00:00:37\', 1, \'Total Memory\', \'976 MB\')', false, true)
+			ProfileFootnote('I(3, 2, \'Max solved tets\', 24457, false, 2, \'Max matrix size\', 155129, false, 1, \'Matrix bandwidth\', \'21.1\')', 0)
+		$end 'ProfileGroup'
+		ProfileFootnote('I(2, 1, \'Stop Time\', \'04/17/2024 20:31:04\', 1, \'Status\', \'Normal Completion\')', 0)
+	$end 'ProfileGroup'
 $end 'Profile'
