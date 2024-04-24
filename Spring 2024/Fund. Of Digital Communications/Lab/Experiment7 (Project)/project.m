@@ -3,7 +3,7 @@ close all
 clc
 A = sqrt(2);
 
-data = zeros(1, 1e4);
+data = zeros(1, 1e6);
 qpsk_symbols = [(1-1j), (1+1j), (-1-1j), (-1+1j)];
 for i=1:1:length(data)
     data(i) = A * qpsk_symbols(randi(length(qpsk_symbols)));
